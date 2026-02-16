@@ -14,6 +14,7 @@ import os
 import signal
 import sys
 import yaml
+from typing import Callable, Dict
 
 # Ensure project root is on sys.path
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -93,92 +94,133 @@ def run_repl(agent: CodingAgent):
             print(f"\n[错误] {e}\n")
 
 
+def _cmd_status(agent: CodingAgent):
+    print(f"\n{agent.status()}\n")
+
+
+def _cmd_memory(agent: CodingAgent):
+    summary = agent.memory.summary()
+    print(f"\n{yaml.dump(summary, allow_unicode=True)}\n")
+
+
+def _cmd_improve(agent: CodingAgent):
+    print("\n正在运行自我改进循环...\n")
+    response = agent.chat("请进行自我改进")
+    print(f"\nPyCoder > {response}\n")
+
+
+def _cmd_skills(agent: CodingAgent):
+    print(f"\n{agent.skills.describe_all()}\n")
+    gaps = agent.skills.identify_gaps()
+    if gaps:
+        print("🔍 需要加强的领域:")
+        for g in gaps[:5]:
+            print(f"  - {g['skill']} [{g['level']}]: {g['reason']}")
+        print()
+
+
+def _cmd_meta(agent: CodingAgent):
+    print("\n正在挖掘元知识...\n")
+    response = agent.chat("请提炼元知识和元经验")
+    print(f"\nPyCoder > {response}\n")
+
+
+def _cmd_memory_agent(agent: CodingAgent):
+    response = agent.chat("记忆管理智能体状态")
+    print(f"\nPyCoder > {response}\n")
+
+
+def _cmd_reflect(agent: CodingAgent):
+    response = agent.chat("反思状态")
+    print(f"\nPyCoder > {response}\n")
+
+
+def _cmd_retrospect(agent: CodingAgent):
+    print("\n正在进行会话反思回顾...\n")
+    response = agent.chat("回顾会话反思")
+    print(f"\nPyCoder > {response}\n")
+
+
+def _cmd_save(agent: CodingAgent):
+    agent.save_session()
+    print("\n会话已保存。\n")
+
+
+def _cmd_clear(agent: CodingAgent):
+    agent.memory.working.clear()
+    print("\n工作记忆已清除。\n")
+
+
+def _cmd_history(agent: CodingAgent):
+    turns = agent.memory.working.get_full_turns()
+    if not turns:
+        print("\n暂无交互历史。\n")
+        return
+
+    print(f"\n最近 {len(turns)} 条记录：")
+    for t in turns[-10:]:
+        role = t["role"].upper()
+        text = t["content"][:120].replace("\n", " ")
+        print(f"  [{role}] {text}{'…' if len(t['content']) > 120 else ''}")
+    print()
+
+
+def _cmd_help(_: CodingAgent):
+    print(BANNER)
+
+
+def _command_registry() -> Dict[str, Callable[[CodingAgent], None]]:
+    """集中管理 REPL 命令映射，便于扩展与维护。"""
+    return {
+        "/status": _cmd_status,
+        "/memory": _cmd_memory,
+        "/improve": _cmd_improve,
+        "/skills": _cmd_skills,
+        "/meta": _cmd_meta,
+        "/memory-agent": _cmd_memory_agent,
+        "/reflect": _cmd_reflect,
+        "/retrospect": _cmd_retrospect,
+        "/save": _cmd_save,
+        "/clear": _cmd_clear,
+        "/history": _cmd_history,
+        "/help": _cmd_help,
+    }
+
+
+def _handle_orchestrate_command(agent: CodingAgent, raw_cmd: str):
+    """处理 /orchestrate 及其可选内联任务参数。"""
+    task = raw_cmd[len("/orchestrate"):].strip()
+    if not task:
+        try:
+            task = input("请输入复杂任务描述 > ").strip()
+        except (EOFError, KeyboardInterrupt):
+            print("\n")
+            return
+    if task:
+        print("\n正在编排子智能体...\n")
+        response = agent.chat(f"请编排多智能体完成：{task}")
+        print(f"\nPyCoder > {response}\n")
+
+
 def _handle_command(agent: CodingAgent, cmd: str) -> bool:
     """Handle slash commands. Returns False if the loop should exit."""
-    cmd = cmd.lower().strip()
+    raw_cmd = cmd.strip()
+    normalized_cmd = raw_cmd.lower()
 
-    if cmd == "/quit" or cmd == "/exit":
+    if normalized_cmd in ("/quit", "/exit"):
         _graceful_exit(agent)
         return False
 
-    elif cmd == "/status":
-        print(f"\n{agent.status()}\n")
+    if normalized_cmd.startswith("/orchestrate"):
+        _handle_orchestrate_command(agent, raw_cmd)
+        return True
 
-    elif cmd == "/memory":
-        summary = agent.memory.summary()
-        print(f"\n{yaml.dump(summary, allow_unicode=True)}\n")
+    handler = _command_registry().get(normalized_cmd)
+    if handler:
+        handler(agent)
+        return True
 
-    elif cmd == "/improve":
-        print("\n正在运行自我改进循环...\n")
-        response = agent.chat("请进行自我改进")
-        print(f"\nPyCoder > {response}\n")
-
-    elif cmd == "/skills":
-        print(f"\n{agent.skills.describe_all()}\n")
-        gaps = agent.skills.identify_gaps()
-        if gaps:
-            print("🔍 需要加强的领域:")
-            for g in gaps[:5]:
-                print(f"  - {g['skill']} [{g['level']}]: {g['reason']}")
-            print()
-
-    elif cmd == "/meta":
-        print("\n正在挖掘元知识...\n")
-        response = agent.chat("请提炼元知识和元经验")
-        print(f"\nPyCoder > {response}\n")
-
-    elif cmd.startswith("/orchestrate"):
-        # /orchestrate <task> or prompt for task
-        task = cmd[len("/orchestrate"):].strip()
-        if not task:
-            try:
-                task = input("请输入复杂任务描述 > ").strip()
-            except (EOFError, KeyboardInterrupt):
-                print("\n")
-                return True
-        if task:
-            print("\n正在编排子智能体...\n")
-            response = agent.chat(f"请编排多智能体完成：{task}")
-            print(f"\nPyCoder > {response}\n")
-
-    elif cmd == "/memory-agent":
-        response = agent.chat("记忆管理智能体状态")
-        print(f"\nPyCoder > {response}\n")
-
-    elif cmd == "/reflect":
-        response = agent.chat("反思状态")
-        print(f"\nPyCoder > {response}\n")
-
-    elif cmd == "/retrospect":
-        print("\n正在进行会话反思回顾...\n")
-        response = agent.chat("回顾会话反思")
-        print(f"\nPyCoder > {response}\n")
-
-    elif cmd == "/save":
-        agent.save_session()
-        print("\n会话已保存。\n")
-
-    elif cmd == "/clear":
-        agent.memory.working.clear()
-        print("\n工作记忆已清除。\n")
-
-    elif cmd == "/history":
-        turns = agent.memory.working.get_full_turns()
-        if not turns:
-            print("\n暂无交互历史。\n")
-        else:
-            print(f"\n最近 {len(turns)} 条记录：")
-            for t in turns[-10:]:
-                role = t["role"].upper()
-                text = t["content"][:120].replace("\n", " ")
-                print(f"  [{role}] {text}{'…' if len(t['content']) > 120 else ''}")
-            print()
-
-    elif cmd == "/help":
-        print(BANNER)
-
-    else:
-        print(f"\n未知命令: {cmd}  （输入 /help 查看可用命令）\n")
+    print(f"\n未知命令: {normalized_cmd}  （输入 /help 查看可用命令）\n")
 
     return True
 

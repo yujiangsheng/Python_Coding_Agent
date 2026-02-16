@@ -83,3 +83,22 @@ git push origin v0.1.0
 ```
 
 标签推送后会自动触发 `Release` workflow 创建 GitHub Release。
+
+## 7) 扩展 REPL 命令（开发者示例）
+
+`main.py` 已采用命令注册表模式。新增命令推荐两步：
+
+1. 新增处理函数（示例）
+
+```python
+def _cmd_ping(agent: CodingAgent):
+	print("\nPONG\n")
+```
+
+2. 在 `_command_registry()` 返回字典中注册
+
+```python
+"/ping": _cmd_ping,
+```
+
+这样无需继续扩展 `if/elif` 链，命令维护和测试都会更简单。
