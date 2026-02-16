@@ -90,8 +90,17 @@ python evolve.py --resume --rounds 10
 - 架构说明：`docs/ARCHITECTURE.md`
 - 使用示例：`docs/USAGE_EXAMPLES.md`
 - 配置剖面：`docs/CONFIG_PROFILES.md`
+- 运维排障：`docs/OPERATIONS_TROUBLESHOOTING.md`
 - 发布流程：`RELEASE_PROCESS.md`
 - 演化稳定性记录：`data/evolution/STABILITY_CHANGELOG.md`
+
+## 健康检查
+
+```bash
+python scripts/health_check.py
+```
+
+用于快速验证运行环境、配置完整性、核心模块导入与 Ollama 连通性。
 
 ## 开发与验证
 

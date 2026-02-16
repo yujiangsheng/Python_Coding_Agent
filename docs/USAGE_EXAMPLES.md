@@ -102,3 +102,15 @@ def _cmd_ping(agent: CodingAgent):
 ```
 
 这样无需继续扩展 `if/elif` 链，命令维护和测试都会更简单。
+
+## 8) 一键健康检查
+
+```bash
+python scripts/health_check.py
+```
+
+建议在以下时机执行：
+
+- 新机器首次部署后
+- 切换模型后端后
+- 发布前回归检查前
