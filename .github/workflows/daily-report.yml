@@ -31,11 +31,15 @@ jobs:
         run: |
           python scripts/daily_report.py --window 10
 
+      - name: Prune old reports
+        run: |
+          python scripts/prune_reports.py --keep 30
+
       - name: Commit and push report
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/reports/*.md
+          git add -A data/reports
           if git diff --cached --quiet; then
             echo "No report changes to commit"
             exit 0

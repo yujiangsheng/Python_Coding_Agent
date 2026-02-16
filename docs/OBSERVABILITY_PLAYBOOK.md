@@ -54,6 +54,13 @@ python scripts/daily_report.py --window 10
 - 工作流：`.github/workflows/daily-report.yml`
 - 触发：每日定时 + 手动 `workflow_dispatch`
 - 行为：生成 `data/reports/*.md` 并自动提交到 `main`
+- 保留策略：自动清理历史日报，仅保留最近 30 份
+
+如需手动清理：
+
+```bash
+python scripts/prune_reports.py --keep 30
+```
 
 ## 3. 发布前门禁
 

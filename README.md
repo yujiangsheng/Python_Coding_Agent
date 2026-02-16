@@ -119,6 +119,8 @@ python scripts/daily_report.py --window 10
 
 仓库已提供定时自动日报工作流：`.github/workflows/daily-report.yml`（每日执行，也支持手动触发）。
 
+默认保留策略：自动清理历史日报，仅保留最近 30 份。
+
 ## 开发与验证
 
 ```bash

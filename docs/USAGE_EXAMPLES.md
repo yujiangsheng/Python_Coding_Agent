@@ -144,3 +144,9 @@ python scripts/daily_report.py --window 10
 ```bash
 python scripts/daily_report.py --window 10 --output data/reports/daily_manual.md
 ```
+
+## 11) 清理历史日报（保留最近 N 份）
+
+```bash
+python scripts/prune_reports.py --keep 30
+```
