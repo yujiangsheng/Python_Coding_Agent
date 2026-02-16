@@ -44,6 +44,12 @@ python scripts/window_report.py --window 10 --compare-prev --key-tasks hard_calc
 - 检查对应任务的 retry 提示是否失效
 - 小步修复后重跑 8~10 轮确认
 
+5. 归档日报（Markdown）：
+
+```bash
+python scripts/daily_report.py --window 10
+```
+
 ## 3. 发布前门禁
 
 建议全部满足：

@@ -130,3 +130,17 @@ python scripts/window_report.py --window 10 --compare-prev --key-tasks hard_calc
 ```
 
 输出为 JSON，可直接用于日报或自动化看板。
+
+## 10) 生成 Markdown 日报
+
+默认生成到 `data/reports/`：
+
+```bash
+python scripts/daily_report.py --window 10
+```
+
+自定义输出路径：
+
+```bash
+python scripts/daily_report.py --window 10 --output data/reports/daily_manual.md
+```

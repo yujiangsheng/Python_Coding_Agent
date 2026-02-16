@@ -109,6 +109,14 @@ python scripts/health_check.py
 python scripts/window_report.py --window 10 --compare-prev --key-tasks hard_calc_parser hard_concurrent_pool med_decorator_retry
 ```
 
+自动生成 Markdown 日报：
+
+```bash
+python scripts/daily_report.py --window 10
+```
+
+默认输出到 `data/reports/`。
+
 ## 开发与验证
 
 ```bash
