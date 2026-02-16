@@ -9,7 +9,7 @@ import logging
 import os
 import time
 import yaml
-from typing import Dict, Any, Optional
+from typing import Dict, Any, Optional, Callable
 
 from agent.exceptions import ConfigError
 
@@ -78,6 +78,7 @@ class CodingAgent:
         self._orchestrator: Optional[AgentOrchestrator] = None
         self._memory_agent: Optional[MemoryAgent] = None
         self._reflection: Optional[ReflectionAgent] = None
+        self._intent_handlers: Optional[Dict[str, Callable[[Intent, str, Dict[str, Any]], str]]] = None
 
         self.session_start = time.time()
         self.interaction_count = 0
@@ -260,32 +261,53 @@ class CodingAgent:
     def _dispatch(self, intent: Intent, user_message: str,
                   recalled: Dict[str, Any]) -> str:
         """Route to the appropriate handler based on intent type."""
-        handlers = {
-            IntentType.CODE_GENERATE: self._handle_code_generate,
-            IntentType.CODE_MODIFY: self._handle_code_modify,
-            IntentType.CODE_EXPLAIN: self._handle_code_explain,
-            IntentType.CODE_DEBUG: self._handle_code_debug,
-            IntentType.CODE_REVIEW: self._handle_code_review,
-            IntentType.CODE_TEST: self._handle_code_test,
-            IntentType.QUESTION: self._handle_question,
-            IntentType.SEARCH: self._handle_search,
-            IntentType.SELF_IMPROVE: self._handle_self_improve,
-            IntentType.MEMORY_MANAGE: self._handle_memory,
-            IntentType.SYSTEM_COMMAND: self._handle_system,
-            IntentType.CONVERSATION: self._handle_conversation,
-            IntentType.SKILL_DESCRIBE: self._handle_skill_describe,
-            IntentType.META_MINE: self._handle_meta_mine,
-            IntentType.ORCHESTRATE: self._handle_orchestrate,
-            IntentType.MEMORY_AGENT: self._handle_memory_agent,
-            IntentType.REFLECT: self._handle_reflect,
-        }
-
-        handler = handlers.get(intent.type, self._handle_conversation)
+        handler = self._get_intent_handlers().get(intent.type, self._handle_conversation)
         try:
             return handler(intent, user_message, recalled)
         except Exception as e:
             logger.error(f"Handler error: {e}", exc_info=True)
             return f"处理过程中出现错误：{e}\n\n请重试或换一种方式描述你的需求。"
+
+    def _get_intent_handlers(self) -> Dict[str, Callable[[Intent, str, Dict[str, Any]], str]]:
+        """Build and cache intent handlers to avoid rebuilding mapping per turn."""
+        if self._intent_handlers is None:
+            self._intent_handlers = {
+                IntentType.CODE_GENERATE: self._handle_code_generate,
+                IntentType.CODE_MODIFY: self._handle_code_modify,
+                IntentType.CODE_EXPLAIN: self._handle_code_explain,
+                IntentType.CODE_DEBUG: self._handle_code_debug,
+                IntentType.CODE_REVIEW: self._handle_code_review,
+                IntentType.CODE_TEST: self._handle_code_test,
+                IntentType.QUESTION: self._handle_question,
+                IntentType.SEARCH: self._handle_search,
+                IntentType.SELF_IMPROVE: self._handle_self_improve,
+                IntentType.MEMORY_MANAGE: self._handle_memory,
+                IntentType.SYSTEM_COMMAND: self._handle_system,
+                IntentType.CONVERSATION: self._handle_conversation,
+                IntentType.SKILL_DESCRIBE: self._handle_skill_describe,
+                IntentType.META_MINE: self._handle_meta_mine,
+                IntentType.ORCHESTRATE: self._handle_orchestrate,
+                IntentType.MEMORY_AGENT: self._handle_memory_agent,
+                IntentType.REFLECT: self._handle_reflect,
+            }
+        return self._intent_handlers
+
+    def _record_codegen_experience(
+        self,
+        intent_label: str,
+        user_message: str,
+        code: str,
+        outcome: str,
+        success: bool,
+    ) -> None:
+        """Store code-generation/debug experiences via MemoryAgent in one place."""
+        self.memory_agent.route_and_store(
+            f"[{intent_label}] Task: {user_message[:500]}\n"
+            f"Code: {code[:1000]}\n"
+            f"Outcome: {outcome}",
+            info_type="experience",
+            metadata={"intent": intent_label, "success": success},
+        )
 
     # ------------------------------------------------------------------
     # Intent handlers
@@ -293,6 +315,7 @@ class CodingAgent:
 
     def _handle_code_generate(self, intent: Intent, msg: str, recalled: dict) -> str:
         """Generate new code."""
+        # 中文说明：生成后会自动执行并把结果回写到记忆系统，便于后续检索与复用。
         context = self._build_context(recalled)
         result = self.codegen.generate_and_run(msg, context=context)
 
@@ -310,10 +333,12 @@ class CodingAgent:
         # Store experience via MemoryAgent (single path — no duplication)
         success = hasattr(exec_result, 'success') and exec_result.success
         outcome = exec_result.summary() if hasattr(exec_result, 'summary') else "unknown"
-        self.memory_agent.route_and_store(
-            f"Task: {msg[:500]}\nCode: {result.get('code', '')[:1000]}\nOutcome: {outcome}",
-            info_type="experience",
-            metadata={"intent": intent.type, "success": success},
+        self._record_codegen_experience(
+            intent_label=str(intent.type),
+            user_message=msg,
+            code=result.get("code", ""),
+            outcome=outcome,
+            success=success,
         )
 
         return "\n".join(response_parts)
@@ -333,6 +358,7 @@ class CodingAgent:
 
     def _handle_code_debug(self, intent: Intent, msg: str, recalled: dict) -> str:
         """Debug code."""
+        # 中文说明：调试路径与生成路径共享同一套经验沉淀逻辑，减少重复和分叉行为。
         context = self._build_context(recalled)
         result = self.codegen.generate_and_run(msg, context=context, auto_fix=True)
 
@@ -344,10 +370,12 @@ class CodingAgent:
         # Store experience via MemoryAgent (single path — no duplication)
         success = hasattr(exec_result, 'success') and exec_result.success
         outcome = exec_result.summary() if hasattr(exec_result, 'summary') else "unknown"
-        self.memory_agent.route_and_store(
-            f"[Debug] Task: {msg[:400]}\nFix: {result.get('code', '')[:1000]}\nOutcome: {outcome}",
-            info_type="experience",
-            metadata={"intent": "debug", "success": success},
+        self._record_codegen_experience(
+            intent_label="debug",
+            user_message=msg,
+            code=result.get("code", ""),
+            outcome=outcome,
+            success=success,
         )
 
         return "\n".join(response_parts)
