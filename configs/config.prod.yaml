@@ -1,0 +1,80 @@
+# 生产/长稳运行配置模板（稳定优先）
+# 使用方式：python main.py --config configs/config.prod.yaml
+
+model:
+  backend: "ollama"
+  ollama_model: "qwen3-coder:30b"
+  ollama_url: "http://localhost:11434"
+
+  # 长稳场景保留较高上限，提升复杂任务覆盖
+  max_new_tokens: 16384
+  temperature: 0.6
+  top_p: 0.9
+  top_k: 40
+
+memory:
+  auto_search: true
+
+  working:
+    max_turns: 24
+    max_tokens: 8192
+
+  long_term:
+    embedding_dim: 384
+    max_entries: 100000
+    similarity_threshold: 0.65
+    index_path: "data/memories/long_term_index.json"
+    surprise_threshold: 0.15
+    dedup_threshold: 0.92
+    decay_half_life: 604800
+    consolidation_threshold: 0.90
+
+  persistent:
+    db_path: "data/memories/persistent.json"
+    max_entries: 50000
+    dedup_enabled: true
+    dedup_ratio: 0.85
+
+  external:
+    enabled: true
+    search_engine: "duckduckgo"
+    max_results: 5
+
+execution:
+  timeout: 30
+  max_output_chars: 12000
+  allowed_imports: []
+
+self_improvement:
+  enabled: true
+  log_dir: "data/improvements"
+  min_confidence: 0.8
+  max_iterations: 5
+  backup: true
+
+memory_agent:
+  error_registry_path: "data/error_registry.json"
+  llm_routing: true
+  max_exploration_suggestions: 5
+
+meta_knowledge:
+  min_experiences: 8
+  batch_size: 20
+  cooldown: 3600
+
+skills:
+  db_path: "data/skills.json"
+
+orchestration:
+  max_sub_agents: 6
+
+reflection:
+  use_llm: true
+  quality_threshold: 0.65
+  llm_cooldown: 5.0
+  max_session_records: 200
+  evolution_db_path: "data/evolution.json"
+
+logging:
+  level: "INFO"
+  file: "data/agent.log"

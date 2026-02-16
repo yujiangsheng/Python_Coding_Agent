@@ -1,134 +1,130 @@
 # ============================================================
-# Python Coding Agent Configuration
-# Author & Maintainer: Jiangsheng Yu
+# PyCoder 主配置（config.yaml）
+# 说明：此文件为“默认配置”。
+# - 开发/测试建议参考：configs/config.dev.yaml
+# - 长稳运行建议参考：configs/config.prod.yaml
 # ============================================================
 
 model:
-  # Backend: "dashscope" (cloud API) | "ollama" (local) | "transformers" (HF)
+  # 模型后端：
+  # - "dashscope"：云端 API
+  # - "ollama"：本地模型服务（默认）
+  # - "transformers"：本地 HF 推理
   backend: "ollama"
 
-  # ---- DashScope API settings (OpenAI-compatible) ----
+  # DashScope 配置（backend=dashscope 时生效）
   dashscope_model: "qwen3-coder-plus"
   dashscope_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
-  # API key: reads from DASHSCOPE_API_KEY env var by default
-  # dashscope_api_key: "sk-xxx"   # or set here directly
+  # 建议优先通过环境变量 DASHSCOPE_API_KEY 注入密钥
+  # dashscope_api_key: "sk-xxx"
 
-  # ---- Ollama settings ----
+  # Ollama 配置（backend=ollama 时生效）
   ollama_model: "qwen3-coder:30b"
   ollama_url: "http://localhost:11434"
 
-  # ---- Transformers fallback settings ----
-  # HuggingFace model identifier (used when backend: "transformers")
+  # Transformers 配置（backend=transformers 时生效）
   name: "Qwen/Qwen3-Coder-30B-A3B-Instruct"
   trust_remote_code: true
   torch_dtype: "auto"
   load_in_4bit: false
   load_in_8bit: false
 
-  # ---- Generation parameters (shared) ----
+  # 统一生成参数（各后端共享）
   max_new_tokens: 16384
   temperature: 0.7
   top_p: 0.95
   top_k: 40
 
 memory:
-  # Auto search fallback: query web when internal recall is weak
+  # 当内部记忆召回不足时，是否启用外部检索回退
   auto_search: true
 
-  # Working memory: recent conversation turns kept in context
+  # 工作记忆（短期上下文）
   working:
     max_turns: 20
     max_tokens: 8192
 
-  # Long-term memory: vector-indexed memories across sessions
-  # Enhanced with surprise gating + dedup + relevance decay
+  # 长期记忆（向量索引 + 去重 + 衰减）
   long_term:
     embedding_dim: 384
     max_entries: 100000
     similarity_threshold: 0.65
     index_path: "data/memories/long_term_index.json"
-    # --- Surprise gating parameters ---
-    # Minimum surprise (1 − max_sim) to accept a new memory (novelty gate)
+    # 新颖性门限：surprise = 1 - max_similarity
     surprise_threshold: 0.15
-    # Near-duplicate threshold above which storage is skipped
+    # 近重复门限：高于此值则拒绝写入
     dedup_threshold: 0.92
-    # Relevance decay half-life in seconds (7 days)
+    # 相关性半衰期（秒）：7 天
     decay_half_life: 604800
-    # Consolidation: merge entries above this similarity
+    # 合并门限：高相似条目会在整理时合并
     consolidation_threshold: 0.90
 
-  # Persistent memory: structured knowledge base on disk
-  # Enhanced with experience replay + semantic dedup
+  # 持久记忆（结构化知识）
   persistent:
     db_path: "data/memories/persistent.json"
     max_entries: 50000
     dedup_enabled: true
     dedup_ratio: 0.85
 
-  # External memory: web search and documentation retrieval
+  # 外部记忆（搜索/文档）
   external:
     enabled: true
     search_engine: "duckduckgo"
     max_results: 5
 
 execution:
-  # Sandbox timeout in seconds for running generated code
+  # 代码沙箱执行超时（秒）
   timeout: 30
-  # Maximum output length captured from execution
+  # 执行输出截断长度
   max_output_chars: 10000
-  # Allowed imports (empty = allow all; use with caution)
+  # 允许导入白名单；空列表表示不限制
   allowed_imports: []
 
 self_improvement:
-  # Enable self-improvement loop
+  # 是否启用自我改进循环
   enabled: true
-  # Directory for improvement logs and patches
+  # 改进日志目录
   log_dir: "data/improvements"
-  # Minimum confidence score to apply self-modifications
+  # 应用改动的最低置信度
   min_confidence: 0.7
-  # Maximum consecutive self-improvement iterations
+  # 连续改进最大轮次
   max_iterations: 5
-  # Backup originals before modification
+  # 改动前是否备份
   backup: true
 
-# --- Memory Agent (LLM memory routing + error prevention) ---
 memory_agent:
-  # Path for persistent error registry
+  # 错误注册表持久化路径
   error_registry_path: "data/error_registry.json"
-  # Use LLM for information classification (slower but smarter)
+  # 是否启用 LLM 信息路由（更智能但更慢）
   llm_routing: true
-  # Maximum exploration suggestions per query
+  # 每次最多给出多少探索建议
   max_exploration_suggestions: 5
 
-# --- Meta-knowledge mining ---
 meta_knowledge:
-  # Minimum experience count needed before mining
+  # 提炼元知识前至少需要的经验数量
   min_experiences: 5
-  # Max experiences sent to LLM per mining batch
+  # 单批送入 LLM 的经验上限
   batch_size: 20
-  # Cooldown between mining runs (seconds, 1 hour)
+  # 挖掘冷却时间（秒）
   cooldown: 3600
 
-# --- Skill registry ---
 skills:
   db_path: "data/skills.json"
 
-# --- Multi-agent orchestration ---
 orchestration:
-  # Maximum sub-agents per orchestration
+  # 单次编排最多子智能体数
   max_sub_agents: 6
 
-# --- Reflection Agent (systematic self-evaluation) ---
 reflection:
-  # Use LLM for deep reflection (slower but better)
+  # 是否使用 LLM 做深度反思
   use_llm: true
-  # Minimum quality score threshold
+  # 低于该分值视为质量偏低
   quality_threshold: 0.6
-  # Cooldown between LLM reflection calls (seconds)
+  # LLM 反思调用冷却（秒）
   llm_cooldown: 5.0
-  # Max per-session reflection records
+  # 单会话最大反思记录数
   max_session_records: 200
-  # Path for cross-session evolution tracking
+  # 跨会话进化跟踪文件
   evolution_db_path: "data/evolution.json"
 
 logging:

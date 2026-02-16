@@ -29,6 +29,13 @@ model:
   ollama_url: "http://localhost:11434"
 ```
 
+也可使用预设配置剖面：
+
+```bash
+python main.py --config configs/config.dev.yaml
+python main.py --config configs/config.prod.yaml
+```
+
 ### 3) 运行方式
 
 交互模式：
@@ -82,6 +89,7 @@ python evolve.py --resume --rounds 10
 
 - 架构说明：`docs/ARCHITECTURE.md`
 - 使用示例：`docs/USAGE_EXAMPLES.md`
+- 配置剖面：`docs/CONFIG_PROFILES.md`
 - 发布流程：`RELEASE_PROCESS.md`
 - 演化稳定性记录：`data/evolution/STABILITY_CHANGELOG.md`
 
