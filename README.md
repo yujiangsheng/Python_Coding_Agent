@@ -123,6 +123,8 @@ python scripts/daily_report.py --window 10
 
 该工作流包含质量闸门，未达阈值时会标记 job 失败。
 
+当闸门失败时会自动生成告警摘要：`data/reports/alert_latest.md`。
+
 ## 开发与验证
 
 ```bash

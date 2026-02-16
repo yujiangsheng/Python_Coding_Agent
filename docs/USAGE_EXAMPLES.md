@@ -162,3 +162,9 @@ python scripts/daily_report.py --window 10 --fail-on-gate
 ```bash
 python scripts/daily_report.py --window 10 --fail-on-gate --gate-avg-min 0.95 --gate-std-max 0.06 --gate-hard-min 0.80
 ```
+
+生成（或清理）告警摘要文件：
+
+```bash
+python scripts/daily_report.py --window 10 --alert-on-gate-fail --alert-output data/reports/alert_latest.md
+```

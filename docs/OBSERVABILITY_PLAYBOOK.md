@@ -56,6 +56,7 @@ python scripts/daily_report.py --window 10
 - 行为：生成 `data/reports/*.md` 并自动提交到 `main`
 - 保留策略：自动清理历史日报，仅保留最近 30 份
 - 质量闸门：执行 `daily_report.py --fail-on-gate`，不达标时 job 失败
+- 告警摘要：闸门失败时写入 `data/reports/alert_latest.md`，通过时自动清理
 
 如需手动清理：
 

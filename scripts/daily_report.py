@@ -326,6 +326,54 @@ def build_markdown(
     return "\n".join(lines) + "\n"
 
 
+def build_alert_markdown(
+    generated_at: str,
+    report_path: Path,
+    gate: Dict[str, Any],
+    health: Dict[str, Any],
+) -> str:
+    """Build concise alert markdown for failed quality gate."""
+    lines: list[str] = []
+    lines.append("# 🚨 PyCoder 质量闸门告警")
+    lines.append("")
+    lines.append(f"- 触发时间: {generated_at}")
+    lines.append(f"- 对应日报: {report_path}")
+    lines.append(f"- 健康检查通过: {health.get('passed')}")
+    lines.append("")
+
+    lines.append("## Gate 状态")
+    lines.append("")
+    lines.append("- 结果: **FAIL**")
+    t = gate.get("thresholds", {})
+    lines.append(
+        f"- 阈值: avg>={_fmt(t.get('avg_min', 'N/A'))}, "
+        f"std<={_fmt(t.get('std_max', 'N/A'))}, "
+        f"hard_task>={_fmt(t.get('hard_min', 'N/A'))}"
+    )
+    lines.append(
+        f"- 当前: avg={_fmt(gate.get('current_avg', 'N/A'))}, "
+        f"std={_fmt(gate.get('current_std', 'N/A'))}, "
+        f"parser={_fmt(gate.get('parser_rate', 'N/A'))}, "
+        f"pool={_fmt(gate.get('pool_rate', 'N/A'))}"
+    )
+    lines.append("")
+
+    reasons = gate.get("reasons", [])
+    if reasons:
+        lines.append("## 失败原因")
+        lines.append("")
+        for reason in reasons:
+            lines.append(f"- {reason}")
+        lines.append("")
+
+    lines.append("## 建议动作")
+    lines.append("")
+    lines.append("- 检查 docs/OPERATIONS_TROUBLESHOOTING.md 的对应故障章节。")
+    lines.append("- 优先处理 hard_concurrent_pool / hard_calc_parser 回归。")
+    lines.append("- 修复后重跑 8~10 轮窗口并重新生成日报。")
+    return "\n".join(lines) + "\n"
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Generate daily markdown report")
     parser.add_argument("--window", type=int, default=10, help="Window size for metrics (default: 10)")
@@ -335,6 +383,8 @@ def main() -> int:
     parser.add_argument("--gate-std-max", type=float, default=0.06, help="Quality gate maximum std_round_pass_ratio")
     parser.add_argument("--gate-hard-min", type=float, default=0.80, help="Quality gate minimum pass_rate for hard tasks")
     parser.add_argument("--fail-on-gate", action="store_true", help="Exit non-zero when quality gate fails")
+    parser.add_argument("--alert-on-gate-fail", action="store_true", help="Write alert markdown when quality gate fails")
+    parser.add_argument("--alert-output", type=str, default="data/reports/alert_latest.md", help="Alert markdown output path")
     args = parser.parse_args()
 
     REPORT_DIR.mkdir(parents=True, exist_ok=True)
@@ -374,6 +424,27 @@ def main() -> int:
     output_path.write_text(md, encoding="utf-8")
 
     print(f"Report generated: {output_path}")
+
+    if args.alert_on_gate_fail:
+        alert_path = Path(args.alert_output)
+        if not alert_path.is_absolute():
+            alert_path = PROJECT_ROOT / alert_path
+        alert_path.parent.mkdir(parents=True, exist_ok=True)
+
+        if gate.get("passed"):
+            if alert_path.exists():
+                alert_path.unlink(missing_ok=True)
+                print(f"Alert cleared: {alert_path}")
+        else:
+            alert_md = build_alert_markdown(
+                generated_at=now,
+                report_path=output_path,
+                gate=gate,
+                health=health,
+            )
+            alert_path.write_text(alert_md, encoding="utf-8")
+            print(f"Alert generated: {alert_path}")
+
     if args.fail_on_gate and not gate.get("passed"):
         print("Quality gate failed.")
         return 2

@@ -29,7 +29,7 @@ jobs:
 
       - name: Generate daily report
         run: |
-          python scripts/daily_report.py --window 10
+          python scripts/daily_report.py --window 10 --alert-on-gate-fail --alert-output data/reports/alert_latest.md
 
       - name: Prune old reports
         run: |
