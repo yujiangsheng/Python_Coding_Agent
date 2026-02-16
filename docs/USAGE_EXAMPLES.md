@@ -92,7 +92,7 @@ git push origin v0.1.0
 
 ```python
 def _cmd_ping(agent: CodingAgent):
-	print("\nPONG\n")
+    print("\nPONG\n")
 ```
 
 2. 在 `_command_registry()` 返回字典中注册
@@ -174,3 +174,5 @@ python scripts/daily_report.py --window 10 --alert-on-gate-fail --alert-output d
 - Top 3 回归任务
 - 每个回归任务的 pass_rate / delta_pass_rate / fails / flips
 - 定向修复动作建议
+
+更多运维与观测背景说明见：`docs/DOCS_INDEX.md`、`docs/OBSERVABILITY_PLAYBOOK.md`。

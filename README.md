@@ -87,6 +87,7 @@ python evolve.py --resume --rounds 10
 
 ## 文档导航
 
+- 文档总览：`docs/DOCS_INDEX.md`
 - 架构说明：`docs/ARCHITECTURE.md`
 - 使用示例：`docs/USAGE_EXAMPLES.md`
 - 配置剖面：`docs/CONFIG_PROFILES.md`
@@ -103,29 +104,7 @@ python scripts/health_check.py
 
 用于快速验证运行环境、配置完整性、核心模块导入与 Ollama 连通性。
 
-窗口指标报告（JSON）：
-
-```bash
-python scripts/window_report.py --window 10 --compare-prev --key-tasks hard_calc_parser hard_concurrent_pool med_decorator_retry
-```
-
-自动生成 Markdown 日报：
-
-```bash
-python scripts/daily_report.py --window 10
-```
-
-默认输出到 `data/reports/`。
-
-仓库已提供定时自动日报工作流：`.github/workflows/daily-report.yml`（每日执行，也支持手动触发）。
-
-默认保留策略：自动清理历史日报，仅保留最近 30 份。
-
-该工作流包含质量闸门，未达阈值时会标记 job 失败。
-
-当闸门失败时会自动生成告警摘要：`data/reports/alert_latest.md`。
-
-告警摘要包含 Top 3 回归任务及定向修复建议，便于快速止损。
+观测命令与自动日报说明已集中整理到：`docs/OBSERVABILITY_PLAYBOOK.md` 与 `docs/USAGE_EXAMPLES.md`。
 
 ## 开发与验证
 

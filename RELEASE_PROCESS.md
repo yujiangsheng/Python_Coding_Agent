@@ -5,10 +5,10 @@
 Run locally:
 
 ```bash
-/Users/jiangshengyu/Documents/program/python/Python_Coding_Agent/.venv/bin/python -m py_compile evolve.py main.py agent/code_generator.py
-/Users/jiangshengyu/Documents/program/python/Python_Coding_Agent/.venv/bin/python test_agent.py
-/Users/jiangshengyu/Documents/program/python/Python_Coding_Agent/.venv/bin/python test_memory_agent.py
-/Users/jiangshengyu/Documents/program/python/Python_Coding_Agent/.venv/bin/python test_reflection_agent.py
+python -m py_compile evolve.py main.py agent/code_generator.py
+python test_agent.py
+python test_memory_agent.py
+python test_reflection_agent.py
 ```
 
 ## 2) Prepare release commit

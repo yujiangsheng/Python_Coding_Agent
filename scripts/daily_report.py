@@ -97,6 +97,15 @@ def _fmt(v: Any) -> str:
     return str(v)
 
 
+def _resolve_output_path(path_str: str, default_path: Path) -> Path:
+    """统一解析输出路径：支持绝对路径与项目相对路径。"""
+    path = Path(path_str) if path_str else default_path
+    if not path.is_absolute():
+        path = PROJECT_ROOT / path
+    path.parent.mkdir(parents=True, exist_ok=True)
+    return path
+
+
 def _extract_hard_task_rates(window_result: Dict[str, Any]) -> Tuple[float, float]:
     """Return (parser_rate, pool_rate), -1 when unavailable."""
     if not window_result.get("ok"):
@@ -505,19 +514,21 @@ def main() -> int:
         gate=gate,
     )
 
-    output_path = Path(args.output) if args.output else (REPORT_DIR / f"daily_report_{stamp}.md")
-    if not output_path.is_absolute():
-        output_path = PROJECT_ROOT / output_path
-    output_path.parent.mkdir(parents=True, exist_ok=True)
+    # 输出日报（默认写入 data/reports/ 时间戳文件）
+    output_path = _resolve_output_path(
+        path_str=args.output,
+        default_path=REPORT_DIR / f"daily_report_{stamp}.md",
+    )
     output_path.write_text(md, encoding="utf-8")
 
     print(f"Report generated: {output_path}")
 
     if args.alert_on_gate_fail:
-        alert_path = Path(args.alert_output)
-        if not alert_path.is_absolute():
-            alert_path = PROJECT_ROOT / alert_path
-        alert_path.parent.mkdir(parents=True, exist_ok=True)
+        # 告警文件（失败写入，通过自动清理）
+        alert_path = _resolve_output_path(
+            path_str=args.alert_output,
+            default_path=PROJECT_ROOT / "data/reports/alert_latest.md",
+        )
 
         if gate.get("passed"):
             if alert_path.exists():
