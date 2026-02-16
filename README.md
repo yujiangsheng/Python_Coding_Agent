@@ -117,6 +117,8 @@ python scripts/daily_report.py --window 10
 
 默认输出到 `data/reports/`。
 
+仓库已提供定时自动日报工作流：`.github/workflows/daily-report.yml`（每日执行，也支持手动触发）。
+
 ## 开发与验证
 
 ```bash

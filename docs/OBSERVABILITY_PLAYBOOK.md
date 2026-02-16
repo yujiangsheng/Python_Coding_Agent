@@ -50,6 +50,11 @@ python scripts/window_report.py --window 10 --compare-prev --key-tasks hard_calc
 python scripts/daily_report.py --window 10
 ```
 
+6. 自动化（GitHub Actions）：
+- 工作流：`.github/workflows/daily-report.yml`
+- 触发：每日定时 + 手动 `workflow_dispatch`
+- 行为：生成 `data/reports/*.md` 并自动提交到 `main`
+
 ## 3. 发布前门禁
 
 建议全部满足：
