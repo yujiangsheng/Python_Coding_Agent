@@ -91,6 +91,7 @@ python evolve.py --resume --rounds 10
 - 使用示例：`docs/USAGE_EXAMPLES.md`
 - 配置剖面：`docs/CONFIG_PROFILES.md`
 - 运维排障：`docs/OPERATIONS_TROUBLESHOOTING.md`
+- 观测看板：`docs/OBSERVABILITY_PLAYBOOK.md`
 - 发布流程：`RELEASE_PROCESS.md`
 - 演化稳定性记录：`data/evolution/STABILITY_CHANGELOG.md`
 
@@ -101,6 +102,12 @@ python scripts/health_check.py
 ```
 
 用于快速验证运行环境、配置完整性、核心模块导入与 Ollama 连通性。
+
+窗口指标报告（JSON）：
+
+```bash
+python scripts/window_report.py --window 10 --compare-prev --key-tasks hard_calc_parser hard_concurrent_pool med_decorator_retry
+```
 
 ## 开发与验证
 

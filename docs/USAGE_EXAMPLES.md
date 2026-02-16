@@ -114,3 +114,19 @@ python scripts/health_check.py
 - 新机器首次部署后
 - 切换模型后端后
 - 发布前回归检查前
+
+## 9) 生成窗口指标报告
+
+当前窗口：
+
+```bash
+python scripts/window_report.py --window 10
+```
+
+与上一窗口对比（推荐）：
+
+```bash
+python scripts/window_report.py --window 10 --compare-prev --key-tasks hard_calc_parser hard_concurrent_pool med_decorator_retry
+```
+
+输出为 JSON，可直接用于日报或自动化看板。
