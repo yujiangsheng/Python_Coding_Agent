@@ -6,8 +6,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-REPORT_DIR = PROJECT_ROOT / "data" / "reports"
+from common import PROJECT_ROOT, resolve_project_path
 
 
 def list_report_files(report_dir: Path) -> list[Path]:
@@ -39,9 +38,11 @@ def main() -> int:
     parser.add_argument("--dir", type=str, default="data/reports", help="Report directory relative to project root")
     args = parser.parse_args()
 
-    report_dir = Path(args.dir)
-    if not report_dir.is_absolute():
-        report_dir = PROJECT_ROOT / report_dir
+    report_dir = resolve_project_path(
+        path_str=args.dir,
+        default_path=PROJECT_ROOT / "data" / "reports",
+        ensure_parent=False,
+    )
     report_dir.mkdir(parents=True, exist_ok=True)
 
     deleted_count, deleted_files = prune_reports(args.keep, report_dir)

@@ -12,10 +12,9 @@ from typing import List, Tuple
 from urllib.request import Request, urlopen
 
 import yaml
+from common import ensure_project_root_on_path
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-if str(PROJECT_ROOT) not in sys.path:
-    sys.path.insert(0, str(PROJECT_ROOT))
+PROJECT_ROOT = ensure_project_root_on_path()
 
 
 def _ok(msg: str):

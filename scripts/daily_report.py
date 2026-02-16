@@ -11,24 +11,18 @@ from __future__ import annotations
 
 import argparse
 import json
-import subprocess
 import sys
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, Any, Tuple
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+from common import PROJECT_ROOT, resolve_project_path, run_project_command
+
 REPORT_DIR = PROJECT_ROOT / "data" / "reports"
 
 
 def run_command(cmd: list[str]) -> Tuple[int, str, str]:
-    result = subprocess.run(
-        cmd,
-        cwd=PROJECT_ROOT,
-        capture_output=True,
-        text=True,
-    )
-    return result.returncode, result.stdout.strip(), result.stderr.strip()
+    return run_project_command(cmd)
 
 
 def run_health_check(python_exec: str) -> Dict[str, Any]:
@@ -99,11 +93,7 @@ def _fmt(v: Any) -> str:
 
 def _resolve_output_path(path_str: str, default_path: Path) -> Path:
     """统一解析输出路径：支持绝对路径与项目相对路径。"""
-    path = Path(path_str) if path_str else default_path
-    if not path.is_absolute():
-        path = PROJECT_ROOT / path
-    path.parent.mkdir(parents=True, exist_ok=True)
-    return path
+    return resolve_project_path(path_str=path_str, default_path=default_path)
 
 
 def _extract_hard_task_rates(window_result: Dict[str, Any]) -> Tuple[float, float]:

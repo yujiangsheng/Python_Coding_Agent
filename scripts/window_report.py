@@ -15,7 +15,9 @@ import statistics
 from pathlib import Path
 from typing import Dict, List, Tuple
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+from common import ensure_project_root_on_path
+
+PROJECT_ROOT = ensure_project_root_on_path()
 LOG_PATH = PROJECT_ROOT / "data" / "evolution" / "evolution.log"
 
 
