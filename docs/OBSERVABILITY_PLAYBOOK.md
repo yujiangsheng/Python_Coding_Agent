@@ -55,12 +55,20 @@ python scripts/daily_report.py --window 10
 - 触发：每日定时 + 手动 `workflow_dispatch`
 - 行为：生成 `data/reports/*.md` 并自动提交到 `main`
 - 保留策略：自动清理历史日报，仅保留最近 30 份
+- 质量闸门：执行 `daily_report.py --fail-on-gate`，不达标时 job 失败
 
 如需手动清理：
 
 ```bash
 python scripts/prune_reports.py --keep 30
 ```
+
+闸门默认阈值：
+
+- `avg_round_pass_ratio >= 0.95`
+- `std_round_pass_ratio <= 0.06`
+- `hard_calc_parser / hard_concurrent_pool >= 0.80`
+- 健康检查通过
 
 ## 3. 发布前门禁
 

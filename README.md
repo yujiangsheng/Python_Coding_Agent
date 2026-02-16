@@ -121,6 +121,8 @@ python scripts/daily_report.py --window 10
 
 默认保留策略：自动清理历史日报，仅保留最近 30 份。
 
+该工作流包含质量闸门，未达阈值时会标记 job 失败。
+
 ## 开发与验证
 
 ```bash

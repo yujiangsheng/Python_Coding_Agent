@@ -150,3 +150,15 @@ python scripts/daily_report.py --window 10 --output data/reports/daily_manual.md
 ```bash
 python scripts/prune_reports.py --keep 30
 ```
+
+## 12) 启用日报质量闸门（失败返回非 0）
+
+```bash
+python scripts/daily_report.py --window 10 --fail-on-gate
+```
+
+可自定义阈值：
+
+```bash
+python scripts/daily_report.py --window 10 --fail-on-gate --gate-avg-min 0.95 --gate-std-max 0.06 --gate-hard-min 0.80
+```

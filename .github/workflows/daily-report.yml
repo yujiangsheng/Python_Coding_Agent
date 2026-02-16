@@ -46,3 +46,7 @@ jobs:
           fi
           git commit -m "chore(report): auto-generate daily report [skip ci]"
           git push
+
+      - name: Quality gate
+        run: |
+          python scripts/daily_report.py --window 10 --fail-on-gate --output /tmp/daily_gate.md
