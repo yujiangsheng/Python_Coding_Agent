@@ -1,0 +1,2490 @@
+[
+ {
+  "file": "model_loader.py",
+  "description": "Improve logging in the Transformers backend to include more detailed information about model parameters and device usage.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770874802.300106
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add __str__ method to base PyCoderError class to provide better error message formatting and debugging information",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770875230.788095
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add __init__ method to all custom exception classes to support exception chaining and better error context passing",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770875233.673996
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add __init__ method to all custom exception classes to support exception chaining and better error context passing",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770875236.303354
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add __init__ method to all custom exception classes to support exception chaining and better error context passing",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770875238.827903
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add __init__ method to all custom exception classes to support exception chaining and better error context passing",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770875241.431678
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add logging capability to exceptions to help with debugging and monitoring",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770875669.486877
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a method to get error code or type for better categorization in error handling",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770875672.664374
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add context information to GenerationError to help identify where generation failed",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770875675.319964
+ },
+ {
+  "file": "meta_knowledge.py",
+  "description": "Add input validation for the model_loader and persistent_memory to prevent runtime errors when they are None or improperly initialized.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770875767.022136
+ },
+ {
+  "file": "meta_knowledge.py",
+  "description": "Improve error handling in _llm_extract by logging the raw response for debugging purposes before returning an empty list.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770875769.2026072
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a __repr__ method to PyCoderError and its subclasses for better debugging and logging.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770876433.243343
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a logging capability to PyCoderError to automatically log errors when raised.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770876436.618735
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Improve GenerationError to include a traceback or stack trace for debugging purposes.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770876439.5919948
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a method to all custom exceptions to return a dictionary representation for serialization.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770876442.4533582
+ },
+ {
+  "file": "meta_knowledge.py",
+  "description": "Add input validation for the model_loader and persistent_memory to prevent runtime errors when they are None or improperly initialized.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770876536.509998
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a 'cause' attribute to PyCoderError to capture underlying exceptions for better debugging and error chaining.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770877066.4420538
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Improve GenerationError to include a retry mechanism or max retries count for handling transient failures.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770877069.736143
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add logging of error details in PyCoderError's __init__ to help with debugging without requiring manual logging calls.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770877073.113067
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Introduce a new exception type for rate limiting or throttling scenarios to differentiate from general backend unavailability.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770877076.249662
+ },
+ {
+  "file": "meta_knowledge.py",
+  "description": "Add input validation for the model_loader and persistent_memory to prevent runtime errors when they are None or improperly initialized.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770877833.693729
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Improve the GenerationError class to include retry logic and better handling of retry counts.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770878550.7854762
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a method to log exceptions with full context and traceback for debugging purposes.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770878553.362297
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a helper function to convert exception to a JSON serializable format for API responses.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770878557.310977
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a retry mechanism to RateLimitError to support automatic retry handling.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770878561.0546691
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Improve error handling in PyCoderError.__init__ to ensure consistent logging and avoid potential NoneType errors.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770879119.574815
+ },
+ {
+  "file": "meta_knowledge.py",
+  "description": "Add input validation for the model_loader and persistent_memory to ensure they are not None before proceeding with mining operations.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770879219.389127
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a mechanism to capture and store the full traceback during exception initialization for better debugging.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770879993.722144
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Improve the `from_dict` method to handle cases where the error class is not found or is not a subclass of PyCoderError.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770879996.260813
+ },
+ {
+  "file": "meta_knowledge.py",
+  "description": "Improve error handling in _llm_extract by logging the raw LLM response when JSON parsing fails, which helps in debugging LLM output issues.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770880092.762978
+ },
+ {
+  "file": "model_loader.py",
+  "description": "Improve error handling in _TransformersBackend.load() by adding more specific exception catching for model loading failures.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770880688.522861
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Improve error handling in PyCoderError.__init__ to prevent logging issues when cause is not a string.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770881189.709729
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a method to PyCoderError to serialize the error to JSON with better handling of nested exceptions.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770881191.675843
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a retry mechanism for RateLimitError with a configurable delay.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770881194.527164
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Improve the `from_dict` method to handle cases where the error class is not found or is not a subclass of PyCoderError more gracefully.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770881700.287745
+ },
+ {
+  "file": "meta_knowledge.py",
+  "description": "Improve error handling in _llm_extract to catch more specific exceptions and provide better logging for debugging.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770882641.2976158
+ },
+ {
+  "file": "meta_knowledge.py",
+  "description": "Add a check for empty or malformed experience entries in _gather_experiences to prevent processing invalid data.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770882644.0348742
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a mechanism to track retry attempts more robustly by storing retry history and preventing infinite retries.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770883159.079218
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Improve error handling in `from_dict` to provide better fallbacks and logging when an invalid error type is encountered.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770883161.6820219
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add support for custom error codes in PyCoderError to allow for more structured error identification.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770883164.647836
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a retry mechanism with exponential backoff to RateLimitError to make retrying more intelligent.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770883168.739368
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Improve error handling in PyCoderError.__init__ to ensure that cause is always properly logged even if it's not a string.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770883930.964532
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a retry mechanism to RateLimitError that includes jitter to prevent thundering herd issues.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770883933.544199
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Improve error handling in PyCoderError.__init__ to ensure that the error_code is always properly set, even if it's not passed explicitly.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770884926.0919712
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a retry mechanism to RateLimitError that includes exponential backoff with jitter and a maximum retry duration.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770884928.6858501
+ },
+ {
+  "file": "model_loader.py",
+  "description": "Improve error handling in _TransformersBackend.load() by adding more specific exception handling for model loading failures.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770885070.211228
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a method to serialize exception data to JSON for better interoperability with external systems.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770885731.801573
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a retry mechanism to RateLimitError that supports exponential backoff with jitter and configurable max retries.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770886426.608468
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a utility method to log the full error including traceback and context in a structured way for better debugging.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770886429.425053
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Improve error handling in PyCoderError.__init__ to ensure that error_code is always a string and handle potential None values more gracefully.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770887527.058455
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a method to log error details with more structured logging including timestamp and error level.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770887530.1201658
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Improve error handling in PyCoderError.__init__ to ensure that the cause is always a string or None for consistent logging.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770888268.057153
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a retry mechanism to RateLimitError that supports exponential backoff with jitter and configurable max retry time.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770888270.392861
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a method to log the full error with stack trace and context in a structured format for better debugging.",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770888272.9110668
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_dict in from_dict method to prevent injection attacks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770931491.858429
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add retry history tracking to GenerationError for better debugging",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770931496.57869
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_dict in from_dict method to prevent injection attacks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770932126.684669
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_dict in from_dict method to prevent injection attacks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770932880.539937
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add context validation in GenerationError to prevent None context from causing issues",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770932884.537153
+ },
+ {
+  "file": "core.py",
+  "description": "Refactor the agent's main processing loop to improve modularity and readability",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770933891.292385
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_dict in from_dict method to prevent injection attacks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770933925.5472362
+ },
+ {
+  "file": "core.py",
+  "description": "Refactor the agent's main processing flow to improve modularity and readability",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770934573.994318
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_dict in from_dict method to prevent injection attacks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770934615.9430559
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Improve error handling in GenerationError to capture more context information",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770934617.770517
+ },
+ {
+  "file": "core.py",
+  "description": "Refactor the agent's main processing loop to improve modularity and readability",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770935049.344534
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_dict in from_dict method to prevent injection attacks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770935077.84548
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Improve retry logic in RateLimitError to include exponential backoff with jitter and max delay",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770935079.600585
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_dict in from_dict method to prevent injection attacks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770936356.876773
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_dict in from_dict method to prevent injection attacks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770936984.6953359
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Improve retry logic in RateLimitError to handle exponential backoff with jitter more robustly",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770936986.5065951
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_dict in from_dict method to prevent injection attacks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770937592.4173481
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Improve retry logic in RateLimitError to handle exponential backoff with jitter more robustly",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770937594.244295
+ },
+ {
+  "file": "core.py",
+  "description": "Improve error handling in `_maybe_augment_with_search` method",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770938082.232258
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_dict in from_dict method to prevent injection attacks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770938107.743552
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Improve retry logic in RateLimitError to handle exponential backoff with jitter more robustly",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770938109.430551
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_dict in from_dict method to prevent injection attacks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770938701.8965561
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add logging of retry attempts in GenerationError to track retry behavior",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770938704.9780438
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_dict in from_dict method to prevent injection attacks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770939357.951456
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Improve retry logic in RateLimitError to handle exponential backoff with jitter more robustly",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770939359.619861
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add retry history tracking to GenerationError for better debugging",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770939363.153561
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a method to log full error details including context to PyCoderError",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770939365.115393
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_dict in from_dict method to prevent injection attacks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770939997.681311
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_dict in from_dict method to prevent injection attacks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770940811.7880378
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_dict in from_dict method to prevent injection attacks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770941396.462924
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add retry history tracking to GenerationError to better understand failures",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770941401.524406
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_dict in from_dict method to prevent injection attacks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770941861.5010402
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Improve retry logic in RateLimitError to handle exponential backoff with jitter more robustly",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770941863.157067
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add logging of context in GenerationError.__init__ for better debugging",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770941864.7789261
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_dict in from_dict method to prevent injection attacks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770942669.258115
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_dict in from_dict method to prevent injection attacks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770943128.779764
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Improve retry logic in RateLimitError to use exponential backoff with jitter and max delay",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770943130.501073
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Implement better logging for auto-fix attempts with more detailed error information",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770943669.042666
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add better error handling for subprocess execution with more specific exception types",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770944201.5715299
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_dict in from_dict method to prevent injection attacks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770944971.8782651
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add logging of retry attempts in GenerationError to track retry behavior",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770944975.122872
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add support for custom error codes in all exception classes to allow more granular error handling",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770944979.4842901
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_dict in from_dict method to prevent injection attacks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770945877.420525
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add retry history tracking to GenerationError for better debugging",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770945883.097526
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_dict in from_dict method to prevent potential injection attacks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770946581.8354251
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a method to convert GenerationError to a JSON serializable format",
+  "diff_hash": "2ad0cbf0e787",
+  "diff_summary": "--- a/exceptions.py\n+++ b/exceptions.py\n@@ -95,36 +95,9 @@\n \n import traceback\n \n-class GenerationError(PyCoderError):\n-    \"\"\"Raised when text/code generation fails.\"\"\"\n-    def __init__(self, message=\"Generation failed\", context=None, max_retries=3, retry_count=0, *args):\n-        self.message = message\n-        self.context = context\n-        self.max_retries = max_retries\n-        self.retry_count = retry_count\n-        self.retry_history = []\n-        self.traceback = traceback.format_exc()",
+  "error": "Smoke test failed",
+  "timestamp": 1770946587.6911428
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Improve error handling in GenerationError to avoid None context issues",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770952719.2690911
+ },
+ {
+  "file": "agent_orchestrator.py",
+  "description": "Add validation for priority values in SubAgent initialization",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770956284.397059
+ },
+ {
+  "file": "agent_orchestrator.py",
+  "description": "Add validation for SubAgent initialization parameters",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770958291.362527
+ },
+ {
+  "file": "agent_orchestrator.py",
+  "description": "Add validation for SubAgent initialization to ensure role is not empty and priority is positive",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770963449.473451
+ },
+ {
+  "file": "agent_orchestrator.py",
+  "description": "Add validation for role and skill_description in SubAgent to ensure they are not None",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770965534.6453
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction logic to handle more edge cases and malformed fences",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770966487.4914792
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction logic to handle more edge cases and malformed fences",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1770967235.6774778
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction logic to handle nested code blocks and malformed fences more robustly",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771007728.785546
+ },
+ {
+  "file": "intent.py",
+  "description": "Improve regex pattern matching by adding word boundary checks to prevent false positives",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771008630.487527
+ },
+ {
+  "file": "memory_agent.py",
+  "description": "Enhance error registry with automatic pattern recognition",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771009551.9947689
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction logic to better handle malformed or fragmented code blocks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771011846.602674
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Enhance error handling in auto-fix loop to prevent infinite loops and improve logging",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771011852.0491571
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction logic to handle malformed fenced code blocks and improve robustness",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771012308.735935
+ },
+ {
+  "file": "memory_agent.py",
+  "description": "Enhance error registry with automatic pattern recognition",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771013372.569419
+ },
+ {
+  "file": "memory_agent.py",
+  "description": "Add comprehensive logging for debugging and monitoring",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771014174.468313
+ },
+ {
+  "file": "memory_agent.py",
+  "description": "Add unit tests for critical business logic",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771014178.28461
+ },
+ {
+  "file": "reflection_agent.py",
+  "description": "Refactor the reflection agent to use a more modular design for better maintainability",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771014276.9830139
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add a check to ensure the result variable is defined before using it in auto-fix loop",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771014973.2341309
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Improve error handling in RateLimitError by adding a check for negative retry_after values",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771017515.304609
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add context parameter to all error constructors for better debugging and tracing",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771017519.35521
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add better handling for code blocks with mixed indentation and improve extraction logic",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771017997.249474
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add context validation in ModelNotLoadedError to ensure context is a dictionary",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771018476.37168
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Improve error handling in PyCoderError.__init__ to prevent None cause from breaking logging",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771031831.0828538
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for context parameter in ModelNotLoadedError to ensure it's a dictionary",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771032252.1120782
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Improve error handling in PyCoderError.__init__ to prevent None cause from breaking logging",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771032255.942532
+ },
+ {
+  "file": "intent.py",
+  "description": "Improve rule-based pattern matching to handle overlapping patterns and prioritize more specific matches",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771032296.8455539
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction logic to handle malformed or mixed-language code blocks more robustly",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771032894.615087
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771033713.2429702
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction logic to handle nested code blocks and malformed fences more robustly",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771034189.8017678
+ },
+ {
+  "file": "intent.py",
+  "description": "Improve rule-based classifier to handle overlapping patterns and prioritize more specific matches",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771035044.4195058
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction logic to handle nested code blocks and malformed fences more robustly",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771035743.4215128
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a string and not empty",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771036386.8104079
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Improve retry logic in RateLimitError to include exponential backoff with jitter and logging",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771036391.182457
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771036893.586466
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling multiple language fences and malformed code blocks more gracefully",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771036995.424351
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771037730.4945621
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771037971.112843
+ },
+ {
+  "file": "intent.py",
+  "description": "Improve regex pattern matching to avoid false positives by ensuring word boundaries and better specificity",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771038012.772197
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771038570.430479
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a method to RateLimitError to check if retries are still allowed",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771038576.6419342
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771038959.398745
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771039558.5239658
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction logic to handle more edge cases and malformed fenced code blocks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771040371.840516
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771040414.9183092
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction logic to handle more edge cases and malformed fenced code",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771040878.373541
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction logic to handle more edge cases and malformed fences",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771041445.4761732
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771041491.5631628
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771041926.534048
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction logic to handle malformed or nested code blocks more robustly",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771042770.4586592
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add retry history tracking to RateLimitError to improve debugging",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771042817.405675
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction logic to handle nested code blocks and malformed fences more robustly",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771043296.317888
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771043678.413582
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771044044.159425
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771045139.9196422
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction logic to handle more edge cases and malformed fences",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771046031.100352
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771047564.3921
+ },
+ {
+  "file": "memory_agent.py",
+  "description": "Enhance error registry with automatic pattern recognition",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771047630.872349
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction logic to handle malformed or nested code blocks more robustly",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771047899.7832808
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add input validation for code extraction functions to prevent regex denial of service",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771048538.917105
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add code size validation to prevent overly large code generation",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771048543.131996
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add code size limit for test generation to prevent excessive output",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771048545.293157
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add input validation for code generation to prevent empty or invalid inputs",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771049459.779405
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add a check for maximum code size in extract_code_blocks to prevent potential DoS",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771049463.628948
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fenced code blocks and adding more precise regex patterns",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771050717.3057122
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling more edge cases in extract_code_blocks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771051275.538928
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771051319.918276
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling more edge cases in extract_code_blocks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771051995.82479
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add validation for code parameter in explain_code method",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771052003.2884622
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling more edge cases in extract_code_blocks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771052361.958803
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add better error handling for empty or invalid code in generate_and_run",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771052366.248938
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling more edge cases in extract_code_blocks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771052849.1685472
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771052897.270308
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Improve context validation in ModelNotLoadedError to ensure context is a dictionary or None",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771053188.688148
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771054286.579666
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling more edge cases in extract_code_blocks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771055448.425571
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling more edge cases in extract_code_blocks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771056167.8930008
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add better error handling for empty or malformed code in generate_and_run",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771056170.2322738
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add a check for empty or None result in _build_fix_request to prevent errors",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771056173.560073
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771056214.703567
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771058035.621608
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771058406.972783
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771059019.4962041
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771059483.7484102
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling more edge cases in extract_code_blocks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771060290.1475708
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add logging for better debugging in generate method",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771060297.84446
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling nested code blocks and malformed fences",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771060640.762115
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add better error handling for empty or invalid code in generate method",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771060644.301426
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fenced code blocks and adding more precise regex patterns",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771061230.153425
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add logging for auto-fix attempts to improve debugging and monitoring of the auto-fix process",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771061236.158914
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add comprehensive error handling and validation in the write_tests method to prevent crashes from malformed responses",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771061238.107064
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fences and adding more precise pattern matching",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771061579.9893498
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add retry limit validation and logging for auto-fix attempts to prevent infinite loops",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771061585.8759308
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction logic to handle nested code blocks and malformed fences more robustly",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771061814.242075
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add better error handling and logging in the auto-fix loop to track failures more effectively",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771061822.4357219
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling more edge cases in extract_code_blocks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771062232.680456
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fences and adding more precise regex patterns",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771062435.5679832
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fences and adding more precise regex patterns",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771062982.992373
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add better error handling and logging in execute_code for more informative debugging",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771062989.070125
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fences and adding more precise regex patterns",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771063153.909066
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fences and adding more precise regex patterns",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771063549.2495959
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve error handling in _build_fix_request to ensure proper error formatting",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771063556.4313731
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fences and adding more precise regex patterns",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771063934.722647
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add better error handling and logging in auto-fix loop to prevent silent failures",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771063940.86927
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fences and adding more precise pattern matching",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771064333.810761
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fences and adding more precise regex patterns",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771064764.781872
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771064814.166891
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fences and adding more precise regex patterns",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771065146.1012092
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add better error handling and logging in auto-fix loop to prevent silent failures",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771065151.533798
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add code quality checks and validation in review_code method",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771065153.523793
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771065368.0140412
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fenced code blocks and adding more precise regex patterns",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771065644.028435
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve the auto-fix mechanism by adding a maximum iteration limit to prevent infinite loops",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771065652.0416892
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771066013.925272
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fences and adding more precise regex patterns",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771067070.702852
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fences and adding more precise regex patterns",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771067614.76082
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add better error handling and logging for the _build_fix_request method",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771067622.868546
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fences and improving regex patterns",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771068269.0605981
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fences and adding more precise regex patterns",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771068749.332763
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add comprehensive error handling and logging in auto-fix loop to prevent silent failures",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771068755.698682
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling nested code blocks and malformed fences",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771069163.621619
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add retry limit check and logging for auto-fix attempts",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771069169.235033
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add comprehensive error handling for _build_fix_request method",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771069171.159452
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by adding more precise regex patterns and handling malformed fences",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771070026.249142
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fences and adding more precise regex patterns",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771070325.333744
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fences and adding more precise regex patterns",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771070608.032835
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by adding more precise regex patterns and handling malformed fences",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771070959.474856
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling edge cases in code block detection",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771071308.087404
+ },
+ {
+  "file": "intent.py",
+  "description": "Improve regex pattern matching to handle overlapping matches better and reduce false positives by using more precise word boundary logic",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771072171.988142
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling more edge cases in extract_code_blocks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771072502.4264388
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling nested code blocks and malformed fences",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771072941.148884
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add better error handling for empty or invalid code in generate method",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771072943.38401
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add input validation and logging for review_code method",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771072946.699428
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add input validation and logging for explain_code method",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771072948.3835058
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fences and adding more precise regex patterns",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771074318.0786061
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve error handling in _build_fix_request to handle None values more gracefully",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771074326.343102
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fences and adding more precise pattern matching",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771074633.108661
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add a check for empty or whitespace-only code before attempting execution",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771074639.009044
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve error handling in _build_fix_request to prevent NoneType errors",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771074640.821048
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling edge cases in code block detection and adding more precise regex patterns",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771075063.14728
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fences and adding more precise regex patterns",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771076795.491358
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Enhance execution result handling with better error categorization and logging",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771076799.2372632
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling edge cases in raw code detection",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771077570.1776152
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771077616.611417
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fenced code blocks and adding more precise regex patterns",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771078306.76764
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fenced code blocks and adding more precise regex patterns",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771079956.928132
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add logging for auto-fix attempts to improve debugging and monitoring",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771079964.165511
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve regex pattern for code block extraction to handle edge cases like nested fences and malformed blocks",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771081310.9682271
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a method to RateLimitError to log retry attempts with full context",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771083345.4055219
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771083647.096191
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771085779.350083
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771086405.733064
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add comprehensive error handling and logging for the auto-fix loop to prevent silent failures",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771086944.38525
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771087475.861661
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771088490.4014761
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fences and adding more precise pattern matching",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771089488.52531
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771089993.792935
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fences and adding more precise pattern matching",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771090489.906529
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add logging for auto-fix attempts to improve debugging and monitoring",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771091915.328463
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771092336.218764
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction logic to handle nested code blocks and malformed fences more robustly",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771094675.2780879
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771095053.7668211
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a method to RateLimitError to check if retries are exhausted and log accordingly",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771095059.659329
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771096145.624318
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fenced code blocks and adding more precise regex patterns",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771096711.673135
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add logging for auto-fix attempts to improve debugging and monitoring",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771096718.3819351
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fences and adding more precise pattern matching",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771098609.0241642
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve regex pattern for code block extraction to handle nested fences and edge cases more robustly",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771099828.395134
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fences and adding more precise language detection",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771100418.730208
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771100759.798775
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction robustness by handling malformed fences and adding more precise language detection",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771100982.194121
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771101036.016358
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771101304.329846
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add retry history tracking to RateLimitError to provide better debugging information",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771101311.882348
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a method to PyCoderError to get a formatted error string for logging",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771101613.901995
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771101867.4506109
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771102084.1132002
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Improve ModelNotLoadedError to include more context information",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771102091.397511
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771129948.910802
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771132068.113756
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction logic to handle nested code blocks and malformed fences more robustly",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771132695.753907
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add better error handling and logging for model generation failures",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771132702.0686998
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771133931.1381261
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771135635.296171
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771135969.6936169
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771136630.186354
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Improve code extraction logic to handle malformed fenced code blocks and prevent regex DoS by adding a maximum match limit",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771136879.6589
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Fix duplicate method definitions in CodeGenerator class",
+  "diff_hash": "ce51ec57dd3f",
+  "diff_summary": "--- a/code_generator.py\n+++ b/code_generator.py\n@@ -222,55 +222,18 @@\n         self.max_output = config.get(\"max_output_chars\", 10000)\n         self.history: list = []  # Track generation history\n \n-    def generate(self, request: str, context: Optional[list] = None,\n-                             auto_fix: bool = True, max_retries: int = 3) -> Dict[str, Any]:\n-        \"\"\"Generate code, execute it, and optionally auto-fix errors.\n-\n-        Returns a dict with keys: response, code, result, iterat",
+  "error": "Smoke test failed",
+  "timestamp": 1771136884.342466
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771137208.785952
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a method to RateLimitError to get full retry info including delay and count",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771137717.900647
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771140342.7534971
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771179744.52203
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771180470.145277
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771180758.3401759
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771189509.468975
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771190405.778893
+ },
+ {
+  "file": "memory_agent.py",
+  "description": "Add comprehensive input validation for user data",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771190899.597971
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771193178.819951
+ },
+ {
+  "file": "memory_agent.py",
+  "description": "Enhance error registry with automatic pattern recognition",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771193816.330348
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771194209.415843
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771200361.584976
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771200943.5737221
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a method to ModelNotLoadedError to get context information in a structured format",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771201643.217073
+ },
+ {
+  "file": "memory_agent.py",
+  "description": "Add comprehensive input validation to prevent runtime errors",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771214784.566336
+ },
+ {
+  "file": "code_generator.py",
+  "description": "Add input validation for code blocks extraction to prevent potential regex issues",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771217772.89238
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add retry history tracking to ModelNotLoadedError for better debugging",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771217990.552299
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a method to RateLimitError to get the next retry delay without side effects",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771217996.446618
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to ensure it's a non-empty string",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771218685.251832
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add retry tracking to RateLimitError to improve retry behavior",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771218690.456108
+ },
+ {
+  "file": "memory_agent.py",
+  "description": "Enhance error registry with automatic pattern recognition",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771223559.656383
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add a method to PyCoderError to get the error code directly",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771223772.8916018
+ },
+ {
+  "file": "exceptions.py",
+  "description": "Add input validation for context in ModelNotLoadedError to ensure it's a dictionary",
+  "diff_hash": "",
+  "diff_summary": "",
+  "error": null,
+  "timestamp": 1771225501.367508
+ }
+]

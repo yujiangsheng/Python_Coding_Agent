@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Data (runtime generated, not versioned)
+data/agent.log
+data/evolution/evolution.log
+data/evolution/evolution_stdout.log
+data/improvements/*.bak
+data/memories/long_term_index.json
+data/memories/persistent.json
+data/skills.json
+
+# Model weights (use Ollama instead)
+models/
+*.safetensors
+*.gguf
+
+# Misc
+*.tmp
+*.bak

@@ -1,0 +1,136 @@
+# ============================================================
+# Python Coding Agent Configuration
+# Author & Maintainer: Jiangsheng Yu
+# ============================================================
+
+model:
+  # Backend: "dashscope" (cloud API) | "ollama" (local) | "transformers" (HF)
+  backend: "ollama"
+
+  # ---- DashScope API settings (OpenAI-compatible) ----
+  dashscope_model: "qwen3-coder-plus"
+  dashscope_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  # API key: reads from DASHSCOPE_API_KEY env var by default
+  # dashscope_api_key: "sk-xxx"   # or set here directly
+
+  # ---- Ollama settings ----
+  ollama_model: "qwen3-coder:30b"
+  ollama_url: "http://localhost:11434"
+
+  # ---- Transformers fallback settings ----
+  # HuggingFace model identifier (used when backend: "transformers")
+  name: "Qwen/Qwen3-Coder-30B-A3B-Instruct"
+  trust_remote_code: true
+  torch_dtype: "auto"
+  load_in_4bit: false
+  load_in_8bit: false
+
+  # ---- Generation parameters (shared) ----
+  max_new_tokens: 16384
+  temperature: 0.7
+  top_p: 0.95
+  top_k: 40
+
+memory:
+  # Auto search fallback: query web when internal recall is weak
+  auto_search: true
+
+  # Working memory: recent conversation turns kept in context
+  working:
+    max_turns: 20
+    max_tokens: 8192
+
+  # Long-term memory: vector-indexed memories across sessions
+  # Enhanced with surprise gating + dedup + relevance decay
+  long_term:
+    embedding_dim: 384
+    max_entries: 100000
+    similarity_threshold: 0.65
+    index_path: "data/memories/long_term_index.json"
+    # --- Surprise gating parameters ---
+    # Minimum surprise (1 − max_sim) to accept a new memory (novelty gate)
+    surprise_threshold: 0.15
+    # Near-duplicate threshold above which storage is skipped
+    dedup_threshold: 0.92
+    # Relevance decay half-life in seconds (7 days)
+    decay_half_life: 604800
+    # Consolidation: merge entries above this similarity
+    consolidation_threshold: 0.90
+
+  # Persistent memory: structured knowledge base on disk
+  # Enhanced with experience replay + semantic dedup
+  persistent:
+    db_path: "data/memories/persistent.json"
+    max_entries: 50000
+    dedup_enabled: true
+    dedup_ratio: 0.85
+
+  # External memory: web search and documentation retrieval
+  external:
+    enabled: true
+    search_engine: "duckduckgo"
+    max_results: 5
+
+execution:
+  # Sandbox timeout in seconds for running generated code
+  timeout: 30
+  # Maximum output length captured from execution
+  max_output_chars: 10000
+  # Allowed imports (empty = allow all; use with caution)
+  allowed_imports: []
+
+self_improvement:
+  # Enable self-improvement loop
+  enabled: true
+  # Directory for improvement logs and patches
+  log_dir: "data/improvements"
+  # Minimum confidence score to apply self-modifications
+  min_confidence: 0.7
+  # Maximum consecutive self-improvement iterations
+  max_iterations: 5
+  # Backup originals before modification
+  backup: true
+
+# --- Memory Agent (LLM memory routing + error prevention) ---
+memory_agent:
+  # Path for persistent error registry
+  error_registry_path: "data/error_registry.json"
+  # Use LLM for information classification (slower but smarter)
+  llm_routing: true
+  # Maximum exploration suggestions per query
+  max_exploration_suggestions: 5
+
+# --- Meta-knowledge mining ---
+meta_knowledge:
+  # Minimum experience count needed before mining
+  min_experiences: 5
+  # Max experiences sent to LLM per mining batch
+  batch_size: 20
+  # Cooldown between mining runs (seconds, 1 hour)
+  cooldown: 3600
+
+# --- Skill registry ---
+skills:
+  db_path: "data/skills.json"
+
+# --- Multi-agent orchestration ---
+orchestration:
+  # Maximum sub-agents per orchestration
+  max_sub_agents: 6
+
+# --- Reflection Agent (systematic self-evaluation) ---
+reflection:
+  # Use LLM for deep reflection (slower but better)
+  use_llm: true
+  # Minimum quality score threshold
+  quality_threshold: 0.6
+  # Cooldown between LLM reflection calls (seconds)
+  llm_cooldown: 5.0
+  # Max per-session reflection records
+  max_session_records: 200
+  # Path for cross-session evolution tracking
+  evolution_db_path: "data/evolution.json"
+
+logging:
+  level: "INFO"
+  file: "data/agent.log"
