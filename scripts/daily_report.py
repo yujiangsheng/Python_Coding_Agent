@@ -331,6 +331,7 @@ def build_alert_markdown(
     report_path: Path,
     gate: Dict[str, Any],
     health: Dict[str, Any],
+    window_result: Dict[str, Any],
 ) -> str:
     """Build concise alert markdown for failed quality gate."""
     lines: list[str] = []
@@ -366,12 +367,99 @@ def build_alert_markdown(
             lines.append(f"- {reason}")
         lines.append("")
 
+    top_regressions = _extract_top_regressions(window_result, top_n=3)
+    if top_regressions:
+        lines.append("## Top 3 回归任务")
+        lines.append("")
+        for item in top_regressions:
+            lines.append(
+                f"- {item['task']}: pass_rate={_fmt(item.get('pass_rate'))}, "
+                f"delta_pass_rate={_fmt(item.get('delta_pass_rate'))}, "
+                f"fails={item.get('fails')}, flips={item.get('flips')}"
+            )
+        lines.append("")
+
     lines.append("## 建议动作")
     lines.append("")
     lines.append("- 检查 docs/OPERATIONS_TROUBLESHOOTING.md 的对应故障章节。")
-    lines.append("- 优先处理 hard_concurrent_pool / hard_calc_parser 回归。")
+    for action in _suggest_actions(top_regressions):
+        lines.append(f"- {action}")
     lines.append("- 修复后重跑 8~10 轮窗口并重新生成日报。")
     return "\n".join(lines) + "\n"
+
+
+def _extract_top_regressions(window_result: Dict[str, Any], top_n: int = 3) -> list[Dict[str, Any]]:
+    """Extract top regressions from compare payload; fallback to lowest pass-rate tasks."""
+    if not window_result.get("ok"):
+        return []
+
+    payload = window_result.get("payload", {})
+    key_tasks = payload.get("key_tasks", {})
+    regressions: list[Dict[str, Any]] = []
+
+    # Primary: use compare deltas when available
+    for task, item in key_tasks.items():
+        if isinstance(item, dict) and "new" in item:
+            new_item = item.get("new", {})
+            delta = float(item.get("delta_pass_rate", 0.0))
+            regressions.append({
+                "task": task,
+                "pass_rate": float(new_item.get("pass_rate", -1.0)),
+                "delta_pass_rate": delta,
+                "fails": int(new_item.get("fails", -1)),
+                "flips": int(new_item.get("flips", -1)),
+                "score": delta,
+            })
+
+    if regressions:
+        negatives = [r for r in regressions if r["delta_pass_rate"] < 0]
+        if negatives:
+            negatives.sort(key=lambda x: (x["delta_pass_rate"], x["pass_rate"]))
+            return negatives[:top_n]
+
+        # If no negative deltas, choose currently weakest tasks in compare set
+        regressions.sort(key=lambda x: (x["pass_rate"], -x["fails"], x["flips"]))
+        return regressions[:top_n]
+
+    # Fallback: pick lowest current pass-rate tasks
+    current_tasks = payload.get("current", {}).get("tasks", {})
+    for task, item in current_tasks.items():
+        regressions.append({
+            "task": task,
+            "pass_rate": float(item.get("pass_rate", -1.0)),
+            "delta_pass_rate": 0.0,
+            "fails": int(item.get("fails", -1)),
+            "flips": int(item.get("flips", -1)),
+            "score": float(item.get("pass_rate", -1.0)),
+        })
+
+    regressions.sort(key=lambda x: (x["score"], -x["fails"]))
+    return regressions[:top_n]
+
+
+def _suggest_actions(top_regressions: list[Dict[str, Any]]) -> list[str]:
+    """Generate concise remediation hints based on top regressions."""
+    if not top_regressions:
+        return ["未识别具体回归任务，建议先检查 evolution.log 最近失败条目。"]
+
+    action_map = {
+        "hard_concurrent_pool": "hard_concurrent_pool：优先检查 timeout 与 PriorityQueue 可比较元组规则，确认 worker 能完成 future。",
+        "hard_calc_parser": "hard_calc_parser：优先检查负号语义、token 消耗完整性与 parse 结束无剩余 token。",
+        "med_decorator_retry": "med_decorator_retry：检查同步/异步重试分支和 max_retries 语义（总尝试=1+max_retries）。",
+        "med_lru_cache": "med_lru_cache：检查 TTL 过期路径和并发锁粒度，确保 get/put 语义一致。",
+        "expert_async_pipeline": "expert_async_pipeline：检查 semaphore 并发控制与阶段统计是否正确累积。",
+        "expert_type_checker": "expert_type_checker：检查泛型容器类型匹配逻辑与 Union/Optional 处理。",
+    }
+
+    actions: list[str] = []
+    seen = set()
+    for item in top_regressions:
+        task = item.get("task", "")
+        if not task or task in seen:
+            continue
+        seen.add(task)
+        actions.append(action_map.get(task, f"{task}：先复盘最近失败 traceback，再补充任务定向提示与重试规则。"))
+    return actions
 
 
 def main() -> int:
@@ -441,6 +529,7 @@ def main() -> int:
                 report_path=output_path,
                 gate=gate,
                 health=health,
+                window_result=window_result,
             )
             alert_path.write_text(alert_md, encoding="utf-8")
             print(f"Alert generated: {alert_path}")

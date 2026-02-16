@@ -125,6 +125,8 @@ python scripts/daily_report.py --window 10
 
 当闸门失败时会自动生成告警摘要：`data/reports/alert_latest.md`。
 
+告警摘要包含 Top 3 回归任务及定向修复建议，便于快速止损。
+
 ## 开发与验证
 
 ```bash

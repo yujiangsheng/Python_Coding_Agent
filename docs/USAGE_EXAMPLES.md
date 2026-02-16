@@ -168,3 +168,9 @@ python scripts/daily_report.py --window 10 --fail-on-gate --gate-avg-min 0.95 --
 ```bash
 python scripts/daily_report.py --window 10 --alert-on-gate-fail --alert-output data/reports/alert_latest.md
 ```
+
+当 Gate 失败时，`alert_latest.md` 会包含：
+
+- Top 3 回归任务
+- 每个回归任务的 pass_rate / delta_pass_rate / fails / flips
+- 定向修复动作建议
