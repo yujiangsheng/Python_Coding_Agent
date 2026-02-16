@@ -28,6 +28,8 @@ git push origin main
 git push origin v0.1.0
 ```
 
+Tag push now automatically triggers GitHub Actions workflow `Release`, which runs compile/tests and then creates a GitHub Release.
+
 ## 4) Verify in GitHub
 
 - Confirm `CI` workflow is green on `main`.
