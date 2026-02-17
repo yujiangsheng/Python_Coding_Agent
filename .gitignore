@@ -32,6 +32,7 @@ data/improvements/*.bak
 data/memories/long_term_index.json
 data/memories/persistent.json
 data/skills.json
+data/reports/daily_manual_latest.md
 
 # Model weights (use Ollama instead)
 models/
