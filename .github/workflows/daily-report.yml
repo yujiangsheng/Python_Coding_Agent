@@ -1,8 +1,6 @@
 name: Daily Report
 
 on:
-  schedule:
-    - cron: "15 1 * * *"
   workflow_dispatch:
 
 permissions:
@@ -29,7 +27,7 @@ jobs:
 
       - name: Generate daily report
         run: |
-          python scripts/daily_report.py --window 10 --alert-on-gate-fail --alert-output data/reports/alert_latest.md
+          python scripts/daily_report.py --window 10
 
       - name: Prune old reports
         run: |
