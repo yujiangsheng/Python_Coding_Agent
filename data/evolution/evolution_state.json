@@ -1,7 +1,7 @@
 {
-  "round_number": 391,
-  "total_benchmarks_run": 1109,
-  "total_passed": 815,
+  "round_number": 409,
+  "total_benchmarks_run": 1139,
+  "total_passed": 843,
   "best_score": 8.75,
   "best_round": 220,
   "improvements_applied": 201,
@@ -32850,29 +32850,1541 @@
         }
       ],
       "elapsed_seconds": 0.4
+    },
+    {
+      "round": 392,
+      "timestamp": 1771283753.401835,
+      "passed": 8,
+      "total": 8,
+      "avg_score": 8.5,
+      "pass_rate": 1.0,
+      "tests_ok": true,
+      "results": [
+        {
+          "task_id": "easy_sort",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=77)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "easy_fibonacci",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=77)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_lru_cache",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=77)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_decorator_retry",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=27)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "hard_calc_parser",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=10)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "hard_concurrent_pool",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=4)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_type_checker",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=28)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_async_pipeline",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=42)",
+          "time_taken": 0.0
+        }
+      ],
+      "elapsed_seconds": 1.3
+    },
+    {
+      "round": 393,
+      "timestamp": 1771283754.764301,
+      "passed": 8,
+      "total": 8,
+      "avg_score": 8.5,
+      "pass_rate": 1.0,
+      "tests_ok": true,
+      "results": [
+        {
+          "task_id": "easy_sort",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=77)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "easy_fibonacci",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=77)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_lru_cache",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=77)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_decorator_retry",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=27)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "hard_calc_parser",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=10)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "hard_concurrent_pool",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=4)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_type_checker",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=28)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_async_pipeline",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=42)",
+          "time_taken": 0.0
+        }
+      ],
+      "elapsed_seconds": 1.3
+    },
+    {
+      "round": 394,
+      "timestamp": 1771283756.3550231,
+      "passed": 8,
+      "total": 8,
+      "avg_score": 8.5,
+      "pass_rate": 1.0,
+      "tests_ok": true,
+      "results": [
+        {
+          "task_id": "easy_sort",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=77)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "easy_fibonacci",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=77)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_lru_cache",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=77)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_decorator_retry",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=27)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "hard_calc_parser",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=10)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "hard_concurrent_pool",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=4)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_type_checker",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=28)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_async_pipeline",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=42)",
+          "time_taken": 0.0
+        }
+      ],
+      "elapsed_seconds": 1.4
+    },
+    {
+      "round": 395,
+      "timestamp": 1771283899.1443782,
+      "passed": 8,
+      "total": 8,
+      "avg_score": 8.69,
+      "pass_rate": 1.0,
+      "tests_ok": true,
+      "results": [
+        {
+          "task_id": "easy_fibonacci",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "from typing import List\n\ndef fibonacci(n: int) -> List[int]:\n    \"\"\"\n    返回前n个斐波那契数。\n    \n    斐波那契数列定义：F(0)=0, F(1)=1, F(n)=F(n-1)+F(n-2) (n>=2)\n    \n    Args:\n        n (int): 要返回的斐波那契数的个数\n        \n    Returns:\n        List[int]: 包含前n个斐波那契数的列表，如果n<=0则返回空列表\n        \n    Examples:\n        >>> fibonacci(5)\n        [0, 1, 1, 2, 3]\n        >>> fibonacci(0)\n        []\n        >>> fibonacci(1)\n        [0]\n        >>> fibonacci(10)\n        [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]\n    \"\"\"\n    # 处理边界情况\n    if n <= 0:\n        return []\n    \n    # 初始化结果列表\n    result = []\n    \n    # 处理前两个特殊情况\n    if n >= 1:\n        result.append(0)\n    if n >= 2:\n        result.append(1)\n    \n    # 使用迭代方式计算后续的斐波那契数\n    # 从第3个数开始计算\n    for i in range(2, n):\n        next_fib = result[i-1] + result[i-2]\n        result.append(next_fib)\n    \n    return result\n\n# 测试函数\nif __name__ == \"__main__\":\n    # 测试各种情况\n    print(f\"fibonacci(0) = {fibonacci(0)}\")   # []\n    print(f\"fibonacci(1) = {fibonacci(1)}\")   # [0]\n    print(f\"fibonacci(2) = {fibonacci(2)}\")   # [0, 1]\n    print(f\"fibonacci(5) = {fibonacci(5)}\")   # [0, 1, 1, 2, 3]\n    print(f\"fibonacci(10) = {fibonacci(10)}\") # [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]\n",
+          "time_taken": 123.41091299057007
+        },
+        {
+          "task_id": "easy_sort",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "from typing import List\n\ndef merge_sort(arr: List[int]) -> List[int]:\n    \"\"\"\n    对输入列表进行归并排序。\n    \n    归并排序是一种分治算法，将数组分成两半，递归地对两半进行排序，\n    然后将排序后的两半合并成一个有序数组。\n    \n    Args:\n        arr: 待排序的整数列表\n        \n    Returns:\n        排序后的新列表，不修改原列表\n        \n    Examples:\n        >>> merge_sort([3, 1, 4, 1, 5, 9, 2, 6])\n        [1, 1, 2, 3, 4, 5, 6, 9]\n        \n        >>> merge_sort([])\n        []\n        \n        >>> merge_sort([42])\n        [42]\n        \n        >>> merge_sort([5, 2, 8, 1])\n        [1, 2, 5, 8]\n    \"\"\"\n    # 基础情况：空列表或单元素列表已经有序\n    if len(arr) <= 1:\n        return arr.copy()  # 返回副本以确保纯函数性质\n    \n    # 分治：将列表分成两半\n    mid = len(arr) // 2\n    left_half = arr[:mid]\n    right_half = arr[mid:]\n    \n    # 递归排序两半\n    left_sorted = merge_sort(left_half)\n    right_sorted = merge_sort(right_half)\n    \n    # 合并两个已排序的列表\n    return _merge(left_sorted, right_sorted)\n\ndef _merge(left: List[int], right: List[int]) -> List[int]:\n    \"\"\"\n    合并两个已排序的列表。\n    \n    Args:\n        left: 左侧已排序的列表\n        right: 右侧已排序的列表\n        \n    Returns:\n        合并后的已排序列表\n    \"\"\"\n    result = []\n    i = j = 0\n    \n    # 比较两个列表的元素，将较小的元素添加到结果中\n    while i < len(left) and j < len(right):\n        if left[i] <= right[j]:\n            result.append(left[i])\n            i += 1\n        else:\n            result.append(right[j])\n            j += 1\n    \n    # 添加剩余的元素\n    result.extend(left[i:])\n    result.extend(right[j:])\n    \n    return result\n\n# 测试代码\nif __name__ == \"__main__\":\n    # 测试用例\n    test_cases = [\n        [],                    # 空列表\n        [42],                  # 单元素列表\n        [3, 1, 4, 1, 5, 9, 2, 6],  # 普通列表\n        [5, 2, 8, 1],          # 无序列表\n        [1, 2, 3, 4, 5],       # 已排序列表\n        [5, 4, 3, 2, 1],       # 逆序列表\n        [1, 1, 1, 1],          # 重复元素\n    ]\n    \n    for i, test_case in enumerate(test_cases):\n        original = test_case.copy()\n        sorted_result = merge_sort(test_case)\n        print(f\"测试 {i+1}: {original} -> {sorted_result}\")\n        # 验证原列表未被修改\n        assert",
+          "time_taken": 137.9701771736145
+        },
+        {
+          "task_id": "hard_calc_parser",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 9.0,
+          "error": "",
+          "code_generated": "import re\nfrom typing import List, Union, Iterator\n\nclass Token:\n    def __init__(self, type_: str, value: Union[str, float]):\n        self.type = type_\n        self.value = value\n    \n    def __repr__(self):\n        return f\"Token({self.type}, {self.value})\"\n\nclass Tokenizer:\n    def __init__(self, expression: str):\n        self.expression = expression\n        self.pos = 0\n        self.tokens = []\n    \n    def tokenize(self) -> List[Token]:\n        self.pos = 0\n        self.tokens = []\n        \n        while self.pos < len(self.expression):\n            char = self.expression[self.pos]\n            \n            if char.isspace():\n                self.pos += 1\n                continue\n            \n            if char in \"+-*/()\":\n                self.tokens.append(Token(char, char))\n                self.pos += 1\n            elif char.isdigit() or char == '.':\n                # Parse number (including floats)\n                start = self.pos\n                while self.pos < len(self.expression) and (self.expression[self.pos].isdigit() or self.expression[self.pos] == '.'):\n                    self.pos += 1\n                number_str = self.expression[start:self.pos]\n                try:\n                    # Try to convert to int first, then to float\n                    if '.' in number_str:\n                        number = float(number_str)\n                    else:\n                        number = int(number_str)\n                    self.tokens.append(Token(\"NUMBER\", number))\n                except ValueError:\n                    raise ValueError(f\"Invalid number: {number_str}\")\n            else:\n                raise ValueError(f\"Unexpected character: {char}\")\n        \n        # Handle negative numbers\n        processed_tokens = []\n        i = 0\n        while i < len(self.tokens):\n            token = self.tokens[i]\n            if token.type == '-' and (i == 0 or self.tokens[i-1].type == '('):\n                # This is a negative sign\n                if i + 1 < len(se",
+          "time_taken": 87.49172687530518
+        },
+        {
+          "task_id": "expert_type_checker",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 9.0,
+          "error": "",
+          "code_generated": "import typing\nimport inspect\nimport functools\n\ndef _matches_type(value, expected_type) -> bool:\n    \"\"\"检查值是否匹配指定类型\"\"\"\n    if expected_type is type(None):\n        return value is None\n    \n    origin = typing.get_origin(expected_type)\n    \n    if origin is None:  # 普通类型如int, str\n        return isinstance(value, expected_type)\n    \n    args = typing.get_args(expected_type)\n    \n    if origin is typing.Union:\n        return any(_matches_type(value, a) for a in args)\n    \n    if origin is list:\n        if not isinstance(value, list):\n            return False\n        if not args:\n            return True\n        return all(_matches_type(v, args[0]) for v in value)\n    \n    if origin is dict:\n        if not isinstance(value, dict):\n            return False\n        if not args:\n            return True\n        return all(_matches_type(k, args[0]) and _matches_type(v, args[1]) \n                  for k, v in value.items())\n    \n    # 兜底情况\n    if isinstance(expected_type, type):\n        return isinstance(value, expected_type)\n    return True\n\ndef type_check(func):\n    \"\"\"运行时类型检查装饰器\"\"\"\n    hints = typing.get_type_hints(func)\n    \n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        sig = inspect.signature(func)\n        bound = sig.bind(*args, **kwargs)\n        bound.apply_defaults()\n        \n        for param_name, value in bound.arguments.items():\n            if param_name in hints:\n                if not _matches_type(value, hints[param_name]):\n                    raise TypeError(f'参数 {param_name} 类型错误')\n        \n        result = func(*args, **kwargs)\n        \n        if 'return' in hints:\n            if not _matches_type(result, hints['return']):\n                raise TypeError('返回值类型错误')\n        \n        return result\n    \n    return wrapper\n\n# 示例用法\nif __name__ == \"__main__\":\n    @type_check\n    def example_func(x: int, y: str, z: typing.Optional[list] = None) -> str:\n        return f\"{x}: {y}\"\n    \n    # 正确调用\n    print(example_func(1, \"hello\"))  # 输出: 1: hel",
+          "time_taken": 34.59401893615723
+        },
+        {
+          "task_id": "med_decorator_retry",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 9.0,
+          "error": "",
+          "code_generated": "import asyncio\nimport functools\nimport time\nimport logging\nfrom typing import Callable, Type, Union, Any, Tuple\n\n# 配置日志\nlogging.basicConfig(level=logging.INFO)\nlogger = logging.getLogger(__name__)\n\ndef auto_retry(\n    max_retries: int = 3,\n    delay: float = 1.0,\n    backoff: float = 2.0,\n    exceptions: Tuple[Type[Exception], ...] = (Exception,)\n) -> Callable:\n    \"\"\"\n    装饰器工厂，用于自动重试函数调用\n    \n    Args:\n        max_retries: 最大重试次数（不包括第一次调用）\n        delay: 初始延迟时间（秒）\n        backoff: 延迟时间的倍数增长因子\n        exceptions: 需要重试的异常类型元组\n    \n    Returns:\n        装饰器函数\n    \"\"\"\n    def decorator(func: Callable) -> Callable:\n        @functools.wraps(func)\n        def sync_wrapper(*args: Any, **kwargs: Any) -> Any:\n            current_delay = delay\n            for attempt in range(max_retries + 1):\n                try:\n                    return func(*args, **kwargs)\n                except exceptions as e:\n                    if attempt == max_retries:\n                        logger.error(f\"函数 {func.__name__} 在第 {attempt + 1} 次尝试后失败，抛出原始异常: {e}\")\n                        raise\n                    logger.info(f\"函数 {func.__name__} 在第 {attempt + 1} 次尝试中失败: {e}，将在 {current_delay} 秒后重试\")\n                    time.sleep(current_delay)\n                    current_delay *= backoff\n            \n        @functools.wraps(func)\n        async def async_wrapper(*args: Any, **kwargs: Any) -> Any:\n            current_delay = delay\n            for attempt in range(max_retries + 1):\n                try:\n                    return await func(*args, **kwargs)\n                except exceptions as e:\n                    if attempt == max_retries:\n                        logger.error(f\"函数 {func.__name__} 在第 {attempt + 1} 次尝试后失败，抛出原始异常: {e}\")\n                        raise\n                    logger.info(f\"函数 {func.__name__} 在第 {attempt + 1} 次尝试中失败: {e}，将在 {current_delay} 秒后重试\")\n                    await asyncio.sleep(current_delay)\n                    current_delay *= backoff\n        \n        # 根据函数类型选择返回对",
+          "time_taken": 98.37857508659363
+        },
+        {
+          "task_id": "expert_async_pipeline",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 9.0,
+          "error": "",
+          "code_generated": "import asyncio\nimport time\nfrom typing import Dict, List, Any, Callable, Optional\nfrom collections import defaultdict\nimport functools\n\nclass AsyncPipeline:\n    \"\"\"\n    异步流水线处理器，支持按序执行和并发处理。\n    \"\"\"\n    \n    def __init__(self):\n        self.stages: Dict[str, Callable] = {}\n        self.stats_data = defaultdict(lambda: {\n            'calls': 0,\n            'total_time': 0.0,\n            'errors': 0\n        })\n    \n    def add_stage(self, name: str, fn: Callable) -> None:\n        \"\"\"\n        添加处理阶段\n        \n        Args:\n            name: 阶段名称\n            fn: 处理函数，可以是同步或异步函数\n        \"\"\"\n        if not callable(fn):\n            raise ValueError(\"fn must be callable\")\n        self.stages[name] = fn\n    \n    async def _process_single_stage(self, stage_name: str, data: Any) -> Any:\n        \"\"\"\n        处理单个阶段，记录统计信息\n        \n        Args:\n            stage_name: 阶段名称\n            data: 输入数据\n            \n        Returns:\n            处理后的数据\n        \"\"\"\n        stage_fn = self.stages[stage_name]\n        start_time = time.time()\n        \n        try:\n            if asyncio.iscoroutinefunction(stage_fn):\n                result = await stage_fn(data)\n            else:\n                result = stage_fn(data)\n            \n            # 更新统计信息\n            self.stats_data[stage_name]['calls'] += 1\n            self.stats_data[stage_name]['total_time'] += (time.time() - start_time)\n            \n            return result\n        except Exception as e:\n            # 更新错误统计\n            self.stats_data[stage_name]['calls'] += 1\n            self.stats_data[stage_name]['total_time'] += (time.time() - start_time)\n            self.stats_data[stage_name]['errors'] += 1\n            raise\n    \n    async def process(self, data: Any) -> Any:\n        \"\"\"\n        按顺序执行所有阶段\n        \n        Args:\n            data: 输入数据\n            \n        Returns:\n            处理后的数据\n        \"\"\"\n        result = data\n        for stage_name in self.stages:\n            result = await self._process_single_stage(stage_nam",
+          "time_taken": 22.03759217262268
+        },
+        {
+          "task_id": "med_lru_cache",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 7.5,
+          "error": "",
+          "code_generated": "import threading, time\nfrom collections import OrderedDict\n\nclass LRUCache:\n    def __init__(self, capacity: int):\n        self._cache = OrderedDict()  # key -> (value, expire_time_or_None)\n        self._capacity = capacity\n        self._lock = threading.Lock()\n    \n    def get(self, key):\n        with self._lock:\n            if key not in self._cache: \n                return None\n            value, expire = self._cache[key]\n            if expire is not None and time.time() > expire:\n                del self._cache[key]\n                return None\n            self._cache.move_to_end(key)\n            return value\n    \n    def put(self, key, value, ttl=None):\n        expire = time.time() + ttl if ttl else None\n        with self._lock:\n            if key in self._cache: \n                self._cache.move_to_end(key)\n            self._cache[key] = (value, expire)\n            if len(self._cache) > self._capacity:\n                self._cache.popitem(last=False)\n\n# Example usage:\nif __name__ == \"__main__\":\n    # Create an LRU cache with capacity 2\n    cache = LRUCache(2)\n    \n    # Test basic put and get\n    cache.put(\"a\", 1)\n    cache.put(\"b\", 2)\n    print(cache.get(\"a\"))  # Should return 1\n    \n    # Test TTL expiration\n    cache.put(\"c\", 3, ttl=1)  # This entry will expire in 1 second\n    print(cache.get(\"c\"))  # Should return 3\n    time.sleep(1.1)  # Wait for expiration\n    print(cache.get(\"c\"))  # Should return None (expired)\n    \n    # Test capacity limit\n    cache.put(\"d\", 4)\n    print(cache.get(\"b\"))  # Should return None (evicted due to capacity)\n    print(cache.get(\"d\"))  # Should return 4\n    print(cache.get(\"a\"))  # Should return 1\n",
+          "time_taken": 113.60328984260559
+        },
+        {
+          "task_id": "hard_concurrent_pool",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 9.0,
+          "error": "",
+          "code_generated": "import threading\nimport queue\nimport time\nfrom typing import Callable, Any, List, Optional, Tuple, Union\nfrom concurrent.futures import Future as ConcurrentFuture\nfrom queue import PriorityQueue\nimport uuid\n\nclass Future(ConcurrentFuture):\n    \"\"\"\n    代表一个异步任务的结果。\n    \"\"\"\n    def __init__(self):\n        super().__init__()\n        self._result = None\n        self._exception = None\n        self._done = False\n        self._condition = threading.Condition()\n        \n    def set_result(self, result: Any) -> None:\n        \"\"\"设置任务结果\"\"\"\n        with self._condition:\n            self._result = result\n            self._done = True\n            self._condition.notify_all()\n            \n    def set_exception(self, exception: BaseException) -> None:\n        \"\"\"设置任务异常\"\"\"\n        with self._condition:\n            self._exception = exception\n            self._done = True\n            self._condition.notify_all()\n            \n    def result(self, timeout: Optional[float] = None) -> Any:\n        \"\"\"获取任务结果，如果超时则抛出 TimeoutError\"\"\"\n        with self._condition:\n            if not self._done:\n                if not self._condition.wait(timeout):\n                    raise TimeoutError(\"Task timed out\")\n            \n            if self._exception:\n                raise self._exception\n            return self._result\n\nclass TaskPool:\n    \"\"\"\n    可复用的并发任务池，使用线程实现。\n    \n    Args:\n        max_workers: 最大工作线程数，默认为CPU核心数\n    \"\"\"\n    \n    def __init__(self, max_workers: Optional[int] = None):\n        if max_workers is None:\n            import multiprocessing\n            max_workers = multiprocessing.cpu_count()\n            \n        self.max_workers = max_workers\n        self._workers: List[threading.Thread] = []\n        self._task_queue: PriorityQueue = PriorityQueue()\n        self._shutdown_event = threading.Event()\n        self._worker_lock = threading.Lock()\n        self._seq_counter = 0\n        \n        # 启动工作线程\n        for _ in range(max_workers):\n            worker = threading.Thread(target=s",
+          "time_taken": 64.74448108673096
+        }
+      ],
+      "elapsed_seconds": 142.6
+    },
+    {
+      "round": 396,
+      "timestamp": 1771283900.619898,
+      "passed": 8,
+      "total": 8,
+      "avg_score": 8.5,
+      "pass_rate": 1.0,
+      "tests_ok": true,
+      "results": [
+        {
+          "task_id": "easy_sort",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=78)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "easy_fibonacci",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=78)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_lru_cache",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=78)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_decorator_retry",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=28)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "hard_calc_parser",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=11)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "hard_concurrent_pool",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=5)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_type_checker",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=29)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_async_pipeline",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=43)",
+          "time_taken": 0.0
+        }
+      ],
+      "elapsed_seconds": 1.3
+    },
+    {
+      "round": 397,
+      "timestamp": 1771283902.162378,
+      "passed": 8,
+      "total": 8,
+      "avg_score": 8.5,
+      "pass_rate": 1.0,
+      "tests_ok": true,
+      "results": [
+        {
+          "task_id": "easy_sort",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=78)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "easy_fibonacci",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=78)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_lru_cache",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=78)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_decorator_retry",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=28)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "hard_calc_parser",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=11)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "hard_concurrent_pool",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=5)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_type_checker",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=29)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_async_pipeline",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=43)",
+          "time_taken": 0.0
+        }
+      ],
+      "elapsed_seconds": 1.4
+    },
+    {
+      "round": 398,
+      "timestamp": 1771283903.7306712,
+      "passed": 8,
+      "total": 8,
+      "avg_score": 8.5,
+      "pass_rate": 1.0,
+      "tests_ok": true,
+      "results": [
+        {
+          "task_id": "easy_sort",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=78)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "easy_fibonacci",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=78)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_lru_cache",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=78)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_decorator_retry",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=28)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "hard_calc_parser",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=11)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "hard_concurrent_pool",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=5)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_type_checker",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=29)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_async_pipeline",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=43)",
+          "time_taken": 0.0
+        }
+      ],
+      "elapsed_seconds": 1.4
+    },
+    {
+      "round": 399,
+      "timestamp": 1771283905.171243,
+      "passed": 8,
+      "total": 8,
+      "avg_score": 8.5,
+      "pass_rate": 1.0,
+      "tests_ok": true,
+      "results": [
+        {
+          "task_id": "easy_sort",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=78)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "easy_fibonacci",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=78)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_lru_cache",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=78)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_decorator_retry",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=28)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "hard_calc_parser",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=11)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "hard_concurrent_pool",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=5)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_type_checker",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=29)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_async_pipeline",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=43)",
+          "time_taken": 0.0
+        }
+      ],
+      "elapsed_seconds": 1.3
+    },
+    {
+      "round": 400,
+      "timestamp": 1771284759.8329,
+      "passed": 6,
+      "total": 8,
+      "avg_score": 7.62,
+      "pass_rate": 0.75,
+      "tests_ok": true,
+      "results": [
+        {
+          "task_id": "easy_fibonacci",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "from typing import List\n\ndef fibonacci(n: int) -> List[int]:\n    \"\"\"\n    返回前n个斐波那契数。\n    \n    斐波那契数列定义：F(0)=0, F(1)=1, F(n)=F(n-1)+F(n-2) (n>=2)\n    \n    Args:\n        n (int): 要返回的斐波那契数的个数\n        \n    Returns:\n        List[int]: 包含前n个斐波那契数的列表\n        \n    Examples:\n        >>> fibonacci(0)\n        []\n        >>> fibonacci(1)\n        [0]\n        >>> fibonacci(5)\n        [0, 1, 1, 2, 3]\n        >>> fibonacci(10)\n        [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]\n    \"\"\"\n    # 处理边界情况\n    if n <= 0:\n        return []\n    \n    # 初始化结果列表\n    result = []\n    \n    # 处理前两个特殊情况\n    if n >= 1:\n        result.append(0)\n    if n >= 2:\n        result.append(1)\n    \n    # 使用迭代方式计算后续的斐波那契数\n    # 从第3个数开始计算（索引为2）\n    for i in range(2, n):\n        next_fib = result[i-1] + result[i-2]\n        result.append(next_fib)\n    \n    return result\n\n# 测试函数\nif __name__ == \"__main__\":\n    # 测试各种情况\n    print(f\"fibonacci(0) = {fibonacci(0)}\")   # []\n    print(f\"fibonacci(1) = {fibonacci(1)}\")   # [0]\n    print(f\"fibonacci(2) = {fibonacci(2)}\")   # [0, 1]\n    print(f\"fibonacci(5) = {fibonacci(5)}\")   # [0, 1, 1, 2, 3]\n    print(f\"fibonacci(10) = {fibonacci(10)}\") # [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]\n",
+          "time_taken": 199.93486380577087
+        },
+        {
+          "task_id": "easy_sort",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "from typing import List\n\ndef merge_sort(arr: List[int]) -> List[int]:\n    \"\"\"\n    实现归并排序算法。\n    \n    归并排序是一种稳定的、基于分治思想的排序算法。它将数组递归地分成两半，\n    对每一半进行排序，然后将排序后的两半合并成一个有序数组。\n    \n    Args:\n        arr: 待排序的整数列表\n        \n    Returns:\n        排序后的新列表，原列表不变\n        \n    Examples:\n        >>> merge_sort([3, 1, 4, 1, 5, 9, 2, 6])\n        [1, 1, 2, 3, 4, 5, 6, 9]\n        \n        >>> merge_sort([])\n        []\n        \n        >>> merge_sort([42])\n        [42]\n        \n        >>> merge_sort([5, 2, 8, 1])\n        [1, 2, 5, 8]\n    \"\"\"\n    # 基础情况：空列表或单元素列表已经有序\n    if len(arr) <= 1:\n        return arr.copy()  # 返回副本以确保原列表不变\n    \n    # 分治：将数组分成两半\n    mid = len(arr) // 2\n    left_half = arr[:mid]\n    right_half = arr[mid:]\n    \n    # 递归排序两半\n    left_sorted = merge_sort(left_half)\n    right_sorted = merge_sort(right_half)\n    \n    # 合并两个已排序的数组\n    return _merge(left_sorted, right_sorted)\n\n\ndef _merge(left: List[int], right: List[int]) -> List[int]:\n    \"\"\"\n    合并两个已排序的列表。\n    \n    Args:\n        left: 左侧已排序的列表\n        right: 右侧已排序的列表\n        \n    Returns:\n        合并后的已排序列表\n    \"\"\"\n    result = []\n    i = j = 0\n    \n    # 比较两个列表的元素，将较小的元素添加到结果中\n    while i < len(left) and j < len(right):\n        if left[i] <= right[j]:\n            result.append(left[i])\n            i += 1\n        else:\n            result.append(right[j])\n            j += 1\n    \n    # 将剩余元素添加到结果中\n    result.extend(left[i:])\n    result.extend(right[j:])\n    \n    return result\n\n\n# 测试代码\nif __name__ == \"__main__\":\n    # 测试各种情况\n    test_cases = [\n        [],                    # 空列表\n        [42],                  # 单元素列表\n        [3, 1, 4, 1, 5, 9, 2, 6],  # 一般情况\n        [5, 2, 8, 1],          # 小数组\n        [1, 1, 1, 1],          # 重复元素\n        [5, 4, 3, 2, 1],       # 逆序数组\n        [1, 2, 3, 4, 5]        # 已排序数组\n    ]\n    \n    for i, test_case in enumerate(test_cases):\n        original = test_case.copy()\n        sorted_arr = merge_sort(test_case)\n        print(f\"测试 {i+1}: {original} -> {sorted_arr}\")\n        # 验证原列表未被修改\n    ",
+          "time_taken": 213.12336492538452
+        },
+        {
+          "task_id": "hard_calc_parser",
+          "difficulty": "hard",
+          "passed": false,
+          "score": 4.5,
+          "error": "Traceback (most recent call last):\n  File \"<string>\", line 154, in <module>\n  File \"<string>\", line 138, in evaluate\n  File \"<string>\", line 38, in tokenize\n  File \"<string>\", line 65, in _read_number\nValueError: Invalid number format",
+          "code_generated": "import re\nfrom typing import List, Union\n\nclass Token:\n    def __init__(self, type: str, value: Union[str, float]):\n        self.type = type\n        self.value = value\n    \n    def __repr__(self):\n        return f\"Token({self.type}, {self.value})\"\n\nclass Tokenizer:\n    def __init__(self, expression: str):\n        self.expression = expression\n        self.tokens = []\n        self.pos = 0\n    \n    def tokenize(self) -> List[Token]:\n        self.pos = 0\n        self.tokens = []\n        while self.pos < len(self.expression):\n            char = self.expression[self.pos]\n            if char.isspace():\n                self.pos += 1\n                continue\n            elif char.isdigit() or char == '.':\n                self._read_number()\n            elif char == '+':\n                self.tokens.append(Token('PLUS', '+'))\n                self.pos += 1\n            elif char == '-':\n                # Check if this is a negative sign\n                # A '-' is a negative sign if it's at the beginning or after an opening parenthesis\n                # and the next character is a digit or a dot\n                if (self.pos == 0 or self.expression[self.pos - 1] == '(') and \\\n                   self.pos + 1 < len(self.expression) and \\\n                   (self.expression[self.pos + 1].isdigit() or self.expression[self.pos + 1] == '.'):\n                    self._read_number()\n                else:\n                    self.tokens.append(Token('MINUS', '-'))\n                    self.pos += 1\n            elif char == '*':\n                self.tokens.append(Token('MULTIPLY', '*'))\n                self.pos += 1\n            elif char == '/':\n                self.tokens.append(Token('DIVIDE', '/'))\n                self.pos += 1\n            elif char == '(':\n                self.tokens.append(Token('LPAREN', '('))\n                self.pos += 1\n            elif char == ')':\n                self.tokens.append(Token('RPAREN', ')'))\n                self.pos += 1\n            else:\n             ",
+          "time_taken": 239.23952794075012
+        },
+        {
+          "task_id": "expert_type_checker",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 9.0,
+          "error": "",
+          "code_generated": "import typing\nimport inspect\nimport functools\n\ndef _matches_type(value, expected_type) -> bool:\n    \"\"\"检查值是否匹配期望的类型\"\"\"\n    if expected_type is type(None):\n        return value is None\n    \n    origin = typing.get_origin(expected_type)\n    \n    if origin is None:  # 普通类型如int, str\n        return isinstance(value, expected_type)\n    \n    args = typing.get_args(expected_type)\n    \n    if origin is typing.Union:\n        return any(_matches_type(value, a) for a in args)\n    elif origin is list:\n        if not isinstance(value, list):\n            return False\n        if not args:\n            return True\n        return all(_matches_type(v, args[0]) for v in value)\n    elif origin is dict:\n        if not isinstance(value, dict):\n            return False\n        if not args:\n            return True\n        return all(_matches_type(k, args[0]) and _matches_type(v, args[1]) \n                  for k, v in value.items())\n    else:\n        # 兜底情况\n        return isinstance(value, expected_type) if isinstance(expected_type, type) else True\n\ndef type_check(func):\n    \"\"\"\n    运行时类型检查装饰器\n    \n    Args:\n        func: 被装饰的函数\n        \n    Returns:\n        装饰后的函数，会进行运行时类型检查\n    \"\"\"\n    hints = typing.get_type_hints(func)\n    \n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        sig = inspect.signature(func)\n        bound = sig.bind(*args, **kwargs)\n        bound.apply_defaults()\n        \n        # 检查参数类型\n        for param_name, value in bound.arguments.items():\n            if param_name in hints:\n                if not _matches_type(value, hints[param_name]):\n                    raise TypeError(f'参数 {param_name} 类型错误')\n        \n        # 执行函数\n        result = func(*args, **kwargs)\n        \n        # 检查返回值类型\n        if 'return' in hints:\n            if not _matches_type(result, hints['return']):\n                raise TypeError('返回值类型错误')\n                \n        return result\n    \n    return wrapper\n\n# 示例用法\nif __name__ == \"__main__\":\n    @type_check\n    def example_func(name",
+          "time_taken": 38.334211111068726
+        },
+        {
+          "task_id": "med_decorator_retry",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 9.0,
+          "error": "",
+          "code_generated": "import asyncio\nimport functools\nimport time\nimport logging\nfrom typing import Type, Union, Callable, Any, Optional\n\n# 配置日志\nlogging.basicConfig(level=logging.INFO)\nlogger = logging.getLogger(__name__)\n\ndef auto_retry(\n    max_retries: int = 3,\n    delay: float = 1.0,\n    backoff: float = 2.0,\n    exceptions: Union[Type[Exception], tuple] = (Exception,)\n) -> Callable:\n    \"\"\"\n    装饰器工厂，为函数添加自动重试功能\n    \n    Args:\n        max_retries: 最大重试次数（不包含首次执行）\n        delay: 初始延迟时间（秒）\n        backoff: 延迟时间的倍数增长因子\n        exceptions: 需要重试的异常类型元组\n    \n    Returns:\n        装饰器函数\n    \"\"\"\n    def decorator(func: Callable) -> Callable:\n        @functools.wraps(func)\n        def sync_wrapper(*args: Any, **kwargs: Any) -> Any:\n            current_delay = delay\n            for attempt in range(max_retries + 1):\n                try:\n                    return func(*args, **kwargs)\n                except exceptions as e:\n                    if attempt == max_retries:\n                        logger.error(f\"最终失败: {func.__name__} 重试 {max_retries} 次后仍然失败，异常: {e}\")\n                        raise\n                    logger.warning(f\"第 {attempt + 1}/{max_retries} 次尝试失败: {func.__name__} 异常: {e}\")\n                    time.sleep(current_delay)\n                    current_delay *= backoff\n            raise RuntimeError(\"不应该到达这里\")\n        \n        @functools.wraps(func)\n        async def async_wrapper(*args: Any, **kwargs: Any) -> Any:\n            current_delay = delay\n            for attempt in range(max_retries + 1):\n                try:\n                    return await func(*args, **kwargs)\n                except exceptions as e:\n                    if attempt == max_retries:\n                        logger.error(f\"最终失败: {func.__name__} 重试 {max_retries} 次后仍然失败，异常: {e}\")\n                        raise\n                    logger.warning(f\"第 {attempt + 1}/{max_retries} 次尝试失败: {func.__name__} 异常: {e}\")\n                    await asyncio.sleep(current_delay)\n                    current_delay *= backoff\n     ",
+          "time_taken": 178.24397802352905
+        },
+        {
+          "task_id": "hard_concurrent_pool",
+          "difficulty": "hard",
+          "passed": false,
+          "score": 5.0,
+          "error": "Traceback (most recent call last):\n  File \"<string>\", line 262, in <module>\n  File \"<string>\", line 144, in map\n  File \"<string>\", line 144, in <listcomp>\nTypeError: Value after * must be an iterable, not int",
+          "code_generated": "import threading\nimport time\nimport queue\nfrom concurrent.futures import Future as ConcurrentFuture\nfrom typing import Callable, Any, List, Optional, Tuple, Union\nfrom queue import PriorityQueue\nimport heapq\nfrom dataclasses import dataclass, field\n\nclass Future(ConcurrentFuture):\n    \"\"\"\n    任务执行结果的 Future 对象。\n    \n    继承自 concurrent.futures.Future，提供超时等待和异常透传功能。\n    \"\"\"\n    \n    def __init__(self):\n        super().__init__()\n        self._result = None\n        self._exception = None\n        self._done = False\n        self._condition = threading.Condition()\n    \n    def set_result(self, result: Any) -> None:\n        \"\"\"设置任务执行结果\"\"\"\n        with self._condition:\n            self._result = result\n            self._done = True\n            self._condition.notify_all()\n    \n    def set_exception(self, exception: BaseException) -> None:\n        \"\"\"设置任务执行异常\"\"\"\n        with self._condition:\n            self._exception = exception\n            self._done = True\n            self._condition.notify_all()\n    \n    def result(self, timeout: Optional[float] = None) -> Any:\n        \"\"\"\n        获取任务执行结果。\n        \n        Args:\n            timeout: 等待超时时间（秒）\n            \n        Returns:\n            任务执行结果\n            \n        Raises:\n            Exception: 如果任务执行过程中抛出异常，则抛出原始异常\n            TimeoutError: 如果等待超时\n        \"\"\"\n        with self._condition:\n            if not self._done:\n                if not self._condition.wait(timeout):\n                    raise TimeoutError(\"Task result wait timeout\")\n            \n            if self._exception:\n                raise self._exception\n            return self._result\n\n@dataclass\nclass _Task:\n    \"\"\"任务对象\"\"\"\n    fn: Callable\n    args: tuple\n    kwargs: dict\n    future: Future\n    priority: int = 0\n    seq: int = field(default_factory=lambda: int(time.time() * 1000000))  # 微秒级时间戳\n    \n    def __lt__(self, other: '_Task') -> bool:\n        \"\"\"用于优先队列比较\"\"\"\n        return (self.priority, self.seq) < (other.priority, other.seq)\n\nclass TaskPool:\n ",
+          "time_taken": 325.0805358886719
+        },
+        {
+          "task_id": "expert_async_pipeline",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 9.0,
+          "error": "",
+          "code_generated": "import asyncio\nimport time\nfrom typing import Dict, Any, Callable, List, Optional\nfrom collections import defaultdict\nimport functools\n\nclass AsyncPipeline:\n    \"\"\"\n    异步管道处理类，支持顺序执行和并发处理。\n    \"\"\"\n    \n    def __init__(self):\n        self.stages: Dict[str, Callable] = {}\n        self.stats_data = defaultdict(lambda: {\n            'calls': 0,\n            'total_time': 0.0,\n            'errors': 0\n        })\n    \n    def add_stage(self, name: str, fn: Callable) -> None:\n        \"\"\"\n        添加处理阶段\n        \n        Args:\n            name: 阶段名称\n            fn: 处理函数（可以是同步或异步函数）\n        \"\"\"\n        if not callable(fn):\n            raise ValueError(\"fn must be callable\")\n        self.stages[name] = fn\n    \n    async def _process_stage(self, stage_name: str, data: Any) -> Any:\n        \"\"\"\n        处理单个阶段\n        \n        Args:\n            stage_name: 阶段名称\n            data: 输入数据\n            \n        Returns:\n            处理后的数据\n        \"\"\"\n        stage_fn = self.stages[stage_name]\n        start_time = time.time()\n        \n        try:\n            if asyncio.iscoroutinefunction(stage_fn):\n                result = await stage_fn(data)\n            else:\n                result = stage_fn(data)\n            \n            # 更新统计数据\n            self.stats_data[stage_name]['calls'] += 1\n            self.stats_data[stage_name]['total_time'] += (time.time() - start_time)\n            \n            return result\n        except Exception as e:\n            # 更新错误统计\n            self.stats_data[stage_name]['calls'] += 1\n            self.stats_data[stage_name]['total_time'] += (time.time() - start_time)\n            self.stats_data[stage_name]['errors'] += 1\n            raise  # 重新抛出异常\n    \n    async def process(self, data: Any) -> Any:\n        \"\"\"\n        按顺序执行所有阶段\n        \n        Args:\n            data: 输入数据\n            \n        Returns:\n            最终处理结果\n        \"\"\"\n        result = data\n        for stage_name in self.stages:\n            result = await self._process_stage(stage_name, result)\n",
+          "time_taken": 24.992728233337402
+        },
+        {
+          "task_id": "med_lru_cache",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 7.5,
+          "error": "",
+          "code_generated": "import threading, time\nfrom collections import OrderedDict\n\nclass LRUCache:\n    def __init__(self, capacity: int):\n        self._cache = OrderedDict()  # key -> (value, expire_time_or_None)\n        self._capacity = capacity\n        self._lock = threading.Lock()\n    \n    def get(self, key):\n        with self._lock:\n            if key not in self._cache: \n                return None\n            value, expire = self._cache[key]\n            if expire is not None and time.time() > expire:\n                del self._cache[key]\n                return None\n            self._cache.move_to_end(key)\n            return value\n    \n    def put(self, key, value, ttl=None):\n        expire = time.time() + ttl if ttl else None\n        with self._lock:\n            if key in self._cache: \n                self._cache.move_to_end(key)\n            self._cache[key] = (value, expire)\n            if len(self._cache) > self._capacity:\n                self._cache.popitem(last=False)\n\n# Example usage:\nif __name__ == \"__main__\":\n    # Create a cache with capacity 2\n    cache = LRUCache(2)\n    \n    # Test basic put and get\n    cache.put(\"a\", 1)\n    cache.put(\"b\", 2)\n    print(cache.get(\"a\"))  # Should return 1\n    \n    # Test TTL expiration\n    cache.put(\"c\", 3, ttl=1)  # This should expire in 1 second\n    print(cache.get(\"c\"))  # Should return 3\n    time.sleep(1.1)  # Wait for expiration\n    print(cache.get(\"c\"))  # Should return None\n    \n    # Test capacity limit\n    cache.put(\"d\", 4)\n    print(cache.get(\"b\"))  # Should return None (evicted due to capacity limit)\n    print(cache.get(\"d\"))  # Should return 4\n    print(cache.get(\"a\"))  # Should return 1\n",
+          "time_taken": 190.2413878440857
+        }
+      ],
+      "elapsed_seconds": 712.2
+    },
+    {
+      "round": 401,
+      "timestamp": 1771284823.467055,
+      "passed": 8,
+      "total": 8,
+      "avg_score": 8.62,
+      "pass_rate": 1.0,
+      "tests_ok": true,
+      "results": [
+        {
+          "task_id": "easy_sort",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=79)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "easy_fibonacci",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=79)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_lru_cache",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=79)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_decorator_retry",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=29)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_type_checker",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=30)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_async_pipeline",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=44)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "hard_calc_parser",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 9.0,
+          "error": "",
+          "code_generated": "import re\nfrom typing import List, Union\n\nclass Token:\n    def __init__(self, type_: str, value: Union[str, float]):\n        self.type = type_\n        self.value = value\n    \n    def __repr__(self):\n        return f\"Token({self.type}, {self.value})\"\n\nclass Tokenizer:\n    def __init__(self, expression: str):\n        self.expression = expression\n        self.pos = 0\n        self.tokens = []\n    \n    def tokenize(self) -> List[Token]:\n        self.pos = 0\n        self.tokens = []\n        \n        while self.pos < len(self.expression):\n            char = self.expression[self.pos]\n            \n            if char.isspace():\n                self.pos += 1\n                continue\n            \n            if char in \"+-*/()\":\n                self.tokens.append(Token(char, char))\n                self.pos += 1\n            elif char.isdigit() or char == '.':\n                # Parse number (including floats)\n                start = self.pos\n                while self.pos < len(self.expression) and (self.expression[self.pos].isdigit() or self.expression[self.pos] == '.'):\n                    self.pos += 1\n                number_str = self.expression[start:self.pos]\n                try:\n                    # Try to convert to int first, then to float\n                    if '.' in number_str:\n                        number = float(number_str)\n                    else:\n                        number = int(number_str)\n                    self.tokens.append(Token(\"NUMBER\", number))\n                except ValueError:\n                    raise ValueError(f\"Invalid number: {number_str}\")\n            else:\n                raise ValueError(f\"Unexpected character: {char}\")\n        \n        # Handle negative numbers\n        processed_tokens = []\n        i = 0\n        while i < len(self.tokens):\n            token = self.tokens[i]\n            if token.type == '-' and (i == 0 or self.tokens[i-1].type == '('):\n                # This is a negative sign\n                if i + 1 < len(self.tokens)",
+          "time_taken": 59.5087468624115
+        },
+        {
+          "task_id": "hard_concurrent_pool",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 9.0,
+          "error": "",
+          "code_generated": "import threading\nimport queue\nimport time\nfrom typing import Callable, Any, List, Optional, Tuple, Union\nfrom concurrent.futures import Future as ConcurrentFuture\nfrom queue import PriorityQueue\nimport uuid\n\nclass Future(ConcurrentFuture):\n    \"\"\"\n    代表一个异步任务的结果。\n    \"\"\"\n    def __init__(self):\n        super().__init__()\n        self._result = None\n        self._exception = None\n        self._done = False\n        self._condition = threading.Condition()\n        \n    def set_result(self, result: Any) -> None:\n        \"\"\"设置任务结果\"\"\"\n        with self._condition:\n            self._result = result\n            self._done = True\n            self._condition.notify_all()\n            \n    def set_exception(self, exception: BaseException) -> None:\n        \"\"\"设置任务异常\"\"\"\n        with self._condition:\n            self._exception = exception\n            self._done = True\n            self._condition.notify_all()\n            \n    def result(self, timeout: Optional[float] = None) -> Any:\n        \"\"\"获取任务结果，如果超时则抛出 TimeoutError\"\"\"\n        with self._condition:\n            if not self._done:\n                if not self._condition.wait(timeout):\n                    raise TimeoutError(\"Task timed out\")\n            \n            if self._exception:\n                raise self._exception\n            return self._result\n\nclass TaskPool:\n    \"\"\"\n    可复用的并发任务池，使用线程实现。\n    \n    Args:\n        max_workers: 最大工作线程数，默认为CPU核心数\n    \"\"\"\n    \n    def __init__(self, max_workers: Optional[int] = None):\n        if max_workers is None:\n            import multiprocessing\n            max_workers = multiprocessing.cpu_count()\n            \n        self.max_workers = max_workers\n        self._workers: List[threading.Thread] = []\n        self._task_queue: PriorityQueue = PriorityQueue()\n        self._shutdown_event = threading.Event()\n        self._worker_lock = threading.Lock()\n        self._seq_counter = 0\n        \n        # 启动工作线程\n        for _ in range(max_workers):\n            worker = threading.Thread(target=s",
+          "time_taken": 37.60337734222412
+        }
+      ],
+      "elapsed_seconds": 63.5
+    },
+    {
+      "round": 402,
+      "timestamp": 1771284887.04356,
+      "passed": 8,
+      "total": 8,
+      "avg_score": 8.56,
+      "pass_rate": 1.0,
+      "tests_ok": true,
+      "results": [
+        {
+          "task_id": "easy_sort",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=79)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "easy_fibonacci",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=79)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_lru_cache",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=79)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_decorator_retry",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=29)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_type_checker",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=30)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_async_pipeline",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=44)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "hard_calc_parser",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "import re\nfrom typing import List, Union, Iterator\n\nclass TokenType:\n    NUMBER = \"NUMBER\"\n    PLUS = \"PLUS\"\n    MINUS = \"MINUS\"\n    MULTIPLY = \"MULTIPLY\"\n    DIVIDE = \"DIVIDE\"\n    LPAREN = \"LPAREN\"\n    RPAREN = \"RPAREN\"\n    EOF = \"EOF\"\n\nclass Token:\n    def __init__(self, type_: str, value: Union[str, float]):\n        self.type = type_\n        self.value = value\n    \n    def __repr__(self):\n        return f\"Token({self.type}, {self.value})\"\n\nclass Tokenizer:\n    def __init__(self, expression: str):\n        self.expression = expression\n        self.pos = 0\n        self.current_char = self.expression[self.pos] if self.expression else None\n    \n    def advance(self):\n        \"\"\"Move to the next character.\"\"\"\n        self.pos += 1\n        if self.pos >= len(self.expression):\n            self.current_char = None\n        else:\n            self.current_char = self.expression[self.pos]\n    \n    def skip_whitespace(self):\n        \"\"\"Skip whitespace characters.\"\"\"\n        while self.current_char and self.current_char.isspace():\n            self.advance()\n    \n    def read_number(self) -> str:\n        \"\"\"Read a number (including decimals).\"\"\"\n        num_str = \"\"\n        while self.current_char and (self.current_char.isdigit() or self.current_char == '.'):\n            num_str += self.current_char\n            self.advance()\n        return num_str\n    \n    def tokenize(self) -> List[Token]:\n        \"\"\"Convert expression string to list of tokens.\"\"\"\n        tokens = []\n        while self.current_char is not None:\n            self.skip_whitespace()\n            \n            if self.current_char is None:\n                break\n            \n            if self.current_char.isdigit() or self.current_char == '.':\n                # Handle number (including floats)\n                num_str = self.read_number()\n                tokens.append(Token(TokenType.NUMBER, float(num_str)))\n            elif self.current_char == '+':\n                tokens.append(Token(TokenType.PLUS, '+'))\n         ",
+          "time_taken": 58.94422888755798
+        },
+        {
+          "task_id": "hard_concurrent_pool",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 9.0,
+          "error": "",
+          "code_generated": "import threading\nimport queue\nimport time\nimport heapq\nfrom concurrent.futures import Future as ConcurrentFuture\nfrom typing import Callable, Any, List, Optional, Tuple, Union\nfrom dataclasses import dataclass\nfrom queue import PriorityQueue\nimport uuid\n\n@dataclass\nclass Task:\n    \"\"\"任务数据类\"\"\"\n    func: Callable\n    args: tuple\n    kwargs: dict\n    priority: int\n    timeout: Optional[float]\n    future: ConcurrentFuture\n    seq: int  # 用于优先级队列中的排序\n\nclass Future(ConcurrentFuture):\n    \"\"\"任务结果的Future对象\"\"\"\n    def __init__(self, task: Task):\n        super().__init__()\n        self._task = task\n    \n    def result(self, timeout: Optional[float] = None) -> Any:\n        \"\"\"\n        获取任务结果，如果任务失败则抛出原始异常\n        \n        Args:\n            timeout: 超时时间（秒）\n            \n        Returns:\n            任务结果\n            \n        Raises:\n            Exception: 任务执行过程中抛出的原始异常\n            TimeoutError: 超时\n        \"\"\"\n        return super().result(timeout)\n\nclass TaskPool:\n    \"\"\"\n    可复用的并发任务池\n    \n    支持：\n    - 提交任务\n    - 批量执行\n    - 优雅关闭\n    - 超时控制\n    - 优先级支持\n    \"\"\"\n    \n    def __init__(self, max_workers: int = 4):\n        \"\"\"\n        初始化任务池\n        \n        Args:\n            max_workers: 最大工作线程数\n        \"\"\"\n        if max_workers <= 0:\n            raise ValueError(\"max_workers must be positive\")\n            \n        self.max_workers = max_workers\n        self._workers: List[threading.Thread] = []\n        self._task_queue: PriorityQueue = PriorityQueue()\n        self._shutdown_event = threading.Event()\n        self._worker_lock = threading.Lock()\n        self._seq_counter = 0\n        self._initialize_workers()\n    \n    def _initialize_workers(self):\n        \"\"\"初始化工作线程\"\"\"\n        for i in range(self.max_workers):\n            worker = threading.Thread(target=self._worker_loop, name=f\"TaskPoolWorker-{i}\")\n            worker.daemon = True\n            worker.start()\n            self._workers.append(worker)\n    \n    def _worker_loop(self):\n        \"\"\"工作线程主循环\"\"\"\n        while not self._sh",
+          "time_taken": 32.70343780517578
+        }
+      ],
+      "elapsed_seconds": 63.5
+    },
+    {
+      "round": 403,
+      "timestamp": 1771284960.9320471,
+      "passed": 8,
+      "total": 8,
+      "avg_score": 8.56,
+      "pass_rate": 1.0,
+      "tests_ok": true,
+      "results": [
+        {
+          "task_id": "easy_sort",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=79)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "easy_fibonacci",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=79)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_lru_cache",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=79)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_decorator_retry",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=29)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_type_checker",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=30)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_async_pipeline",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=44)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "hard_calc_parser",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "import re\nfrom typing import List, Union, Iterator\n\nclass Token:\n    def __init__(self, type: str, value: Union[str, float]):\n        self.type = type\n        self.value = value\n    \n    def __repr__(self):\n        return f\"Token({self.type}, {self.value})\"\n\nclass Tokenizer:\n    def __init__(self, expression: str):\n        self.expression = expression\n        self.position = 0\n    \n    def tokenize(self) -> List[Token]:\n        tokens = []\n        while self.position < len(self.expression):\n            char = self.expression[self.position]\n            \n            if char.isspace():\n                self.position += 1\n                continue\n            \n            if char in '+-*/()':\n                tokens.append(Token(char, char))\n                self.position += 1\n            elif char.isdigit() or char == '.':\n                # Parse number (including decimals)\n                start = self.position\n                while self.position < len(self.expression) and \\\n                      (self.expression[self.position].isdigit() or self.expression[self.position] == '.'):\n                    self.position += 1\n                value = self.expression[start:self.position]\n                tokens.append(Token('NUMBER', float(value)))\n            else:\n                raise ValueError(f\"Unexpected character: {char}\")\n        \n        return tokens\n\nclass Parser:\n    def __init__(self, tokens: List[Token]):\n        self.tokens = tokens\n        self.position = 0\n    \n    def peek(self) -> Token:\n        if self.position < len(self.tokens):\n            return self.tokens[self.position]\n        return None\n    \n    def consume(self, expected_type: str = None) -> Token:\n        token = self.peek()\n        if token is None:\n            raise ValueError(\"Unexpected end of expression\")\n        if expected_type and token.type != expected_type:\n            raise ValueError(f\"Expected {expected_type}, got {token.type}\")\n        self.position += 1\n        return token\n    \n    def ",
+          "time_taken": 72.49936389923096
+        },
+        {
+          "task_id": "hard_concurrent_pool",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 9.0,
+          "error": "",
+          "code_generated": "import threading\nimport queue\nimport time\nfrom typing import Callable, Any, List, Optional, Tuple, Union\nfrom concurrent.futures import Future as ConcurrentFuture\nfrom queue import PriorityQueue\nimport heapq\n\nclass Future:\n    \"\"\"\n    代表一个异步任务的结果\n    \"\"\"\n    def __init__(self):\n        self._result = None\n        self._exception = None\n        self._done = False\n        self._condition = threading.Condition()\n    \n    def set_result(self, result: Any):\n        \"\"\"设置任务结果\"\"\"\n        with self._condition:\n            self._result = result\n            self._done = True\n            self._condition.notify_all()\n    \n    def set_exception(self, exception: Exception):\n        \"\"\"设置任务异常\"\"\"\n        with self._condition:\n            self._exception = exception\n            self._done = True\n            self._condition.notify_all()\n    \n    def result(self, timeout: Optional[float] = None) -> Any:\n        \"\"\"\n        获取任务结果，如果任务失败则抛出原始异常\n        \n        Args:\n            timeout: 超时时间（秒）\n            \n        Returns:\n            任务结果\n            \n        Raises:\n            Exception: 如果任务失败则抛出原始异常\n            TimeoutError: 如果超时\n        \"\"\"\n        with self._condition:\n            if not self._done:\n                if not self._condition.wait(timeout):\n                    raise TimeoutError(\"Task timed out\")\n            \n            if self._exception:\n                raise self._exception\n            return self._result\n\nclass TaskPool:\n    \"\"\"\n    可复用的并发任务池\n    \n    使用线程池执行任务，支持优先级和超时控制\n    \"\"\"\n    \n    def __init__(self, max_workers: int = 4):\n        \"\"\"\n        初始化任务池\n        \n        Args:\n            max_workers: 最大工作线程数\n        \"\"\"\n        if max_workers <= 0:\n            raise ValueError(\"max_workers must be positive\")\n            \n        self.max_workers = max_workers\n        self._workers: List[threading.Thread] = []\n        self._task_queue: PriorityQueue = PriorityQueue()\n        self._shutdown_event = threading.Event()\n        self._worker_lock = threading.Lock(",
+          "time_taken": 34.03493881225586
+        }
+      ],
+      "elapsed_seconds": 73.8
+    },
+    {
+      "round": 404,
+      "timestamp": 1771284962.538605,
+      "passed": 8,
+      "total": 8,
+      "avg_score": 8.5,
+      "pass_rate": 1.0,
+      "tests_ok": true,
+      "results": [
+        {
+          "task_id": "easy_sort",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=79)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "easy_fibonacci",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=79)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_lru_cache",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=79)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_decorator_retry",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=29)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "hard_calc_parser",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=3)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "hard_concurrent_pool",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=3)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_type_checker",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=30)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_async_pipeline",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=44)",
+          "time_taken": 0.0
+        }
+      ],
+      "elapsed_seconds": 1.5
+    },
+    {
+      "round": 405,
+      "timestamp": 1771285307.035054,
+      "passed": 8,
+      "total": 8,
+      "avg_score": 8.62,
+      "pass_rate": 1.0,
+      "tests_ok": true,
+      "results": [
+        {
+          "task_id": "easy_fibonacci",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "from typing import List\n\ndef fibonacci(n: int) -> List[int]:\n    \"\"\"\n    返回前n个斐波那契数。\n    \n    斐波那契数列定义：F(0) = 0, F(1) = 1, F(n) = F(n-1) + F(n-2) (n >= 2)\n    \n    Args:\n        n (int): 要返回的斐波那契数的个数\n        \n    Returns:\n        List[int]: 包含前n个斐波那契数的列表\n        \n    Examples:\n        >>> fibonacci(0)\n        []\n        >>> fibonacci(1)\n        [0]\n        >>> fibonacci(5)\n        [0, 1, 1, 2, 3]\n        >>> fibonacci(10)\n        [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]\n    \"\"\"\n    # 处理边界情况\n    if n <= 0:\n        return []\n    \n    # 处理n=1的特殊情况\n    if n == 1:\n        return [0]\n    \n    # 初始化结果列表\n    fib_list = [0, 1]\n    \n    # 使用迭代方式计算斐波那契数列\n    for i in range(2, n):\n        next_fib = fib_list[i-1] + fib_list[i-2]\n        fib_list.append(next_fib)\n    \n    return fib_list\n\n# 测试函数\nif __name__ == \"__main__\":\n    # 测试各种情况\n    print(f\"fibonacci(0) = {fibonacci(0)}\")  # []\n    print(f\"fibonacci(1) = {fibonacci(1)}\")  # [0]\n    print(f\"fibonacci(5) = {fibonacci(5)}\")  # [0, 1, 1, 2, 3]\n    print(f\"fibonacci(10) = {fibonacci(10)}\")  # [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]\n    \n    # 验证函数的效率和正确性\n    import time\n    start_time = time.time()\n    result = fibonacci(1000)\n    end_time = time.time()\n    print(f\"fibonacci(1000) 长度: {len(result)}, 耗时: {end_time - start_time:.6f}秒\")\n",
+          "time_taken": 300.15775513648987
+        },
+        {
+          "task_id": "easy_sort",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "from typing import List\n\ndef merge_sort(arr: List[int]) -> List[int]:\n    \"\"\"\n    实现归并排序算法。\n    \n    归并排序是一种稳定的、基于分治思想的排序算法。它将数组递归地分成两半，\n    分别对两半进行排序，然后将排序后的两半合并成一个有序数组。\n    \n    Args:\n        arr: 待排序的整数列表\n        \n    Returns:\n        排序后的新列表，原列表不变\n        \n    Examples:\n        >>> merge_sort([3, 1, 4, 1, 5, 9, 2, 6])\n        [1, 1, 2, 3, 4, 5, 6, 9]\n        \n        >>> merge_sort([])\n        []\n        \n        >>> merge_sort([42])\n        [42]\n        \n        >>> merge_sort([5, 2, 8, 1])\n        [1, 2, 5, 8]\n    \"\"\"\n    # 处理边界情况：空列表或单元素列表\n    if len(arr) <= 1:\n        return arr.copy()  # 返回副本以确保原列表不变\n    \n    # 分治：将数组分成两半\n    mid = len(arr) // 2\n    left_half = arr[:mid]\n    right_half = arr[mid:]\n    \n    # 递归排序左右两半\n    left_sorted = merge_sort(left_half)\n    right_sorted = merge_sort(right_half)\n    \n    # 合并两个已排序的数组\n    return _merge(left_sorted, right_sorted)\n\n\ndef _merge(left: List[int], right: List[int]) -> List[int]:\n    \"\"\"\n    合并两个已排序的列表。\n    \n    Args:\n        left: 左侧已排序的列表\n        right: 右侧已排序的列表\n        \n    Returns:\n        合并后的已排序列表\n    \"\"\"\n    result = []\n    i = j = 0\n    \n    # 比较两个列表的元素，将较小的元素添加到结果中\n    while i < len(left) and j < len(right):\n        if left[i] <= right[j]:\n            result.append(left[i])\n            i += 1\n        else:\n            result.append(right[j])\n            j += 1\n    \n    # 将剩余的元素添加到结果中\n    result.extend(left[i:])\n    result.extend(right[j:])\n    \n    return result\n\n\n# 测试代码\nif __name__ == \"__main__\":\n    # 测试用例\n    test_cases = [\n        [],                    # 空列表\n        [42],                  # 单元素列表\n        [3, 1, 4, 1, 5, 9, 2, 6],  # 一般情况\n        [5, 2, 8, 1],          # 小数组\n        [1, 2, 3, 4, 5],       # 已排序数组\n        [5, 4, 3, 2, 1],       # 逆序数组\n        [1, 1, 1, 1],          # 重复元素\n    ]\n    \n    for i, test_case in enumerate(test_cases):\n        original = test_case.copy()\n        sorted_result = merge_sort(test_case)\n        print(f\"测试 {i+1}:\")\n        print(f\"  原始: {original}\")\n        print",
+          "time_taken": 316.2914538383484
+        },
+        {
+          "task_id": "hard_calc_parser",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "import re\nfrom typing import List, Union\n\nclass Token:\n    def __init__(self, type_: str, value: Union[str, float]):\n        self.type = type_\n        self.value = value\n    \n    def __repr__(self):\n        return f\"Token({self.type}, {self.value})\"\n\nclass Tokenizer:\n    def __init__(self, expression: str):\n        self.expression = expression\n        self.position = 0\n    \n    def _peek(self) -> str:\n        if self.position < len(self.expression):\n            return self.expression[self.position]\n        return ''\n    \n    def _advance(self) -> str:\n        if self.position < len(self.expression):\n            char = self.expression[self.position]\n            self.position += 1\n            return char\n        return ''\n    \n    def _is_digit(self, char: str) -> bool:\n        return char.isdigit()\n    \n    def _is_decimal(self, char: str) -> bool:\n        return char == '.'\n    \n    def _is_operator(self, char: str) -> bool:\n        return char in '+-*/()'\n    \n    def tokenize(self) -> List[Token]:\n        tokens = []\n        \n        while self.position < len(self.expression):\n            char = self._peek()\n            \n            if char.isspace():\n                self._advance()\n                continue\n            \n            if self._is_operator(char):\n                if char == '-' and (self.position == 0 or self._peek() == '('):\n                    # This is a negative sign, not a subtraction operator\n                    # We will parse the following number as negative\n                    number_str = ''\n                    self._advance()  # consume the '-'\n                    \n                    # Check if it's followed by a digit or decimal point\n                    if self._is_digit(self._peek()) or self._is_decimal(self._peek()):\n                        number_str += '-'\n                        while self.position < len(self.expression):\n                            next_char = self._peek()\n                            if self._is_digit(next_char) or ",
+          "time_taken": 287.7333300113678
+        },
+        {
+          "task_id": "expert_type_checker",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 9.0,
+          "error": "",
+          "code_generated": "import typing\nimport inspect\nimport functools\n\ndef _matches_type(value, expected_type) -> bool:\n    \"\"\"检查值是否匹配指定类型\"\"\"\n    # 处理 None 类型\n    if expected_type is type(None):\n        return value is None\n    \n    # 获取类型的原始类型\n    origin = typing.get_origin(expected_type)\n    \n    # 普通类型（如 int, str）\n    if origin is None:\n        return isinstance(value, expected_type)\n    \n    # 获取参数\n    args = typing.get_args(expected_type)\n    \n    # 处理 Union 类型\n    if origin is typing.Union:\n        return any(_matches_type(value, a) for a in args)\n    \n    # 处理 list 类型\n    if origin is list:\n        if not isinstance(value, list):\n            return False\n        if not args:  # 如果没有参数类型，只检查是否是 list\n            return True\n        return all(_matches_type(v, args[0]) for v in value)\n    \n    # 处理 dict 类型\n    if origin is dict:\n        if not isinstance(value, dict):\n            return False\n        if not args:  # 如果没有参数类型，只检查是否是 dict\n            return True\n        return all(_matches_type(k, args[0]) and _matches_type(v, args[1]) \n                  for k, v in value.items())\n    \n    # 兜底情况\n    if isinstance(expected_type, type):\n        return isinstance(value, expected_type)\n    return True\n\ndef type_check(func):\n    \"\"\"运行时类型检查装饰器\"\"\"\n    hints = typing.get_type_hints(func)\n    \n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        sig = inspect.signature(func)\n        bound = sig.bind(*args, **kwargs)\n        bound.apply_defaults()\n        \n        # 检查参数类型\n        for param_name, value in bound.arguments.items():\n            if param_name in hints:\n                if not _matches_type(value, hints[param_name]):\n                    raise TypeError(f'参数 {param_name} 类型错误')\n        \n        # 执行函数\n        result = func(*args, **kwargs)\n        \n        # 检查返回值类型\n        if 'return' in hints:\n            if not _matches_type(result, hints['return']):\n                raise TypeError('返回值类型错误')\n        \n        return result\n    \n    return wrapper\n\n# 测试示例\nif __name__ =",
+          "time_taken": 98.44035792350769
+        },
+        {
+          "task_id": "med_decorator_retry",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 9.0,
+          "error": "",
+          "code_generated": "import asyncio\nimport functools\nimport time\nimport logging\nfrom typing import TypeVar, Callable, Union, Tuple, Any\n\n# 设置日志\nlogging.basicConfig(level=logging.INFO)\nlogger = logging.getLogger(__name__)\n\nT = TypeVar('T')\n\ndef auto_retry(\n    max_retries: int = 3,\n    delay: float = 1.0,\n    backoff: float = 2.0,\n    exceptions: Tuple[TypeVar, ...] = (Exception,)\n) -> Callable[[Callable], Callable]:\n    \"\"\"\n    装饰器工厂，为函数添加自动重试功能。\n    \n    Args:\n        max_retries: 最大重试次数（不包括第一次成功尝试）\n        delay: 初始延迟时间（秒）\n        backoff: 延迟时间的倍数增长因子\n        exceptions: 需要重试的异常类型元组\n    \n    Returns:\n        装饰器函数\n    \"\"\"\n    \n    def decorator(func: Callable) -> Callable:\n        @functools.wraps(func)\n        def sync_wrapper(*args: Any, **kwargs: Any) -> T:\n            current_delay = delay\n            last_exception = None\n            \n            for attempt in range(max_retries + 1):\n                try:\n                    return func(*args, **kwargs)\n                except exceptions as e:\n                    last_exception = e\n                    if attempt < max_retries:\n                        logger.info(f\"Attempt {attempt + 1} failed with {type(e).__name__}: {e}. Retrying in {current_delay} seconds...\")\n                        time.sleep(current_delay)\n                        current_delay *= backoff\n                    else:\n                        logger.info(f\"Attempt {attempt + 1} failed with {type(e).__name__}: {e}. No more retries.\")\n                        raise e\n            \n            # 理论上不会执行到这里，因为上面的循环会抛出异常\n            raise last_exception\n        \n        @functools.wraps(func)\n        async def async_wrapper(*args: Any, **kwargs: Any) -> T:\n            current_delay = delay\n            last_exception = None\n            \n            for attempt in range(max_retries + 1):\n                try:\n                    return await func(*args, **kwargs)\n                except exceptions as e:\n                    last_exception = e\n                    if attempt < m",
+          "time_taken": 273.1854531764984
+        },
+        {
+          "task_id": "expert_async_pipeline",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 9.0,
+          "error": "",
+          "code_generated": "import asyncio\nimport time\nfrom typing import Dict, Any, Callable, List, Optional\nfrom collections import defaultdict\nimport inspect\n\nclass AsyncPipeline:\n    \"\"\"\n    异步流水线处理类，支持顺序执行和并发处理\n    \"\"\"\n    \n    def __init__(self):\n        self.stages: Dict[str, Callable] = {}\n        self.stats_data = defaultdict(lambda: {\n            'calls': 0,\n            'total_time': 0.0,\n            'errors': 0\n        })\n    \n    def add_stage(self, name: str, fn: Callable) -> None:\n        \"\"\"\n        添加处理阶段\n        \n        Args:\n            name: 阶段名称\n            fn: 处理函数（可以是同步或异步函数）\n        \"\"\"\n        if not callable(fn):\n            raise ValueError(\"函数必须是可调用的\")\n        self.stages[name] = fn\n    \n    async def _process_single_stage(self, stage_name: str, fn: Callable, data: Any) -> Any:\n        \"\"\"\n        处理单个阶段，记录统计信息\n        \n        Args:\n            stage_name: 阶段名称\n            fn: 处理函数\n            data: 输入数据\n            \n        Returns:\n            处理后的数据\n        \"\"\"\n        start_time = time.time()\n        try:\n            if asyncio.iscoroutinefunction(fn):\n                result = await fn(data)\n            else:\n                result = fn(data)\n            self.stats_data[stage_name]['calls'] += 1\n            self.stats_data[stage_name]['total_time'] += (time.time() - start_time)\n            return result\n        except Exception as e:\n            self.stats_data[stage_name]['calls'] += 1\n            self.stats_data[stage_name]['total_time'] += (time.time() - start_time)\n            self.stats_data[stage_name]['errors'] += 1\n            raise e\n    \n    async def process(self, data: Any) -> Any:\n        \"\"\"\n        按顺序执行所有阶段\n        \n        Args:\n            data: 输入数据\n            \n        Returns:\n            处理后的数据\n        \"\"\"\n        result = data\n        for stage_name, fn in self.stages.items():\n            result = await self._process_single_stage(stage_name, fn, result)\n        return result\n    \n    async def process_batch(self, items: List[Any], concurr",
+          "time_taken": 82.04725813865662
+        },
+        {
+          "task_id": "hard_concurrent_pool",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 9.0,
+          "error": "",
+          "code_generated": "import threading\nimport queue\nimport time\nimport heapq\nfrom typing import Callable, Any, List, Optional, Tuple, Union\nfrom concurrent.futures import Future as ConcurrentFuture\nfrom dataclasses import dataclass\nfrom enum import Enum\n\nclass TaskStatus(Enum):\n    PENDING = \"pending\"\n    RUNNING = \"running\"\n    COMPLETED = \"completed\"\n    FAILED = \"failed\"\n\n@dataclass\nclass Task:\n    \"\"\"任务数据结构\"\"\"\n    fn: Callable\n    args: tuple\n    kwargs: dict\n    priority: int\n    seq: int\n    timeout: Optional[float] = None\n    \n    def __lt__(self, other):\n        # 用于优先队列比较\n        return (self.priority, self.seq) < (other.priority, other.seq)\n\nclass Future(ConcurrentFuture):\n    \"\"\"Future 类，用于表示异步任务的结果\"\"\"\n    \n    def __init__(self, task: Task):\n        super().__init__()\n        self._task = task\n        self._result: Any = None\n        self._exception: Optional[Exception] = None\n        self._done = False\n        \n    def result(self, timeout: Optional[float] = None) -> Any:\n        \"\"\"\n        获取任务结果，如果任务失败会抛出原始异常\n        \n        Args:\n            timeout: 等待超时时间（秒）\n            \n        Returns:\n            任务执行结果\n            \n        Raises:\n            Exception: 如果任务执行失败，抛出原始异常\n            TimeoutError: 如果等待超时\n        \"\"\"\n        if not self._done:\n            # 如果需要等待，就等待\n            if timeout is not None:\n                # 简化实现：使用线程等待\n                start_time = time.time()\n                while not self._done:\n                    if time.time() - start_time > timeout:\n                        raise TimeoutError(\"Task result wait timeout\")\n                    time.sleep(0.01)\n            else:\n                # 无超时等待\n                while not self._done:\n                    time.sleep(0.01)\n        \n        if self._exception:\n            raise self._exception\n        return self._result\n        \n    def set_result(self, result: Any):\n        \"\"\"设置任务结果\"\"\"\n        self._result = result\n        self._done = True\n        super().set_result(result)\n        \n    def set_exce",
+          "time_taken": 167.11452984809875
+        },
+        {
+          "task_id": "med_lru_cache",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 7.5,
+          "error": "",
+          "code_generated": "import threading, time\nfrom collections import OrderedDict\n\nclass LRUCache:\n    def __init__(self, capacity: int):\n        self._cache = OrderedDict()  # key -> (value, expire_time_or_None)\n        self._capacity = capacity\n        self._lock = threading.Lock()\n    \n    def get(self, key):\n        with self._lock:\n            if key not in self._cache: \n                return None\n            value, expire = self._cache[key]\n            if expire is not None and time.time() > expire:\n                del self._cache[key]\n                return None\n            self._cache.move_to_end(key)\n            return value\n    \n    def put(self, key, value, ttl=None):\n        expire = time.time() + ttl if ttl else None\n        with self._lock:\n            if key in self._cache: \n                self._cache.move_to_end(key)\n            self._cache[key] = (value, expire)\n            if len(self._cache) > self._capacity:\n                self._cache.popitem(last=False)\n\n# Example usage:\nif __name__ == \"__main__\":\n    # Create a cache with capacity 2\n    cache = LRUCache(2)\n    \n    # Test basic put and get\n    cache.put(\"a\", 1)\n    cache.put(\"b\", 2)\n    print(cache.get(\"a\"))  # Should return 1\n    \n    # Test TTL expiration\n    cache.put(\"c\", 3, ttl=1)  # This should expire in 1 second\n    print(cache.get(\"c\"))  # Should return 3\n    time.sleep(1.1)\n    print(cache.get(\"c\"))  # Should return None (expired)\n    \n    # Test capacity limit\n    cache.put(\"d\", 4)\n    print(cache.get(\"b\"))  # Should return None (evicted due to capacity)\n    print(cache.get(\"a\"))  # Should return 1\n    print(cache.get(\"d\"))  # Should return 4\n",
+          "time_taken": 288.79284381866455
+        }
+      ],
+      "elapsed_seconds": 344.4
+    },
+    {
+      "round": 406,
+      "timestamp": 1771285308.4669209,
+      "passed": 8,
+      "total": 8,
+      "avg_score": 8.5,
+      "pass_rate": 1.0,
+      "tests_ok": true,
+      "results": [
+        {
+          "task_id": "easy_sort",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=80)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "easy_fibonacci",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=80)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_lru_cache",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=80)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_decorator_retry",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=30)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "hard_calc_parser",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=4)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "hard_concurrent_pool",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=4)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_type_checker",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=31)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_async_pipeline",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=45)",
+          "time_taken": 0.0
+        }
+      ],
+      "elapsed_seconds": 1.3
+    },
+    {
+      "round": 407,
+      "timestamp": 1771285310.1564429,
+      "passed": 8,
+      "total": 8,
+      "avg_score": 8.5,
+      "pass_rate": 1.0,
+      "tests_ok": true,
+      "results": [
+        {
+          "task_id": "easy_sort",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=80)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "easy_fibonacci",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=80)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_lru_cache",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=80)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_decorator_retry",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=30)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "hard_calc_parser",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=4)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "hard_concurrent_pool",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=4)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_type_checker",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=31)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_async_pipeline",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=45)",
+          "time_taken": 0.0
+        }
+      ],
+      "elapsed_seconds": 1.6
+    },
+    {
+      "round": 408,
+      "timestamp": 1771285311.6755168,
+      "passed": 8,
+      "total": 8,
+      "avg_score": 8.5,
+      "pass_rate": 1.0,
+      "tests_ok": true,
+      "results": [
+        {
+          "task_id": "easy_sort",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=80)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "easy_fibonacci",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=80)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_lru_cache",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=80)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_decorator_retry",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=30)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "hard_calc_parser",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=4)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "hard_concurrent_pool",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=4)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_type_checker",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=31)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_async_pipeline",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=45)",
+          "time_taken": 0.0
+        }
+      ],
+      "elapsed_seconds": 1.4
+    },
+    {
+      "round": 409,
+      "timestamp": 1771285313.23135,
+      "passed": 8,
+      "total": 8,
+      "avg_score": 8.5,
+      "pass_rate": 1.0,
+      "tests_ok": true,
+      "results": [
+        {
+          "task_id": "easy_sort",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=80)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "easy_fibonacci",
+          "difficulty": "easy",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=80)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_lru_cache",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=80)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "med_decorator_retry",
+          "difficulty": "medium",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=30)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "hard_calc_parser",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=4)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "hard_concurrent_pool",
+          "difficulty": "hard",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=4)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_type_checker",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=31)",
+          "time_taken": 0.0
+        },
+        {
+          "task_id": "expert_async_pipeline",
+          "difficulty": "expert",
+          "passed": true,
+          "score": 8.5,
+          "error": "",
+          "code_generated": "(skipped — streak=45)",
+          "time_taken": 0.0
+        }
+      ],
+      "elapsed_seconds": 1.4
     }
   ],
   "started_at": 1771008945.015143,
   "task_pass_streaks": {
-    "easy_fibonacci": 77,
-    "easy_sort": 77,
-    "hard_calc_parser": 10,
-    "expert_type_checker": 28,
-    "expert_async_pipeline": 42,
-    "med_lru_cache": 77,
-    "med_decorator_retry": 27,
+    "easy_fibonacci": 80,
+    "easy_sort": 80,
+    "hard_calc_parser": 4,
+    "expert_type_checker": 31,
+    "expert_async_pipeline": 45,
+    "med_lru_cache": 80,
+    "med_decorator_retry": 30,
     "hard_concurrent_pool": 4
   },
   "task_best_code": {
-    "easy_fibonacci": "from typing import List\n\ndef fibonacci(n: int) -> List[int]:\n    \"\"\"\n    返回前n个斐波那契数。\n    \n    斐波那契数列定义：F(0) = 0, F(1) = 1, F(n) = F(n-1) + F(n-2) (n >= 2)\n    \n    Args:\n        n (int): 要返回的斐波那契数的个数\n        \n    Returns:\n        List[int]: 包含前n个斐波那契数的列表，如果n <= 0则返回空列表\n        \n    Examples:\n        >>> fibonacci(5)\n        [0, 1, 1, 2, 3]\n        >>> fibonacci(0)\n        []\n        >>> fibonacci(1)\n        [0]\n        >>> fibonacci(10)\n        [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]\n    \"\"\"\n    # 处理边界情况\n    if n <= 0:\n        return []\n    \n    # 初始化结果列表\n    result = []\n    \n    # 处理前两个特殊情况\n    if n >= 1:\n        result.append(0)\n    if n >= 2:\n        result.append(1)\n    \n    # 使用迭代方法计算后续的斐波那契数\n    # 避免了指数级递归的低效性\n    for i in range(2, n):\n        next_fib = result[i-1] + result[i-2]\n        result.append(next_fib)\n    \n    return result\n\n# 测试函数\nif __name__ == \"__main__\":\n    # 测试各种情况\n    print(f\"fibonacci(0) = {fibonacci(0)}\")    # []\n    print(f\"fibonacci(1) = {fibonacci(1)}\")    # [0]\n    print(f\"fibonacci(2) = {fibonacci(2)}\")    # [0, 1]\n    print(f\"fibonacci(5) = {fibonacci(5)}\")    # [0, 1, 1, 2, 3]\n    print(f\"fibonacci(10) = {fibonacci(10)}\")  # [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]\n    \n    # 验证效率（大数值测试）\n    print(f\"fibonacci(20) = {fibonacci(20)}\")\n",
-    "easy_sort": "from typing import List\n\ndef merge_sort(arr: List[int]) -> List[int]:\n    \"\"\"\n    对输入的整数列表进行归并排序。\n    \n    归并排序是一种稳定的、基于分治思想的排序算法。\n    时间复杂度：O(n log n)\n    空间复杂度：O(n)\n    \n    Args:\n        arr: 待排序的整数列表\n        \n    Returns:\n        排序后的新列表，原列表不变\n        \n    Examples:\n        >>> merge_sort([3, 1, 4, 1, 5, 9, 2, 6])\n        [1, 1, 2, 3, 4, 5, 6, 9]\n        \n        >>> merge_sort([])\n        []\n        \n        >>> merge_sort([42])\n        [42]\n    \"\"\"\n    # 处理边界情况：空列表或单元素列表\n    if len(arr) <= 1:\n        return arr.copy()  # 返回副本以保证纯函数特性\n    \n    # 分治：将列表分成两半\n    mid = len(arr) // 2\n    left = merge_sort(arr[:mid])\n    right = merge_sort(arr[mid:])\n    \n    # 合并两个已排序的列表\n    return _merge(left, right)\n\ndef _merge(left: List[int], right: List[int]) -> List[int]:\n    \"\"\"\n    合并两个已排序的列表。\n    \n    Args:\n        left: 左侧已排序的列表\n        right: 右侧已排序的列表\n        \n    Returns:\n        合并后的已排序列表\n    \"\"\"\n    result = []\n    i = j = 0\n    \n    # 比较两个列表的元素，将较小的元素添加到结果中\n    while i < len(left) and j < len(right):\n        if left[i] <= right[j]:\n            result.append(left[i])\n            i += 1\n        else:\n            result.append(right[j])\n            j += 1\n    \n    # 将剩余元素添加到结果中\n    result.extend(left[i:])\n    result.extend(right[j:])\n    \n    return result\n\n# 测试代码\nif __name__ == \"__main__\":\n    # 测试用例\n    test_cases = [\n        [],                    # 空列表\n        [42],                  # 单元素列表\n        [3, 1, 4, 1, 5, 9, 2, 6],  # 普通列表\n        [5, 4, 3, 2, 1],       # 逆序列表\n        [1, 2, 3, 4, 5],       # 已排序列表\n        [1, 1, 1, 1],          # 重复元素\n    ]\n    \n    for i, test_case in enumerate(test_cases):\n        result = merge_sort(test_case)\n        print(f\"测试用例 {i+1}: {test_case} -> {result}\")\n",
-    "expert_type_checker": "import typing\nimport inspect\nimport functools\n\ndef _matches_type(value, expected_type) -> bool:\n    \"\"\"检查值是否匹配预期类型\"\"\"\n    if expected_type is type(None):\n        return value is None\n    \n    origin = typing.get_origin(expected_type)\n    \n    if origin is None:  # 普通类型如int, str\n        return isinstance(value, expected_type)\n    \n    args = typing.get_args(expected_type)\n    \n    if origin is typing.Union:\n        return any(_matches_type(value, a) for a in args)\n    elif origin is list:\n        if not isinstance(value, list):\n            return False\n        if not args:\n            return True\n        return all(_matches_type(v, args[0]) for v in value)\n    elif origin is dict:\n        if not isinstance(value, dict):\n            return False\n        if not args:\n            return True\n        return all(_matches_type(k, args[0]) and _matches_type(v, args[1]) \n                  for k, v in value.items())\n    else:\n        # 兜底：如果无法识别的类型，尝试使用 isinstance\n        return isinstance(value, expected_type) if isinstance(expected_type, type) else True\n\ndef type_check(func):\n    \"\"\"运行时类型检查装饰器\"\"\"\n    hints = typing.get_type_hints(func)\n    \n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        sig = inspect.signature(func)\n        bound = sig.bind(*args, **kwargs)\n        bound.apply_defaults()\n        \n        # 检查参数类型\n        for param_name, value in bound.arguments.items():\n            if param_name in hints:\n                if not _matches_type(value, hints[param_name]):\n                    raise TypeError(f'参数 {param_name} 类型错误')\n        \n        # 执行函数\n        result = func(*args, **kwargs)\n        \n        # 检查返回值类型\n        if 'return' in hints:\n            if not _matches_type(result, hints['return']):\n                raise TypeError('返回值类型错误')\n        \n        return result\n    \n    return wrapper\n\n# 测试示例\nif __name__ == \"__main__\":\n    @type_check\n    def test_func(x: int, y: str, z: typing.Optional[typing.List[int]] = None) -> str:\n        return f\"x={x}, y={y}, z={z}\"\n    \n    # 正确调用\n    print(test_func(1, \"hello\"))  # 正常运行\n    print(test_func(1, \"hello\", [1, 2, 3]))  # 正常运行\n    \n    # 错误调用 - 类型错误\n    try:\n        test_func(\"not an int\", \"hello\")\n    except TypeError as e:\n        print(f\"捕获到类型错误: {e}\")\n    \n    try:\n        test_func(1, \"hello\", [\"not an int\"])\n    except TypeError as e:\n        print(f\"捕获到类型错误: {e}\")\n    \n    @type_check\n    def test_dict_func(data: typing.Dict[str, int]) -> int:\n        return sum(data.values())\n    \n    # 正确调用\n    print(test_dict_func({\"a\": 1, \"b\": 2}))  # 正常运行\n    \n    # 错误调用\n    try:\n        test_dict_func({\"a\": \"not an int\"})\n    except TypeError as e:\n        print(f\"捕获到类型错误: {e}\")\n",
-    "expert_async_pipeline": "import asyncio\nimport time\nfrom typing import Dict, Any, Callable, List, Optional\nfrom collections import defaultdict\nimport functools\n\nclass AsyncPipeline:\n    \"\"\"\n    异步流水线处理类，支持顺序处理和并发处理\n    \"\"\"\n    \n    def __init__(self):\n        self.stages: Dict[str, Callable] = {}\n        self.stats_data = defaultdict(lambda: {\n            'calls': 0,\n            'total_time': 0.0,\n            'errors': 0\n        })\n    \n    def add_stage(self, name: str, fn: Callable) -> None:\n        \"\"\"\n        添加处理阶段\n        \n        Args:\n            name: 阶段名称\n            fn: 处理函数（可以是同步或异步函数）\n        \"\"\"\n        if not callable(fn):\n            raise ValueError(\"函数必须是可调用的\")\n        self.stages[name] = fn\n    \n    async def _process_single_stage(self, stage_name: str, data: Any) -> Any:\n        \"\"\"\n        处理单个阶段\n        \n        Args:\n            stage_name: 阶段名称\n            data: 输入数据\n            \n        Returns:\n            处理后的数据\n        \"\"\"\n        stage_func = self.stages[stage_name]\n        start_time = time.time()\n        \n        try:\n            if asyncio.iscoroutinefunction(stage_func):\n                result = await stage_func(data)\n            else:\n                result = stage_func(data)\n            \n            # 记录统计信息\n            self.stats_data[stage_name]['calls'] += 1\n            self.stats_data[stage_name]['total_time'] += (time.time() - start_time)\n            \n            return result\n        except Exception as e:\n            # 记录错误\n            self.stats_data[stage_name]['calls'] += 1\n            self.stats_data[stage_name]['total_time'] += (time.time() - start_time)\n            self.stats_data[stage_name]['errors'] += 1\n            raise  # 重新抛出异常\n    \n    async def process(self, data: Any) -> Any:\n        \"\"\"\n        按顺序执行所有阶段\n        \n        Args:\n            data: 输入数据\n            \n        Returns:\n            最终处理结果\n        \"\"\"\n        result = data\n        for stage_name in self.stages:\n            result = await self._process_single_stage(stage_name, result)\n        return result\n    \n    async def process_batch(self, items: List[Any], concurrency: int = 5) -> List[Any]:\n        \"\"\"\n        并发处理一批数据\n        \n        Args:\n            items: 数据列表\n            concurrency: 最大并发数\n            \n        Returns:\n            处理后的数据列表\n        \"\"\"\n        semaphore = asyncio.Semaphore(concurrency)\n        \n        async def process_item(item: Any) -> Any:\n            async with semaphore:\n                return await self.process(item)\n        \n        tasks = [process_item(item) for item in items]\n        results = await asyncio.gather(*tasks, return_exceptions=True)\n        \n        # 处理异常结果\n        final_results = []\n        for result in results:\n            if isinstance(result, Exception):\n                # 如果有异常，可以记录或重新抛出\n                raise result\n            final_results.append(result)\n            \n        return final_results\n    \n    def stats(self) -> Dict[str, Dict[str, Any]]:\n        \"\"\"\n        获取处理统计信息\n        \n        Returns:\n            包含每个阶段统计信息的字典\n        \"\"\"\n        result = {}\n        for stage_name, stats in self.stats_data.items():\n            calls = stats['calls']\n            total_time = stats['total_time']\n            errors = stats['errors']\n            \n            avg_time = total_time / calls if calls > 0 else 0.0\n            \n            result[stage_name] = {\n                'calls': calls,\n                'avg_time': avg_time,\n                'errors': errors\n            }\n        return result\n\n\n# 示例使用\nasync def example_usage():\n    \"\"\"示例用法\"\"\"\n    \n    # 创建流水线\n    pipeline = AsyncPipeline()\n    \n    # 添加同步阶段\n    def stage1_sync(data):\n        time.sleep(0.1)  # 模拟同步处理\n        return data * 2\n    \n    # 添加异步阶段\n    async def stage2_async(data):\n        await asyncio.sleep(0.1)  # 模拟异步处理\n        return data + 10\n    \n    # 添加带有错误的阶段\n    def stage3_error(data):\n        if data > 100:\n            raise ValueError(\"数据过大\")\n        return data * 3\n    \n    # 添加阶段\n    pipeline.add_stage('stage1', stage1_sync)\n    pipeline.add_stage('stage2', stage2_async)\n    pipeline.add_stage('stage3', stage3_error)\n    \n    # 测试顺序处理\n    print(\"顺序处理测试:\")\n    result = await pipeline.process(5)\n    print(f\"结果: {result}\")\n    print(f\"统计信息: {pipeline.stats()}\")\n    \n    # 测试批量处理\n    print(\"\\n批量处理测试:\")\n    items = [1, 2, 3, 4, 5]\n    results = await pipeline.process_batch(items, concurrency=2)\n    print(f\"批量结果: {results}\")\n    print(f\"统计信息: {pipeline.stats()}\")\n    \n    # 测试错误处理\n    print(\"\\n错误处理测试:\")\n    try:\n        await pipeline.process(50)\n    except ValueError as e:\n        print(f\"捕获到错误: {e}\")\n    print(f\"统计信息: {pipeline.stats()}\")\n\n\n# 如果直接运行此脚本，执行示例\nif __name__ == \"__main__\":\n    asyncio.run(example_usage())\n",
-    "med_lru_cache": "import threading, time\nfrom collections import OrderedDict\n\nclass LRUCache:\n    def __init__(self, capacity: int):\n        self._cache = OrderedDict()  # key -> (value, expire_time_or_None)\n        self._capacity = capacity\n        self._lock = threading.Lock()\n    \n    def get(self, key):\n        with self._lock:\n            if key not in self._cache: \n                return None\n            value, expire = self._cache[key]\n            if expire is not None and time.time() > expire:\n                del self._cache[key]\n                return None\n            self._cache.move_to_end(key)\n            return value\n    \n    def put(self, key, value, ttl=None):\n        expire = time.time() + ttl if ttl else None\n        with self._lock:\n            if key in self._cache: \n                self._cache.move_to_end(key)\n            self._cache[key] = (value, expire)\n            if len(self._cache) > self._capacity:\n                self._cache.popitem(last=False)\n\n# Example usage:\nif __name__ == \"__main__\":\n    # Create a cache with capacity 2\n    cache = LRUCache(2)\n    \n    # Test put and get\n    cache.put(\"a\", 1)\n    cache.put(\"b\", 2)\n    print(cache.get(\"a\"))  # Should return 1\n    \n    # Test TTL\n    cache.put(\"c\", 3, ttl=1)  # This entry will expire in 1 second\n    print(cache.get(\"c\"))  # Should return 3\n    time.sleep(1.1)\n    print(cache.get(\"c\"))  # Should return None (expired)\n    \n    # Test capacity limit\n    cache.put(\"d\", 4)\n    print(cache.get(\"b\"))  # Should return None (evicted due to capacity)\n    print(cache.get(\"a\"))  # Should return 1\n    print(cache.get(\"d\"))  # Should return 4\n",
-    "med_decorator_retry": "import asyncio\nimport functools\nimport time\nimport logging\nfrom typing import TypeVar, Callable, Type, Union, Awaitable\n\nT = TypeVar('T')\n\ndef auto_retry(\n    max_retries: int = 3,\n    delay: float = 1.0,\n    backoff: float = 2.0,\n    exceptions: Union[Type[Exception], tuple] = (Exception,)\n) -> Callable:\n    \"\"\"\n    装饰器工厂，为函数添加自动重试功能\n    \n    Args:\n        max_retries: 最大重试次数（不包括第一次执行）\n        delay: 初始延迟时间（秒）\n        backoff: 延迟时间的倍数增长因子\n        exceptions: 需要重试的异常类型元组\n    \n    Returns:\n        装饰器函数\n    \"\"\"\n    def decorator(func: Callable) -> Callable:\n        if asyncio.iscoroutinefunction(func):\n            @functools.wraps(func)\n            async def async_wrapper(*args, **kwargs) -> T:\n                current_delay = delay\n                last_exception = None\n                \n                for attempt in range(max_retries + 1):\n                    try:\n                        return await func(*args, **kwargs)\n                    except exceptions as e:\n                        last_exception = e\n                        if attempt < max_retries:\n                            logging.warning(f\"Attempt {attempt + 1} failed: {e}. Retrying in {current_delay}s...\")\n                            await asyncio.sleep(current_delay)\n                            current_delay *= backoff\n                        else:\n                            logging.error(f\"All {max_retries + 1} attempts failed. Last exception: {e}\")\n                            raise\n                raise last_exception\n            return async_wrapper\n        else:\n            @functools.wraps(func)\n            def sync_wrapper(*args, **kwargs) -> T:\n                current_delay = delay\n                last_exception = None\n                \n                for attempt in range(max_retries + 1):\n                    try:\n                        return func(*args, **kwargs)\n                    except exceptions as e:\n                        last_exception = e\n                        if attempt < max_retries:\n                            logging.warning(f\"Attempt {attempt + 1} failed: {e}. Retrying in {current_delay}s...\")\n                            time.sleep(current_delay)\n                            current_delay *= backoff\n                        else:\n                            logging.error(f\"All {max_retries + 1} attempts failed. Last exception: {e}\")\n                            raise\n                raise last_exception\n            return sync_wrapper\n    \n    return decorator\n",
-    "hard_calc_parser": "import re\nfrom typing import List, Union, Iterator\n\nclass Token:\n    def __init__(self, type: str, value: Union[str, float]):\n        self.type = type\n        self.value = value\n    \n    def __repr__(self):\n        return f\"Token({self.type}, {self.value})\"\n\nclass Tokenizer:\n    def __init__(self, expression: str):\n        self.expression = expression\n        self.tokens = []\n        self.pos = 0\n    \n    def tokenize(self) -> List[Token]:\n        self.tokens = []\n        self.pos = 0\n        \n        while self.pos < len(self.expression):\n            char = self.expression[self.pos]\n            \n            if char.isspace():\n                self.pos += 1\n                continue\n            \n            if char in '+-*/()':\n                if char == '-' and (self.pos == 0 or self.expression[self.pos-1] == '('):\n                    # This is a negative sign, not a minus operator\n                    # Look ahead to parse the number\n                    num_str = ''\n                    self.pos += 1  # Skip the '-'\n                    while self.pos < len(self.expression):\n                        next_char = self.expression[self.pos]\n                        if next_char.isdigit() or next_char == '.':\n                            num_str += next_char\n                            self.pos += 1\n                        else:\n                            break\n                    if num_str:\n                        # Check if it's a valid number\n                        try:\n                            if '.' in num_str:\n                                num_value = float(num_str)\n                            else:\n                                num_value = int(num_str)\n                            self.tokens.append(Token('NUMBER', -num_value))\n                        except ValueError:\n                            raise ValueError(f\"Invalid number: {num_str}\")\n                    else:\n                        # If there's no number after '-', it's an error\n                        raise ValueError(\"Invalid negative number\")\n                else:\n                    self.tokens.append(Token(char, char))\n                    self.pos += 1\n            elif char.isdigit() or char == '.':\n                # Parse number (including decimals)\n                num_str = ''\n                while self.pos < len(self.expression):\n                    next_char = self.expression[self.pos]\n                    if next_char.isdigit() or next_char == '.':\n                        num_str += next_char\n                        self.pos += 1\n                    else:\n                        break\n                try:\n                    if '.' in num_str:\n                        num_value = float(num_str)\n                    else:\n                        num_value = int(num_str)\n                    self.tokens.append(Token('NUMBER', num_value))\n                except ValueError:\n                    raise ValueError(f\"Invalid number: {num_str}\")\n            else:\n                raise ValueError(f\"Invalid character: {char}\")\n        \n        return self.tokens\n\nclass Parser:\n    def __init__(self, tokens: List[Token]):\n        self.tokens = tokens\n        self.pos = 0\n    \n    def peek(self) -> Token:\n        if self.pos < len(self.tokens):\n            return self.tokens[self.pos]\n        return None\n    \n    def consume(self, expected_type: str) -> Token:\n        token = self.peek()\n        if token and token.type == expected_type:\n            self.pos += 1\n            return token\n        raise ValueError(f\"Expected {expected_type}, got {token.type if token else 'EOF'}\")\n    \n    def parse_expression(self) -> float:\n        \"\"\"Parse addition and subtraction (lowest precedence)\"\"\"\n        result = self.parse_term()\n        \n        while self.peek() and self.peek().type in ['+', '-']:\n            op = self.consume(self.peek().type).value\n            right = self.parse_term()\n            if op == '+':\n                result += right\n            else:\n                result -= right\n        \n        return result\n    \n    def parse_term(self) -> float:\n        \"\"\"Parse multiplication and division (medium precedence)\"\"\"\n        result = self.parse_factor()\n        \n        while self.peek() and self.peek().type in ['*', '/']:\n            op = self.consume(self.peek().type).value\n            right = self.parse_factor()\n            if op == '*':\n                result *= right\n            else:\n                if right == 0:\n                    raise ValueError(\"Division by zero\")\n                result /= right\n        \n        return result\n    \n    def parse_factor(self) -> float:\n        \"\"\"Parse parentheses, numbers, and unary minus (highest precedence)\"\"\"\n        token = self.peek()\n        \n        if token.type == 'NUMBER':\n            return self.consume('NUMBER').value\n        elif token.type == '(':\n            self.consume('(')\n            result = self.parse_expression()\n            self.consume(')')\n            return result\n        elif token.type == '-':\n            # Handle unary minus\n            self.consume('-')\n            return -self.parse_factor()\n        else:\n            raise ValueError(f\"Unexpected token: {token}\")\n\ndef evaluate(expression: str) -> float:\n    \"\"\"Evaluate a mathematical expression and return the result as a float.\n    \n    Args:\n        expression: A string containing a valid mathematical expression\n        \n    Returns:\n        The result of evaluating the expression as a float\n        \n    Raises:\n        ValueError: If the expression is invalid\n    \"\"\"\n    if not expression or not expression.strip():\n        raise ValueError(\"Empty expression\")\n    \n    tokenizer = Tokenizer(expression)\n    tokens = tokenizer.tokenize()\n    \n    parser = Parser(tokens)\n    result = parser.parse_expression()\n    \n    # Check if all tokens were consumed\n    if parser.pos < len(tokens):\n        raise ValueError(\"Unexpected tokens in expression\")\n    \n    return result\n\n# Test cases\nif __name__ == \"__main__\":\n    # Test the provided examples\n    test_cases = [\n        ('-5+3', -2.0),\n        ('2-1', 1.0),\n        ('2*(-3+1)', -4.0),\n        ('3.14*2', 6.28)\n    ]\n    \n    for expr, expected in test_cases:\n        try:\n            result = evaluate(expr)\n            print(f\"{expr} = {result} (expected: {expected})\")\n            assert result == expected, f\"Expected {expected}, got {result}\"\n        except Exception as e:\n            print(f\"Error evaluating '{expr}': {e}\")\n    \n    # Additional tests\n    additional_tests = [\n        ('5', 5.0),\n        ('(5)', 5.0),\n        ('2+3*4', 14.0),\n        ('(2+3)*4', 20.0),\n        ('-2.5*4', -10.0),\n        ('10/2', 5.0),\n        ('10/3', 10/3),\n        ('-(-5)', 5.0),\n        ('3.14159', 3.14159),\n    ]\n    \n    print(\"\\nAdditional tests:\")\n    for expr, expected in additional_tests:\n        try:\n            result = evaluate(expr)\n            print(f\"{expr} = {result}\")\n        except Exception as e:\n            print(f\"Error evaluating '{expr}': {e}\")\n",
-    "hard_concurrent_pool": "import threading\nimport time\nimport queue\nfrom typing import Callable, Any, List, Optional, Tuple, Union\nfrom concurrent.futures import Future as ConcurrentFuture\nfrom queue import PriorityQueue\nimport uuid\n\nclass Future(ConcurrentFuture):\n    \"\"\"\n    代表一个异步任务的结果\n    \"\"\"\n    def __init__(self):\n        super().__init__()\n        self._result = None\n        self._exception = None\n        self._done = False\n        self._condition = threading.Condition()\n    \n    def set_result(self, result: Any):\n        \"\"\"设置任务结果\"\"\"\n        with self._condition:\n            self._result = result\n            self._done = True\n            self._condition.notify_all()\n    \n    def set_exception(self, exception: Exception):\n        \"\"\"设置任务异常\"\"\"\n        with self._condition:\n            self._exception = exception\n            self._done = True\n            self._condition.notify_all()\n    \n    def result(self, timeout: Optional[float] = None) -> Any:\n        \"\"\"\n        获取任务结果或抛出异常\n        \n        Args:\n            timeout: 超时时间（秒）\n            \n        Returns:\n            任务结果\n            \n        Raises:\n            Exception: 任务执行过程中抛出的异常\n            TimeoutError: 超时\n        \"\"\"\n        with self._condition:\n            if not self._done:\n                if not self._condition.wait(timeout):\n                    raise TimeoutError(\"Task timed out\")\n            \n            if self._exception:\n                raise self._exception\n            return self._result\n\nclass TaskPool:\n    \"\"\"\n    可复用的并发任务池\n    \n    使用线程池执行异步任务，支持任务提交、批量执行、超时控制和优先级。\n    \"\"\"\n    \n    def __init__(self, max_workers: int = 4):\n        \"\"\"\n        初始化任务池\n        \n        Args:\n            max_workers: 最大工作线程数\n        \"\"\"\n        if max_workers <= 0:\n            raise ValueError(\"max_workers must be positive\")\n        \n        self._max_workers = max_workers\n        self._workers: List[threading.Thread] = []\n        self._task_queue = PriorityQueue()\n        self._shutdown_event = threading.Event()\n        self._worker_lock = threading.Lock()\n        self._seq_counter = 0\n        \n        # 启动工作线程\n        for _ in range(max_workers):\n            worker = threading.Thread(target=self._worker_loop, daemon=True)\n            worker.start()\n            self._workers.append(worker)\n    \n    def submit(self, fn: Callable, *args, priority: int = 0, timeout: Optional[float] = None, **kwargs) -> Future:\n        \"\"\"\n        提交任务到任务池\n        \n        Args:\n            fn: 要执行的函数\n            *args: 函数参数\n            priority: 任务优先级（数字越小优先级越高）\n            timeout: 任务超时时间（秒）\n            **kwargs: 函数关键字参数\n            \n        Returns:\n            Future: 任务结果的Future对象\n        \"\"\"\n        future = Future()\n        \n        # 构造任务元组 (priority, seq, payload)\n        with self._worker_lock:\n            self._seq_counter += 1\n            task = (priority, self._seq_counter, (fn, args, kwargs, future, timeout))\n            self._task_queue.put(task)\n        \n        return future\n    \n    def map(self, fn: Callable, iterable: List[Any]) -> List[Any]:\n        \"\"\"\n        批量执行任务\n        \n        Args:\n            fn: 要执行的函数\n            iterable: 参数列表\n            \n        Returns:\n            List[Any]: 任务结果列表\n        \"\"\"\n        futures = [self.submit(fn, item) for item in iterable]\n        return [future.result() for future in futures]\n    \n    def shutdown(self, wait: bool = True):\n        \"\"\"\n        关闭任务池\n        \n        Args:\n            wait: 是否等待所有任务完成\n        \"\"\"\n        self._shutdown_event.set()\n        \n        # 发送停止信号给所有工作线程\n        for _ in range(self._max_workers):\n            self._task_queue.put((0, 0, None))\n        \n        if wait:\n            for worker in self._workers:\n                worker.join()\n    \n    def _worker_loop(self):\n        \"\"\"\n        工作线程主循环\n        \"\"\"\n        while not self._shutdown_event.is_set():\n            try:\n                # 从任务队列获取任务\n                priority, seq, task = self._task_queue.get(timeout=1.0)\n                \n                # 如果收到停止信号\n                if task is None:\n                    break\n                \n                fn, args, kwargs, future, timeout = task\n                \n                try:\n                    # 执行任务\n                    result = fn(*args, **kwargs)\n                    future.set_result(result)\n                except Exception as e:\n                    future.set_exception(e)\n                    \n            except queue.Empty:\n                continue\n            except Exception:\n                # 防止工作线程因异常退出\n                continue\n\n# 测试代码\nif __name__ == \"__main__\":\n    # 测试 submit\n    pool = TaskPool(max_workers=2)\n    \n    # 测试基本功能\n    future = pool.submit(lambda x: x * 2, 21)\n    result = future.result(timeout=5)\n    assert result == 42, f\"Expected 42, got {result}\"\n    print(\"✓ submit test passed\")\n    \n    # 测试异常透传\n    def fail():\n        raise ValueError(\"Test exception\")\n    \n    future = pool.submit(fail)\n    try:\n        future.result(timeout=5)\n        assert False, \"Should have raised exception\"\n    except ValueError as e:\n        assert str(e) == \"Test exception\"\n        print(\"✓ exception pass-through test passed\")\n    \n    # 测试批量执行\n    results = pool.map(lambda x: x * 2, [1, 2, 3, 4])\n    assert results == [2, 4, 6, 8]\n    print(\"✓ map test passed\")\n    \n    # 测试关闭\n    pool.shutdown(wait=True)\n    print(\"✓ shutdown test passed\")\n    \n    print(\"All tests passed!\")\n"
+    "easy_fibonacci": "from typing import List\n\ndef fibonacci(n: int) -> List[int]:\n    \"\"\"\n    返回前n个斐波那契数。\n    \n    斐波那契数列定义：F(0) = 0, F(1) = 1, F(n) = F(n-1) + F(n-2) (n >= 2)\n    \n    Args:\n        n (int): 要返回的斐波那契数的个数\n        \n    Returns:\n        List[int]: 包含前n个斐波那契数的列表\n        \n    Examples:\n        >>> fibonacci(0)\n        []\n        >>> fibonacci(1)\n        [0]\n        >>> fibonacci(5)\n        [0, 1, 1, 2, 3]\n        >>> fibonacci(10)\n        [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]\n    \"\"\"\n    # 处理边界情况\n    if n <= 0:\n        return []\n    \n    # 处理n=1的特殊情况\n    if n == 1:\n        return [0]\n    \n    # 初始化结果列表\n    fib_list = [0, 1]\n    \n    # 使用迭代方式计算斐波那契数列\n    for i in range(2, n):\n        next_fib = fib_list[i-1] + fib_list[i-2]\n        fib_list.append(next_fib)\n    \n    return fib_list\n\n# 测试函数\nif __name__ == \"__main__\":\n    # 测试各种情况\n    print(f\"fibonacci(0) = {fibonacci(0)}\")  # []\n    print(f\"fibonacci(1) = {fibonacci(1)}\")  # [0]\n    print(f\"fibonacci(5) = {fibonacci(5)}\")  # [0, 1, 1, 2, 3]\n    print(f\"fibonacci(10) = {fibonacci(10)}\")  # [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]\n    \n    # 验证函数的效率和正确性\n    import time\n    start_time = time.time()\n    result = fibonacci(1000)\n    end_time = time.time()\n    print(f\"fibonacci(1000) 长度: {len(result)}, 耗时: {end_time - start_time:.6f}秒\")\n",
+    "easy_sort": "from typing import List\n\ndef merge_sort(arr: List[int]) -> List[int]:\n    \"\"\"\n    实现归并排序算法。\n    \n    归并排序是一种稳定的、基于分治思想的排序算法。它将数组递归地分成两半，\n    分别对两半进行排序，然后将排序后的两半合并成一个有序数组。\n    \n    Args:\n        arr: 待排序的整数列表\n        \n    Returns:\n        排序后的新列表，原列表不变\n        \n    Examples:\n        >>> merge_sort([3, 1, 4, 1, 5, 9, 2, 6])\n        [1, 1, 2, 3, 4, 5, 6, 9]\n        \n        >>> merge_sort([])\n        []\n        \n        >>> merge_sort([42])\n        [42]\n        \n        >>> merge_sort([5, 2, 8, 1])\n        [1, 2, 5, 8]\n    \"\"\"\n    # 处理边界情况：空列表或单元素列表\n    if len(arr) <= 1:\n        return arr.copy()  # 返回副本以确保原列表不变\n    \n    # 分治：将数组分成两半\n    mid = len(arr) // 2\n    left_half = arr[:mid]\n    right_half = arr[mid:]\n    \n    # 递归排序左右两半\n    left_sorted = merge_sort(left_half)\n    right_sorted = merge_sort(right_half)\n    \n    # 合并两个已排序的数组\n    return _merge(left_sorted, right_sorted)\n\n\ndef _merge(left: List[int], right: List[int]) -> List[int]:\n    \"\"\"\n    合并两个已排序的列表。\n    \n    Args:\n        left: 左侧已排序的列表\n        right: 右侧已排序的列表\n        \n    Returns:\n        合并后的已排序列表\n    \"\"\"\n    result = []\n    i = j = 0\n    \n    # 比较两个列表的元素，将较小的元素添加到结果中\n    while i < len(left) and j < len(right):\n        if left[i] <= right[j]:\n            result.append(left[i])\n            i += 1\n        else:\n            result.append(right[j])\n            j += 1\n    \n    # 将剩余的元素添加到结果中\n    result.extend(left[i:])\n    result.extend(right[j:])\n    \n    return result\n\n\n# 测试代码\nif __name__ == \"__main__\":\n    # 测试用例\n    test_cases = [\n        [],                    # 空列表\n        [42],                  # 单元素列表\n        [3, 1, 4, 1, 5, 9, 2, 6],  # 一般情况\n        [5, 2, 8, 1],          # 小数组\n        [1, 2, 3, 4, 5],       # 已排序数组\n        [5, 4, 3, 2, 1],       # 逆序数组\n        [1, 1, 1, 1],          # 重复元素\n    ]\n    \n    for i, test_case in enumerate(test_cases):\n        original = test_case.copy()\n        sorted_result = merge_sort(test_case)\n        print(f\"测试 {i+1}:\")\n        print(f\"  原始: {original}\")\n        print(f\"  排序: {sorted_result}\")\n        print(f\"  原列表未变: {test_case == original}\")\n        print()\n",
+    "expert_type_checker": "import typing\nimport inspect\nimport functools\n\ndef _matches_type(value, expected_type) -> bool:\n    \"\"\"检查值是否匹配指定类型\"\"\"\n    # 处理 None 类型\n    if expected_type is type(None):\n        return value is None\n    \n    # 获取类型的原始类型\n    origin = typing.get_origin(expected_type)\n    \n    # 普通类型（如 int, str）\n    if origin is None:\n        return isinstance(value, expected_type)\n    \n    # 获取参数\n    args = typing.get_args(expected_type)\n    \n    # 处理 Union 类型\n    if origin is typing.Union:\n        return any(_matches_type(value, a) for a in args)\n    \n    # 处理 list 类型\n    if origin is list:\n        if not isinstance(value, list):\n            return False\n        if not args:  # 如果没有参数类型，只检查是否是 list\n            return True\n        return all(_matches_type(v, args[0]) for v in value)\n    \n    # 处理 dict 类型\n    if origin is dict:\n        if not isinstance(value, dict):\n            return False\n        if not args:  # 如果没有参数类型，只检查是否是 dict\n            return True\n        return all(_matches_type(k, args[0]) and _matches_type(v, args[1]) \n                  for k, v in value.items())\n    \n    # 兜底情况\n    if isinstance(expected_type, type):\n        return isinstance(value, expected_type)\n    return True\n\ndef type_check(func):\n    \"\"\"运行时类型检查装饰器\"\"\"\n    hints = typing.get_type_hints(func)\n    \n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        sig = inspect.signature(func)\n        bound = sig.bind(*args, **kwargs)\n        bound.apply_defaults()\n        \n        # 检查参数类型\n        for param_name, value in bound.arguments.items():\n            if param_name in hints:\n                if not _matches_type(value, hints[param_name]):\n                    raise TypeError(f'参数 {param_name} 类型错误')\n        \n        # 执行函数\n        result = func(*args, **kwargs)\n        \n        # 检查返回值类型\n        if 'return' in hints:\n            if not _matches_type(result, hints['return']):\n                raise TypeError('返回值类型错误')\n        \n        return result\n    \n    return wrapper\n\n# 测试示例\nif __name__ == \"__main__\":\n    @type_check\n    def example_func(x: int, y: str, z: typing.List[int]) -> typing.Dict[str, int]:\n        return {y: x}\n    \n    # 正确调用\n    try:\n        result = example_func(5, \"hello\", [1, 2, 3])\n        print(\"正确调用:\", result)\n    except TypeError as e:\n        print(\"错误:\", e)\n    \n    # 错误调用 - 参数类型错误\n    try:\n        example_func(\"not an int\", \"hello\", [1, 2, 3])\n    except TypeError as e:\n        print(\"错误:\", e)\n    \n    # 错误调用 - 返回值类型错误\n    @type_check\n    def bad_return_func(x: int) -> int:\n        return \"not an int\"  # 这会触发返回值类型检查错误\n    \n    try:\n        bad_return_func(5)\n    except TypeError as e:\n        print(\"错误:\", e)\n    \n    # 测试 Optional 类型\n    @type_check\n    def optional_func(x: typing.Optional[int]) -> str:\n        if x is None:\n            return \"none\"\n        return str(x)\n    \n    try:\n        print(optional_func(None))\n        print(optional_func(42))\n    except TypeError as e:\n        print(\"错误:\", e)\n    \n    # 测试 Union 类型\n    @type_check\n    def union_func(x: typing.Union[int, str]) -> str:\n        return str(x)\n    \n    try:\n        print(union_func(123))\n        print(union_func(\"hello\"))\n    except TypeError as e:\n        print(\"错误:\", e)\n",
+    "expert_async_pipeline": "import asyncio\nimport time\nfrom typing import Dict, Any, Callable, List, Optional\nfrom collections import defaultdict\nimport inspect\n\nclass AsyncPipeline:\n    \"\"\"\n    异步流水线处理类，支持顺序执行和并发处理\n    \"\"\"\n    \n    def __init__(self):\n        self.stages: Dict[str, Callable] = {}\n        self.stats_data = defaultdict(lambda: {\n            'calls': 0,\n            'total_time': 0.0,\n            'errors': 0\n        })\n    \n    def add_stage(self, name: str, fn: Callable) -> None:\n        \"\"\"\n        添加处理阶段\n        \n        Args:\n            name: 阶段名称\n            fn: 处理函数（可以是同步或异步函数）\n        \"\"\"\n        if not callable(fn):\n            raise ValueError(\"函数必须是可调用的\")\n        self.stages[name] = fn\n    \n    async def _process_single_stage(self, stage_name: str, fn: Callable, data: Any) -> Any:\n        \"\"\"\n        处理单个阶段，记录统计信息\n        \n        Args:\n            stage_name: 阶段名称\n            fn: 处理函数\n            data: 输入数据\n            \n        Returns:\n            处理后的数据\n        \"\"\"\n        start_time = time.time()\n        try:\n            if asyncio.iscoroutinefunction(fn):\n                result = await fn(data)\n            else:\n                result = fn(data)\n            self.stats_data[stage_name]['calls'] += 1\n            self.stats_data[stage_name]['total_time'] += (time.time() - start_time)\n            return result\n        except Exception as e:\n            self.stats_data[stage_name]['calls'] += 1\n            self.stats_data[stage_name]['total_time'] += (time.time() - start_time)\n            self.stats_data[stage_name]['errors'] += 1\n            raise e\n    \n    async def process(self, data: Any) -> Any:\n        \"\"\"\n        按顺序执行所有阶段\n        \n        Args:\n            data: 输入数据\n            \n        Returns:\n            处理后的数据\n        \"\"\"\n        result = data\n        for stage_name, fn in self.stages.items():\n            result = await self._process_single_stage(stage_name, fn, result)\n        return result\n    \n    async def process_batch(self, items: List[Any], concurrency: int = 5) -> List[Any]:\n        \"\"\"\n        并发处理一批数据\n        \n        Args:\n            items: 数据列表\n            concurrency: 最大并发数\n            \n        Returns:\n            处理后的数据列表\n        \"\"\"\n        semaphore = asyncio.Semaphore(concurrency)\n        \n        async def process_item(item: Any) -> Any:\n            async with semaphore:\n                try:\n                    return await self.process(item)\n                except Exception as e:\n                    return e\n        \n        tasks = [process_item(item) for item in items]\n        results = await asyncio.gather(*tasks, return_exceptions=True)\n        \n        # 处理异常情况\n        final_results = []\n        for i, result in enumerate(results):\n            if isinstance(result, Exception):\n                self.stats_data['batch_error']['calls'] += 1\n                self.stats_data['batch_error']['errors'] += 1\n                # 不要在这里抛出异常，而是记录到结果中\n                final_results.append(result)\n            else:\n                final_results.append(result)\n        \n        return final_results\n    \n    def stats(self) -> Dict[str, Dict[str, Any]]:\n        \"\"\"\n        获取统计信息\n        \n        Returns:\n            包含每个阶段统计信息的字典\n        \"\"\"\n        result = {}\n        for stage_name, stats in self.stats_data.items():\n            calls = stats['calls']\n            total_time = stats['total_time']\n            errors = stats['errors']\n            \n            avg_time = total_time / calls if calls > 0 else 0.0\n            \n            result[stage_name] = {\n                'calls': calls,\n                'avg_time': avg_time,\n                'errors': errors\n            }\n        return result\n\n# 示例使用\nif __name__ == \"__main__\":\n    # 创建流水线实例\n    pipeline = AsyncPipeline()\n    \n    # 定义一些处理函数\n    async def async_stage1(data):\n        await asyncio.sleep(0.1)  # 模拟异步操作\n        return data * 2\n    \n    def sync_stage2(data):\n        return data + 1\n    \n    async def async_stage3(data):\n        await asyncio.sleep(0.05)  # 模拟异步操作\n        if data > 10:\n            raise ValueError(\"数据太大\")\n        return data ** 2\n    \n    # 添加阶段\n    pipeline.add_stage(\"stage1\", async_stage1)\n    pipeline.add_stage(\"stage2\", sync_stage2)\n    pipeline.add_stage(\"stage3\", async_stage3)\n    \n    # 测试顺序处理\n    print(\"测试顺序处理:\")\n    try:\n        result = asyncio.run(pipeline.process(5))\n        print(f\"处理结果: {result}\")\n    except Exception as e:\n        print(f\"处理异常: {e}\")\n    \n    # 显示统计信息\n    print(\"\\n统计信息:\")\n    print(pipeline.stats())\n    \n    # 测试批量处理\n    print(\"\\n测试批量处理:\")\n    items = [1, 2, 3, 4, 5]\n    try:\n        results = asyncio.run(pipeline.process_batch(items, concurrency=3))\n        print(f\"批量处理结果: {results}\")\n    except Exception as e:\n        print(f\"批量处理异常: {e}\")\n    \n    # 显示最终统计信息\n    print(\"\\n最终统计信息:\")\n    print(pipeline.stats())\n",
+    "med_lru_cache": "import threading, time\nfrom collections import OrderedDict\n\nclass LRUCache:\n    def __init__(self, capacity: int):\n        self._cache = OrderedDict()  # key -> (value, expire_time_or_None)\n        self._capacity = capacity\n        self._lock = threading.Lock()\n    \n    def get(self, key):\n        with self._lock:\n            if key not in self._cache: \n                return None\n            value, expire = self._cache[key]\n            if expire is not None and time.time() > expire:\n                del self._cache[key]\n                return None\n            self._cache.move_to_end(key)\n            return value\n    \n    def put(self, key, value, ttl=None):\n        expire = time.time() + ttl if ttl else None\n        with self._lock:\n            if key in self._cache: \n                self._cache.move_to_end(key)\n            self._cache[key] = (value, expire)\n            if len(self._cache) > self._capacity:\n                self._cache.popitem(last=False)\n\n# Example usage:\nif __name__ == \"__main__\":\n    # Create a cache with capacity 2\n    cache = LRUCache(2)\n    \n    # Test basic put and get\n    cache.put(\"a\", 1)\n    cache.put(\"b\", 2)\n    print(cache.get(\"a\"))  # Should return 1\n    \n    # Test TTL expiration\n    cache.put(\"c\", 3, ttl=1)  # This should expire in 1 second\n    print(cache.get(\"c\"))  # Should return 3\n    time.sleep(1.1)\n    print(cache.get(\"c\"))  # Should return None (expired)\n    \n    # Test capacity limit\n    cache.put(\"d\", 4)\n    print(cache.get(\"b\"))  # Should return None (evicted due to capacity)\n    print(cache.get(\"a\"))  # Should return 1\n    print(cache.get(\"d\"))  # Should return 4\n",
+    "med_decorator_retry": "import asyncio\nimport functools\nimport time\nimport logging\nfrom typing import TypeVar, Callable, Union, Tuple, Any\n\n# 设置日志\nlogging.basicConfig(level=logging.INFO)\nlogger = logging.getLogger(__name__)\n\nT = TypeVar('T')\n\ndef auto_retry(\n    max_retries: int = 3,\n    delay: float = 1.0,\n    backoff: float = 2.0,\n    exceptions: Tuple[TypeVar, ...] = (Exception,)\n) -> Callable[[Callable], Callable]:\n    \"\"\"\n    装饰器工厂，为函数添加自动重试功能。\n    \n    Args:\n        max_retries: 最大重试次数（不包括第一次成功尝试）\n        delay: 初始延迟时间（秒）\n        backoff: 延迟时间的倍数增长因子\n        exceptions: 需要重试的异常类型元组\n    \n    Returns:\n        装饰器函数\n    \"\"\"\n    \n    def decorator(func: Callable) -> Callable:\n        @functools.wraps(func)\n        def sync_wrapper(*args: Any, **kwargs: Any) -> T:\n            current_delay = delay\n            last_exception = None\n            \n            for attempt in range(max_retries + 1):\n                try:\n                    return func(*args, **kwargs)\n                except exceptions as e:\n                    last_exception = e\n                    if attempt < max_retries:\n                        logger.info(f\"Attempt {attempt + 1} failed with {type(e).__name__}: {e}. Retrying in {current_delay} seconds...\")\n                        time.sleep(current_delay)\n                        current_delay *= backoff\n                    else:\n                        logger.info(f\"Attempt {attempt + 1} failed with {type(e).__name__}: {e}. No more retries.\")\n                        raise e\n            \n            # 理论上不会执行到这里，因为上面的循环会抛出异常\n            raise last_exception\n        \n        @functools.wraps(func)\n        async def async_wrapper(*args: Any, **kwargs: Any) -> T:\n            current_delay = delay\n            last_exception = None\n            \n            for attempt in range(max_retries + 1):\n                try:\n                    return await func(*args, **kwargs)\n                except exceptions as e:\n                    last_exception = e\n                    if attempt < max_retries:\n                        logger.info(f\"Attempt {attempt + 1} failed with {type(e).__name__}: {e}. Retrying in {current_delay} seconds...\")\n                        await asyncio.sleep(current_delay)\n                        current_delay *= backoff\n                    else:\n                        logger.info(f\"Attempt {attempt + 1} failed with {type(e).__name__}: {e}. No more retries.\")\n                        raise e\n            \n            # 理论上不会执行到这里，因为上面的循环会抛出异常\n            raise last_exception\n        \n        # 根据原函数是否为异步函数选择合适的包装器\n        if asyncio.iscoroutinefunction(func):\n            return async_wrapper\n        else:\n            return sync_wrapper\n    \n    return decorator\n",
+    "hard_calc_parser": "import re\nfrom typing import List, Union\n\nclass Token:\n    def __init__(self, type_: str, value: Union[str, float]):\n        self.type = type_\n        self.value = value\n    \n    def __repr__(self):\n        return f\"Token({self.type}, {self.value})\"\n\nclass Tokenizer:\n    def __init__(self, expression: str):\n        self.expression = expression\n        self.position = 0\n    \n    def _peek(self) -> str:\n        if self.position < len(self.expression):\n            return self.expression[self.position]\n        return ''\n    \n    def _advance(self) -> str:\n        if self.position < len(self.expression):\n            char = self.expression[self.position]\n            self.position += 1\n            return char\n        return ''\n    \n    def _is_digit(self, char: str) -> bool:\n        return char.isdigit()\n    \n    def _is_decimal(self, char: str) -> bool:\n        return char == '.'\n    \n    def _is_operator(self, char: str) -> bool:\n        return char in '+-*/()'\n    \n    def tokenize(self) -> List[Token]:\n        tokens = []\n        \n        while self.position < len(self.expression):\n            char = self._peek()\n            \n            if char.isspace():\n                self._advance()\n                continue\n            \n            if self._is_operator(char):\n                if char == '-' and (self.position == 0 or self._peek() == '('):\n                    # This is a negative sign, not a subtraction operator\n                    # We will parse the following number as negative\n                    number_str = ''\n                    self._advance()  # consume the '-'\n                    \n                    # Check if it's followed by a digit or decimal point\n                    if self._is_digit(self._peek()) or self._is_decimal(self._peek()):\n                        number_str += '-'\n                        while self.position < len(self.expression):\n                            next_char = self._peek()\n                            if self._is_digit(next_char) or self._is_decimal(next_char):\n                                number_str += next_char\n                                self._advance()\n                            else:\n                                break\n                        tokens.append(Token('NUMBER', float(number_str)))\n                    else:\n                        # Not followed by a number, so it's a subtraction operator\n                        tokens.append(Token('MINUS', '-'))\n                else:\n                    tokens.append(Token(char, char))\n                    self._advance()\n            elif self._is_digit(char) or self._is_decimal(char):\n                number_str = ''\n                while self.position < len(self.expression):\n                    next_char = self._peek()\n                    if self._is_digit(next_char) or self._is_decimal(next_char):\n                        number_str += next_char\n                        self._advance()\n                    else:\n                        break\n                tokens.append(Token('NUMBER', float(number_str)))\n            else:\n                raise ValueError(f\"Unexpected character: {char}\")\n        \n        return tokens\n\nclass Parser:\n    def __init__(self, tokens: List[Token]):\n        self.tokens = tokens\n        self.position = 0\n    \n    def _current(self) -> Token:\n        if self.position < len(self.tokens):\n            return self.tokens[self.position]\n        return None\n    \n    def _advance(self) -> Token:\n        token = self._current()\n        self.position += 1\n        return token\n    \n    def _expect(self, type_: str) -> Token:\n        token = self._current()\n        if token is None or token.type != type_:\n            raise ValueError(f\"Expected {type_}, got {token.type if token else 'None'}\")\n        return self._advance()\n    \n    def parse_expression(self) -> float:\n        result = self.parse_term()\n        \n        while self._current() is not None and self._current().type in ['+', '-']:\n            operator = self._advance().type\n            right = self.parse_term()\n            if operator == '+':\n                result += right\n            else:\n                result -= right\n        \n        return result\n    \n    def parse_term(self) -> float:\n        result = self.parse_factor()\n        \n        while self._current() is not None and self._current().type in ['*', '/']:\n            operator = self._advance().type\n            right = self.parse_factor()\n            if operator == '*':\n                result *= right\n            else:\n                result /= right\n        \n        return result\n    \n    def parse_factor(self) -> float:\n        token = self._current()\n        \n        if token is None:\n            raise ValueError(\"Unexpected end of expression\")\n        \n        if token.type == 'NUMBER':\n            return self._advance().value\n        elif token.type == '(':\n            self._advance()  # consume '('\n            result = self.parse_expression()\n            self._expect(')')\n            return result\n        elif token.type == 'MINUS':\n            self._advance()  # consume '-'\n            # After consuming the minus, we expect a number or expression in parentheses\n            factor_result = self.parse_factor()\n            return -factor_result\n        else:\n            raise ValueError(f\"Unexpected token: {token}\")\n\ndef evaluate(expression: str) -> float:\n    \"\"\"Evaluate a mathematical expression and return the result as a float.\n    \n    Args:\n        expression: A string containing a valid mathematical expression\n        \n    Returns:\n        The result of evaluating the expression as a float\n        \n    Raises:\n        ValueError: If the expression is invalid or contains unsupported characters\n    \"\"\"\n    # Handle empty expression\n    if not expression.strip():\n        raise ValueError(\"Empty expression\")\n    \n    tokenizer = Tokenizer(expression)\n    tokens = tokenizer.tokenize()\n    \n    parser = Parser(tokens)\n    result = parser.parse_expression()\n    \n    # Check if there are remaining tokens\n    if parser.position < len(tokens):\n        raise ValueError(\"Unexpected tokens in expression\")\n    \n    return result\n",
+    "hard_concurrent_pool": "import threading\nimport queue\nimport time\nimport heapq\nfrom typing import Callable, Any, List, Optional, Tuple, Union\nfrom concurrent.futures import Future as ConcurrentFuture\nfrom dataclasses import dataclass\nfrom enum import Enum\n\nclass TaskStatus(Enum):\n    PENDING = \"pending\"\n    RUNNING = \"running\"\n    COMPLETED = \"completed\"\n    FAILED = \"failed\"\n\n@dataclass\nclass Task:\n    \"\"\"任务数据结构\"\"\"\n    fn: Callable\n    args: tuple\n    kwargs: dict\n    priority: int\n    seq: int\n    timeout: Optional[float] = None\n    \n    def __lt__(self, other):\n        # 用于优先队列比较\n        return (self.priority, self.seq) < (other.priority, other.seq)\n\nclass Future(ConcurrentFuture):\n    \"\"\"Future 类，用于表示异步任务的结果\"\"\"\n    \n    def __init__(self, task: Task):\n        super().__init__()\n        self._task = task\n        self._result: Any = None\n        self._exception: Optional[Exception] = None\n        self._done = False\n        \n    def result(self, timeout: Optional[float] = None) -> Any:\n        \"\"\"\n        获取任务结果，如果任务失败会抛出原始异常\n        \n        Args:\n            timeout: 等待超时时间（秒）\n            \n        Returns:\n            任务执行结果\n            \n        Raises:\n            Exception: 如果任务执行失败，抛出原始异常\n            TimeoutError: 如果等待超时\n        \"\"\"\n        if not self._done:\n            # 如果需要等待，就等待\n            if timeout is not None:\n                # 简化实现：使用线程等待\n                start_time = time.time()\n                while not self._done:\n                    if time.time() - start_time > timeout:\n                        raise TimeoutError(\"Task result wait timeout\")\n                    time.sleep(0.01)\n            else:\n                # 无超时等待\n                while not self._done:\n                    time.sleep(0.01)\n        \n        if self._exception:\n            raise self._exception\n        return self._result\n        \n    def set_result(self, result: Any):\n        \"\"\"设置任务结果\"\"\"\n        self._result = result\n        self._done = True\n        super().set_result(result)\n        \n    def set_exception(self, exception: Exception):\n        \"\"\"设置任务异常\"\"\"\n        self._exception = exception\n        self._done = True\n        super().set_exception(exception)\n\nclass TaskPool:\n    \"\"\"可复用的并发任务池\"\"\"\n    \n    def __init__(self, max_workers: int = 4):\n        \"\"\"\n        初始化任务池\n        \n        Args:\n            max_workers: 最大工作线程数\n        \"\"\"\n        if max_workers <= 0:\n            raise ValueError(\"max_workers must be positive\")\n            \n        self.max_workers = max_workers\n        self._workers: List[threading.Thread] = []\n        self._task_queue: queue.PriorityQueue = queue.PriorityQueue()\n        self._shutdown = False\n        self._shutdown_lock = threading.Lock()\n        self._seq_counter = 0\n        self._worker_lock = threading.Lock()\n        self._futures: List[Future] = []\n        \n        # 启动工作线程\n        for _ in range(max_workers):\n            worker = threading.Thread(target=self._worker, daemon=True)\n            worker.start()\n            self._workers.append(worker)\n            \n    def submit(self, fn: Callable, *args, priority: int = 0, timeout: Optional[float] = None, **kwargs) -> Future:\n        \"\"\"\n        提交任务到任务池\n        \n        Args:\n            fn: 要执行的函数\n            *args: 函数参数\n            priority: 任务优先级（数字越小优先级越高）\n            timeout: 任务超时时间（秒）\n            **kwargs: 函数关键字参数\n            \n        Returns:\n            Future 对象，用于获取结果\n        \"\"\"\n        if self._shutdown:\n            raise RuntimeError(\"Cannot submit task to shutdown TaskPool\")\n            \n        # 创建任务\n        task = Task(fn, args, kwargs, priority, self._seq_counter, timeout)\n        self._seq_counter += 1\n        \n        # 创建 Future\n        future = Future(task)\n        \n        # 将任务加入队列\n        self._task_queue.put(task)\n        \n        # 保存 future 以便管理\n        with self._worker_lock:\n            self._futures.append(future)\n            \n        return future\n        \n    def map(self, fn: Callable, iterable: List[Any]) -> List[Any]:\n        \"\"\"\n        批量执行任务并返回结果列表\n        \n        Args:\n            fn: 要执行的函数\n            iterable: 参数列表\n            \n        Returns:\n            执行结果列表\n        \"\"\"\n        futures = [self.submit(fn, arg) for arg in iterable]\n        return [future.result() for future in futures]\n        \n    def shutdown(self, wait: bool = True):\n        \"\"\"\n        关闭任务池\n        \n        Args:\n            wait: 是否等待所有任务完成\n        \"\"\"\n        with self._shutdown_lock:\n            if self._shutdown:\n                return\n            self._shutdown = True\n            \n        # 发送停止信号\n        for _ in range(self.max_workers):\n            self._task_queue.put(Task(lambda: None, (), {}, 0, -1))  # 停止信号\n            \n        if wait:\n            # 等待所有工作线程结束\n            for worker in self._workers:\n                worker.join()\n                \n    def _worker(self):\n        \"\"\"工作线程函数\"\"\"\n        while True:\n            try:\n                # 从队列获取任务\n                task = self._task_queue.get(timeout=1)\n                \n                # 检查是否是停止信号\n                if task.seq == -1:\n                    break\n                    \n                # 执行任务\n                future = None\n                try:\n                    # 找到对应的 future\n                    for f in self._futures:\n                        if getattr(f, '_task', None) is task:\n                            future = f\n                            break\n                       \n                    if future is None:\n                        # 未找到对应的 future，创建新的\n                        future = Future(task)\n                        \n                    result = task.fn(*task.args, **task.kwargs)\n                    future.set_result(result)\n                except Exception as e:\n                    future.set_exception(e)\n                finally:\n                    self._task_queue.task_done()\n                    \n            except queue.Empty:\n                # 队列为空，继续循环\n                continue\n            except Exception as e:\n                # 其他异常\n                print(f\"Worker error: {e}\")\n                continue\n\n# 测试函数\ndef test_task_pool():\n    \"\"\"测试 TaskPool 功能\"\"\"\n    \n    # 测试 1: 基本提交和结果获取\n    print(\"测试 1: 基本提交和结果获取\")\n    pool = TaskPool(max_workers=2)\n    \n    def simple_task(x):\n        return x * 2\n        \n    future = pool.submit(simple_task, 21)\n    result = future.result(timeout=5)\n    assert result == 42, f\"Expected 42, got {result}\"\n    print(\"✓ 基本提交测试通过\")\n    \n    # 测试 2: 异常处理\n    print(\"测试 2: 异常处理\")\n    \n    def fail():\n        raise ValueError(\"Test exception\")\n        \n    future = pool.submit(fail)\n    try:\n        future.result()\n        assert False, \"Should have raised exception\"\n    except ValueError as e:\n        assert str(e) == \"Test exception\"\n        print(\"✓ 异常处理测试通过\")\n    \n    # 测试 3: 优先级\n    print(\"测试 3: 优先级\")\n    \n    results = []\n    def priority_task(x):\n        results.append(x)\n        return x\n        \n    # 提交高优先级任务\n    pool.submit(priority_task, 1, priority=0)\n    # 提交低优先级任务\n    pool.submit(priority_task, 2, priority=1)\n    \n    # 等待任务完成\n    time.sleep(1)\n    print(\"✓ 优先级测试通过\")\n    \n    # 测试 4: 多个任务\n    print(\"测试 4: 多个任务\")\n    futures = [pool.submit(simple_task, i) for i in range(5)]\n    results = [f.result() for f in futures]\n    expected = [0, 2, 4, 6, 8]\n    assert results == expected, f\"Expected {expected}, got {results}\"\n    print(\"✓ 多个任务测试通过\")\n    \n    pool.shutdown()\n    print(\"All tests passed!\")\n\nif __name__ == \"__main__\":\n    test_task_pool()\n"
   },
-  "pass_rate": 0.7348963029756538,
-  "elapsed_minutes": 4508.353331534067
+  "pass_rate": 0.7401229148375769,
+  "elapsed_minutes": 4606.140249482791
 }

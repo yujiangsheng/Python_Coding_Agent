@@ -19389,5 +19389,68 @@
   "applied": false,
   "confidence": 0.8,
   "timestamp": 1771278939.093069
+ },
+ {
+  "id": "imp_1771284708_93931",
+  "target_file": "/Users/jiangshengyu/Documents/program/python/Python_Coding_Agent/agent/exceptions.py",
+  "description": "Add input validation for error_code in PyCoderError to prevent None values and ensure proper formatting",
+  "diff": "",
+  "test_result": {
+   "error": "Memory Agent blocked: 在添加输入验证时，需要确保不会破坏现有的错误处理流程。建议增加全面的单元测试来验证 None 值处理和格式化逻辑，同时检查是否影响了其他依赖该异常类的模块。考虑使用类型提示和更严格的验证规则来避免未来类似问题。",
+   "risk_level": "medium"
+  },
+  "applied": false,
+  "confidence": 0.9,
+  "timestamp": 1771284708.4524002
+ },
+ {
+  "id": "imp_1771284710_93931",
+  "target_file": "/Users/jiangshengyu/Documents/program/python/Python_Coding_Agent/agent/exceptions.py",
+  "description": "Add retry history tracking to ModelNotLoadedError to improve debugging and monitoring",
+  "diff": "",
+  "test_result": {
+   "error": "Memory Agent blocked: 在添加retry history tracking功能前，需确保不会影响现有异常处理逻辑。建议先在隔离环境中测试修改，验证不会破坏现有异常序列化和处理流程，并通过完整的 smoke test",
+   "risk_level": "high"
+  },
+  "applied": false,
+  "confidence": 0.7,
+  "timestamp": 1771284710.2462451
+ },
+ {
+  "id": "imp_1771284711_93931",
+  "target_file": "/Users/jiangshengyu/Documents/program/python/Python_Coding_Agent/agent/exceptions.py",
+  "description": "Add a method to GenerationError to get the traceback information",
+  "diff": "--- a/exceptions.py\n+++ b/exceptions.py\n@@ -150,6 +150,9 @@\n             message = f\"{message}. Context: {context}\"\n         super().__init__(message, *args)\n \n+    def get_traceback(self):\n+        return self.traceback\n+\n \n class ConfigError(PyCoderError):\n     \"\"\"Raised for missing or invalid configuration.\"\"\"\n",
+  "test_result": {
+   "error": "Memory Agent blocked: 避免直接暴露内部traceback信息，建议使用日志记录或安全的错误信息封装方式，防止敏感信息泄露。",
+   "risk_level": "medium"
+  },
+  "applied": false,
+  "confidence": 0.7,
+  "timestamp": 1771284711.76136
+ },
+ {
+  "id": "imp_1771284747_93931",
+  "target_file": "/Users/jiangshengyu/Documents/program/python/Python_Coding_Agent/agent/intent.py",
+  "description": "Improve regex pattern matching to handle overlapping matches more efficiently by using a greedy approach with position tracking",
+  "diff": "--- a/intent.py\n+++ b/intent.py\n@@ -134,28 +134,35 @@\n     # Track matched positions to avoid overlapping matches\n     matched_positions = set()\n     \n+    # Precompute all matches for performance\n+    all_matches = []\n     for intent_type, patterns in _PATTERNS:\n         for i, pattern in enumerate(patterns):\n-            # Use re.finditer to get all matches with positions\n             for match in re.finditer(pattern, text_lower):\n-                start, end = match.span()\n-                # Check if this match overlaps with any previous match\n-                if not any(pos[0] < end and pos[1] > start for pos in matched_positions):\n-                    matched_positions.add((start, end))\n-                    # Assign confidence based on pattern specificity\n-                    confidence = 0.7\n-                    if intent_type in [IntentType.CODE_GENERATE, IntentType.CODE_MODIFY]:\n-                        confidence = 0.8\n-                    elif intent_type in [IntentType.CODE_EXPLAIN, IntentType.CODE_DEBUG]:\n-                        confidence = 0.75\n-                    \n-                    if confidence > best_confidence:\n-                        best_confidence = confidence\n-                        best_match = Intent(\n-                            type=intent_type,\n-                            confidence=confidence,\n-                            description=f\"Rule-matched: {intent_type}\",\n-                        )\n+                all_matches.append((intent_type, match, pattern))\n+    \n+    # Sort matches by start position to process them in order\n+    all_matches.sort(key=lambda x: x[1].start())\n+    \n+    for intent_type, match, pattern in all_matches:\n+        start, end = match.span()\n+        # Check if this match overlaps with any previous match\n+        if not any(pos[0] < end and pos[1] > start for pos in matched_positions):\n+            matched_positions.add((start, end))\n+            # Assign confidence based on pattern specificity\n+            confidence = 0.7\n+            if intent_type in [IntentType.CODE_GENERATE, IntentType.CODE_MODIFY]:\n+                confidence = 0.8\n+            elif intent_type in [IntentType.CODE_EXPLAIN, IntentType.CODE_DEBUG]:\n+                confidence = 0.75\n+            \n+            if confidence > best_confidence:\n+                best_confidence = confidence\n+                best_match = Intent(\n+                    type=intent_type,\n+                    confidence=confidence,\n+                    description=f\"Rule-matched: {intent_type}\",\n+                )\n     \n     return best_match\n \n",
+  "test_result": {
+   "error": "Validation rejected the change"
+  },
+  "applied": false,
+  "confidence": 0.7,
+  "timestamp": 1771284747.184907
+ },
+ {
+  "id": "imp_1771284751_93931",
+  "target_file": "/Users/jiangshengyu/Documents/program/python/Python_Coding_Agent/agent/intent.py",
+  "description": "Add input validation for user_message in classify method to prevent None or empty inputs",
+  "diff": "",
+  "test_result": {
+   "error": "Validation rejected the change"
+  },
+  "applied": false,
+  "confidence": 0.9,
+  "timestamp": 1771284751.477202
  }
 ]
